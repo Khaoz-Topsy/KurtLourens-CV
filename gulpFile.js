@@ -116,5 +116,5 @@ gulp.task('createCssAndRemoveMinified', createCssAndRemoveMinified);
 gulp.task('uglifyJsTask', uglifyJsTask);
 gulp.task('watch', watchTask);
 gulp.task('dev', gulp.series(createCssAndRemoveMinified, uglifyJsTask, browserSyncTask));
-gulp.task('dist', gulp.series(publishHtmlTask, publishMiscTask, publishAssetsTask));
+gulp.task('dist', gulp.series(createCssAndRemoveMinified, uglifyJsTask, publishHtmlTask, publishMiscTask, publishAssetsTask));
 gulp.task('default', createCssAndRemoveMinified);
