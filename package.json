@@ -14,10 +14,12 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0"
+    "gulp-sourcemaps": "^2.6.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-purgecss": "^1.1.1",
+    "gulp-uglify": "^3.0.1"
+  },
   "author": "Kurt Lourens",
   "license": "ISC"
 }

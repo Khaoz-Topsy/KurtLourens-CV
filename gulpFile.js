@@ -4,7 +4,8 @@ var sass = require('gulp-sass');
 var size = require('gulp-size');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
-var purgecss = require('gulp-css-purge');
+var uglify = require('gulp-uglify');
+var purgecss = require('gulp-purgecss')
 var minifyCSS = require('gulp-minify-css');
 var sourcemaps = require("gulp-sourcemaps");
 var browserSync = require('browser-sync').create();
@@ -13,9 +14,11 @@ var browserSync = require('browser-sync').create();
 var inputPaths = {
   scss: "./sass/**/*.scss",
   css: "./assets/css/*.css",
+  lib: "./lib/*.js",
+  html: "./*.html"
 };
 var outputPaths = {
-  dist: "./dist/",
+  js: "./assets/js",
   css: "./assets/css",
   delcss: "./assets/css/*",
   nonmin: "!./assets/css/*.min.js",
@@ -40,11 +43,12 @@ function sassTask() {
 function purgeCssTask() {
   return gulp.src([inputPaths.css])
     // .pipe(concat('main.css'))
-    // .pipe(purgecss({
-    //   trim: true,
-    //   shorten: true,
-    //   verbose: false
-    // }))
+    .pipe(purgecss({
+      trim: true,
+      shorten: true,
+      verbose: false,
+      content: [inputPaths.html]
+    }))
     .pipe(minifyCSS({
       keepSpecialComments: 0,
       removeEmpty: true,
@@ -57,6 +61,17 @@ function purgeCssTask() {
     .pipe(size({ title: "Info     'purgeCssTask'" }))
     .pipe(browserSync.stream());
 }
+
+function uglifyJsTask() {
+  return gulp.src([inputPaths.lib])
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest(outputPaths.js))
+    .pipe(browserSync.stream());
+}
+
 function watchTask() {
   gulp.watch([[inputPaths.scss]], sassTask);
 }
@@ -69,6 +84,7 @@ createCssAndRemoveMinified.description = 'Delete old CSS and Generate new CSS';
 // Configure the browserSync task
 function browserSyncTask() {
   gulp.watch([[inputPaths.scss]]).on('change', gulp.series(createCssAndRemoveMinified, browserSync.reload));
+  gulp.watch([[inputPaths.lib]]).on('change', gulp.series(uglifyJsTask, browserSync.reload));
   gulp.watch('./*.html').on('change', browserSync.reload);
   browserSync.init({
     server: {
@@ -79,6 +95,7 @@ function browserSyncTask() {
 
 gulp.task('cleanCss', cleanCss);
 gulp.task('createCssAndRemoveMinified', createCssAndRemoveMinified);
+gulp.task('uglifyJsTask', uglifyJsTask);
 gulp.task('watch', watchTask);
-gulp.task('dev', gulp.series(createCssAndRemoveMinified, browserSyncTask));
+gulp.task('dev', gulp.series(createCssAndRemoveMinified, uglifyJsTask, browserSyncTask));
 gulp.task('default', createCssAndRemoveMinified);
