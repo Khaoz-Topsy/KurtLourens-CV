@@ -12,6 +12,7 @@ var browserSync = require('browser-sync').create();
 
 
 var inputPaths = {
+  assets: "./assets/**/*.*",
   scss: "./sass/**/*.scss",
   css: "./assets/css/*.css",
   lib: "./lib/*.js",
@@ -22,6 +23,8 @@ var outputPaths = {
   css: "./assets/css",
   delcss: "./assets/css/*",
   nonmin: "!./assets/css/*.min.js",
+  distassets: "./dist/assets/",
+  disthtml: "./dist",
 };
 var delPaths = {
   css: "./assets/css/*",
@@ -72,6 +75,15 @@ function uglifyJsTask() {
     .pipe(browserSync.stream());
 }
 
+function publishHtmlTask() {
+  return gulp.src([inputPaths.html])
+    .pipe(gulp.dest(outputPaths.disthtml));
+}
+function publishAssetsTask() {
+  return gulp.src([inputPaths.assets])
+    .pipe(gulp.dest(outputPaths.distassets));
+}
+
 function watchTask() {
   gulp.watch([[inputPaths.scss]], sassTask);
 }
@@ -98,4 +110,5 @@ gulp.task('createCssAndRemoveMinified', createCssAndRemoveMinified);
 gulp.task('uglifyJsTask', uglifyJsTask);
 gulp.task('watch', watchTask);
 gulp.task('dev', gulp.series(createCssAndRemoveMinified, uglifyJsTask, browserSyncTask));
+gulp.task('dist', gulp.series(publishHtmlTask, publishAssetsTask));
 gulp.task('default', createCssAndRemoveMinified);
