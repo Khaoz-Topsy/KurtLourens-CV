@@ -7,6 +7,7 @@ var rename = require('gulp-rename');
 var purgecss = require('gulp-css-purge');
 var minifyCSS = require('gulp-minify-css');
 var sourcemaps = require("gulp-sourcemaps");
+var browserSync = require('browser-sync').create();
 
 
 var inputPaths = {
@@ -53,7 +54,8 @@ function purgeCssTask() {
       path.basename += ".min";
     }))
     .pipe(gulp.dest(outputPaths.css))
-    .pipe(size({ title: "Info     'purgeCssTask'" }));
+    .pipe(size({ title: "Info     'purgeCssTask'" }))
+    .pipe(browserSync.stream());
 }
 function watchTask() {
   gulp.watch([[inputPaths.scss]], sassTask);
@@ -61,10 +63,22 @@ function watchTask() {
 
 //Delete the existing css, use SASS to generate new css, purge the css, remove non-min css
 var createCssAndRemoveMinified = gulp.series(cleanCss, sassTask, purgeCssTask, cleanNonMinStylesTask);
-createCssAndRemoveMinified.description = 'Delete old CSS and Generate new CSS'
+createCssAndRemoveMinified.description = 'Delete old CSS and Generate new CSS';
 
+
+// Configure the browserSync task
+function browserSyncTask() {
+  gulp.watch([[inputPaths.scss]], createCssAndRemoveMinified);
+  gulp.watch('./*.html').on('change', browserSync.reload);
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
+  });
+}
 
 gulp.task('cleanCss', cleanCss);
 gulp.task('createCssAndRemoveMinified', createCssAndRemoveMinified);
 gulp.task('build-watch', watchTask);
+gulp.task('dev', gulp.series(createCssAndRemoveMinified, browserSyncTask));
 gulp.task('default', createCssAndRemoveMinified);

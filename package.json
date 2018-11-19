@@ -1,9 +1,10 @@
 {
-  "name": "khaoznet-home",
+  "name": "khaoznet-cv",
   "version": "1.0.0",
-  "description": "This is the source files for my home page at khaoznet.xyz",
+  "description": "This is the source files for my cv page at kurtlourens.com",
   "main": "gulpFile.js",
   "dependencies": {
+    "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-cli": "github:gulpjs/gulp-cli",
@@ -17,10 +18,6 @@
     "gulp-uglify": "^3.0.0"
   },
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "https://khaoznet.visualstudio.com/_git/KhaozNet"
-  },
   "author": "Kurt Lourens",
   "license": "ISC"
 }
