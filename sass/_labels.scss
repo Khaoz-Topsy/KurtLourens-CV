@@ -1,91 +1,97 @@
-
-
 .label {
-	display: inline;
-	padding: .2em .6em .3em;
-	line-height: 1;
-	color: #fff;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: baseline;
-	border-radius: .25em;
+    display: inline;
+    padding: .2em .6em .3em;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
 }
-		
-	
+
 .label-vuma,
 .label-vuma[href]:hover,
 .label-vuma[href]:focus {
-  background-color: #ff3399;
+    color: #292929;
+    background-color: #ff3399;
 }
+
 .label-endeavour,
 .label-endeavour[href]:hover,
 .label-endeavour[href]:focus {
-  background-color: #AE8C5E;
+    color: #292929;
+    background-color: #AE8C5E;
 }
+
 .label-entelect,
 .label-entelect[href]:hover,
 .label-entelect[href]:focus {
-  background-color: #004C8E;
+    background-color: #004C8E;
 }
+
 .label-entelectgreen,
 .label-entelectgreen[href]:hover,
 .label-entelectgreen[href]:focus {
-  background-color: #91C322;
+    background-color: #91C322;
 }
+
 .label-ruby,
 .label-ruby[href]:hover,
 .label-ruby[href]:focus {
-  background-color: #BE1F25;
+    background-color: #BE1F25;
 }
+
 .label-uj,
 .label-uj[href]:hover,
 .label-uj[href]:focus {
-  background-color: #ff9f39;
+    color: #292929;
+    background-color: #ff9f39;
 }
-
-
-
 
 .label-orange,
 .label-orange[href]:hover,
 .label-orange[href]:focus {
-  background-color: #ff9f39;
+    background-color: #ff9f39;
 }
+
 .label-pink,
 .label-pink[href]:hover,
 .label-pink[href]:focus {
-  background-color: #ff3399;
+    background-color: #ff3399;
 }
 
-
-	
 .label-default,
 .label-default[href]:hover,
 .label-default[href]:focus {
-  background-color: #5e5e5e;
+    background-color: #5e5e5e;
 }
+
 .label-primary,
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #286090;
+    background-color: #286090;
 }
+
 .label-success,
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #449d44;
+    background-color: #449d44;
 }
+
 .label-info,
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #31b0d5;
+    background-color: #31b0d5;
 }
+
 .label-warning,
 .label-warning[href]:hover,
 .label-warning[href]:focus {
-  background-color: #ec971f;
+    background-color: #ec971f;
 }
+
 .label-danger,
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #c9302c;
+    background-color: #c9302c;
 }
