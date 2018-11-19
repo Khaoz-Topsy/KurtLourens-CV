@@ -12,7 +12,9 @@ var browserSync = require('browser-sync').create();
 
 
 var inputPaths = {
-  misc: ["./docs", "./Images", "./favicon.ico", "./.htaccess", "./sitemap.xml", "./robots.txt"],
+  docs: ["./docs/**/*.*"],
+  images: ["./images/**/*.*"],
+  misc: ["./favicon.ico", "./.htaccess", "./sitemap.xml", "./robots.txt"],
   assets: "./assets/**/*.*",
   scss: "./sass/**/*.scss",
   css: "./assets/css/*.css",
@@ -26,6 +28,8 @@ var outputPaths = {
   nonmin: "!./assets/css/*.min.js",
   distassets: "./dist/assets/",
   dist: "./dist",
+  distdocs: "./dist/docs/",
+  distimages: "./dist/images/",
 };
 var delPaths = {
   css: "./assets/css/*",
@@ -85,6 +89,14 @@ function publishMiscTask() {
   return gulp.src(inputPaths.misc)
     .pipe(gulp.dest(outputPaths.dist));
 }
+function publishDocsTask() {
+  return gulp.src(inputPaths.docs)
+    .pipe(gulp.dest(outputPaths.distdocs));
+}
+function publishImagesTask() {
+  return gulp.src(inputPaths.images)
+    .pipe(gulp.dest(outputPaths.distimages));
+}
 function publishAssetsTask() {
   return gulp.src([inputPaths.assets])
     .pipe(gulp.dest(outputPaths.distassets));
@@ -116,5 +128,5 @@ gulp.task('createCssAndRemoveMinified', createCssAndRemoveMinified);
 gulp.task('uglifyJsTask', uglifyJsTask);
 gulp.task('watch', watchTask);
 gulp.task('dev', gulp.series(createCssAndRemoveMinified, uglifyJsTask, browserSyncTask));
-gulp.task('dist', gulp.series(createCssAndRemoveMinified, uglifyJsTask, publishHtmlTask, publishMiscTask, publishAssetsTask));
+gulp.task('dist', gulp.series(createCssAndRemoveMinified, uglifyJsTask, publishHtmlTask, publishMiscTask, publishDocsTask, publishImagesTask, publishAssetsTask));
 gulp.task('default', createCssAndRemoveMinified);
