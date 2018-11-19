@@ -1,0 +1,33 @@
+strong {
+    a {
+        text-decoration: none;
+        border-bottom: unset;
+        font-weight: 600;
+    }
+}
+
+#header {
+    h4 {
+        margin: 0;
+        font-size: 1em;
+        @include breakpoint('<=medium') {
+            &:not(:last-child) {
+                display: inline-block;
+                border-right: 1px solid red;
+                padding-right: 0.5em;
+                padding-left: 0.15em;
+            }
+        }
+        @include breakpoint('<=small') {
+            &:not(:last-child) {
+                display: block;
+                border-right: unset;
+                padding: 0;
+            }
+        }
+    }
+    footer {
+        position: absolute;
+        bottom: 2em;
+    }
+}

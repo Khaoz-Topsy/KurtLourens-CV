@@ -1,0 +1,29 @@
+section {
+    .row {
+        article {
+            >div.card {
+                background-color: #FFFFFF;
+                padding: 1em 1.25em 1.25em 1.25em;
+                height: 100%;
+                border-radius: 10px;
+                >.top-right {
+                    float: right;
+                    text-align: right;
+                }
+                h2 {
+                    font-size: 1.25em;
+                    strong {
+                        color: #147393;
+                    }
+                    small {
+                        font-size: .65em;
+                    }
+                }
+                img.company {
+                    height: 50px;
+                    float: right;
+                }
+            }
+        }
+    }
+}
