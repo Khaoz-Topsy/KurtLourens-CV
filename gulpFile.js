@@ -5,6 +5,7 @@ var size = require('gulp-size');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
 var purgecss = require('gulp-purgecss')
 var minifyCSS = require('gulp-minify-css');
 var sourcemaps = require("gulp-sourcemaps");
@@ -82,6 +83,13 @@ function uglifyJsTask() {
 
 function publishHtmlTask() {
   return gulp.src([inputPaths.html])
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      collapseBooleanAttributes: true,
+      collapseInlineTagWhitespace: true,
+      useShortDoctype: true,
+      removeComments: true,
+    }))
     .pipe(gulp.dest(outputPaths.dist));
 }
 
