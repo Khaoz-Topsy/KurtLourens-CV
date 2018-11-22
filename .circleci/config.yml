@@ -5,6 +5,29 @@
 #
 version: 2
 jobs:
+  prepare:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:6.10.3
+    environment:
+      NPM_VERSION: "5.7.0"
+    steps:
+    - checkout
+    - restore_cache:
+        name: Restore node modules cache
+        key: node_modules-{{ checksum "package-lock.json" }}
+    - run:
+        name: Install dependencies
+        command: |
+          if [ ! -d node_modules ]; then
+            sudo npm install -g npm@$NPM_VERSION
+            npm ci
+          fi
+    - save_cache:
+        name: Save node modules cache
+        key: node_modules-{{ checksum "package-lock.json" }}
+        paths:
+          - node_modules
   build:
     docker:
       # specify the version you desire here
@@ -16,14 +39,6 @@ jobs:
       - run:
           name: Show current branch
           command: echo ${CIRCLE_BRANCH}
-      - run:
-          name: ls
-          command: sudo ls
-      - run:
-          name: Update npm
-          command: 'sudo npm install npm@latest -g --silent'
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: ls
           command: sudo ls
