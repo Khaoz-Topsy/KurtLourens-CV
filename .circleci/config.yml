@@ -40,6 +40,9 @@ jobs:
       - run:
           name: Show current branch
           command: echo ${CIRCLE_BRANCH}
+      - restore_cache:
+          name: Restore node modules cache
+          key: node_modules-{{ checksum "package-lock.json" }}
       - run:
           name: ls
           command: sudo ls
