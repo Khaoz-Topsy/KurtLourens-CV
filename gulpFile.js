@@ -14,7 +14,7 @@ var browserSync = require('browser-sync').create();
 var inputPaths = {
   docs: ["./docs/**/*.*"],
   images: ["./images/**/*.*"],
-  misc: ["./favicon.ico", "./.htaccess", "./sitemap.xml", "./robots.txt"],
+  misc: ["./favicon.ico", "./sitemap.xml", "./robots.txt"],
   assets: "./assets/**/*.*",
   scss: "./sass/**/*.scss",
   css: "./assets/css/*.css",
