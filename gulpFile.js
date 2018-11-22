@@ -8,7 +8,6 @@ var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var purgecss = require('gulp-purgecss')
 var minifyCSS = require('gulp-minify-css');
-var sourcemaps = require("gulp-sourcemaps");
 var browserSync = require('browser-sync').create();
 
 
@@ -35,6 +34,8 @@ var outputPaths = {
 var delPaths = {
   css: "./assets/css/*",
   css_non_min: "!./assets/css/*.min.css",
+  js: "./assets/js/*",
+  dist: "./dist/**/*",
 };
 
 function cleanCss() {
@@ -43,6 +44,13 @@ function cleanCss() {
 function cleanNonMinStylesTask() {
   return del([delPaths.css, delPaths.css_non_min]);
 }
+function cleanJs() {
+  return del([delPaths.js]);
+}
+function cleanDist() {
+  return del([delPaths.dist]);
+}
+
 function sassTask() {
   return gulp.src([inputPaths.scss])
     .pipe(sass())
@@ -73,6 +81,7 @@ function purgeCssTask() {
 
 function uglifyJsTask() {
   return gulp.src([inputPaths.lib])
+    .pipe(concat('bundle.js'))
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
@@ -118,11 +127,15 @@ function watchTask() {
 var createCssAndRemoveMinified = gulp.series(cleanCss, sassTask, purgeCssTask, cleanNonMinStylesTask);
 createCssAndRemoveMinified.description = 'Delete old CSS and Generate new CSS';
 
+//Delete the existing js, new js bundle
+var generateJsBundle = gulp.series(cleanJs, uglifyJsTask);
+generateJsBundle.description = 'Delete old JS and Generate new JS';
+
 
 // Configure the browserSync task
 function browserSyncTask() {
   gulp.watch([[inputPaths.scss]]).on('change', gulp.series(createCssAndRemoveMinified, browserSync.reload));
-  gulp.watch([[inputPaths.lib]]).on('change', gulp.series(uglifyJsTask, browserSync.reload));
+  gulp.watch([[inputPaths.lib]]).on('change', gulp.series(generateJsBundle, browserSync.reload));
   gulp.watch('./*.html').on('change', browserSync.reload);
   browserSync.init({
     server: {
@@ -133,8 +146,10 @@ function browserSyncTask() {
 
 gulp.task('cleanCss', cleanCss);
 gulp.task('createCssAndRemoveMinified', createCssAndRemoveMinified);
-gulp.task('uglifyJsTask', uglifyJsTask);
+gulp.task('generateJsBundle', generateJsBundle);
 gulp.task('watch', watchTask);
-gulp.task('dev', gulp.series(createCssAndRemoveMinified, uglifyJsTask, browserSyncTask));
-gulp.task('dist', gulp.series(createCssAndRemoveMinified, uglifyJsTask, publishHtmlTask, publishMiscTask, publishDocsTask, publishImagesTask, publishAssetsTask));
+gulp.task('dev', gulp.series(createCssAndRemoveMinified, generateJsBundle, browserSyncTask));
+gulp.task('cleanDist', cleanDist);
+gulp.task('dist', gulp.series(cleanDist, createCssAndRemoveMinified, generateJsBundle, publishHtmlTask, publishMiscTask, publishDocsTask, publishImagesTask, publishAssetsTask));
+gulp.task('dist:min', gulp.series(cleanDist, createCssAndRemoveMinified, generateJsBundle, publishHtmlTask, publishMiscTask, publishAssetsTask));
 gulp.task('default', createCssAndRemoveMinified);
