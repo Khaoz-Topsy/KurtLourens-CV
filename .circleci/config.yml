@@ -32,6 +32,8 @@ jobs:
         paths:
           - node_modules
   build:      
+    docker:
+      - image: circleci/node:6.10.3
     steps:
       - checkout
       # Log the current branch
