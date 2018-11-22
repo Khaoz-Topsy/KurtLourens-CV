@@ -25,6 +25,9 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
+          name: ls
+          command: sudo ls
+      - run:
           name: install-npm-packages
           command: sudo npm install
       - save_cache:
