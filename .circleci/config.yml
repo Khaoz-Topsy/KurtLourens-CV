@@ -8,15 +8,8 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:6.10-browsers
+      - image: circleci/node:6.10.3
       
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
-
-    working_directory: ~/project
-
     steps:
       - checkout
       # Log the current branch
@@ -28,7 +21,7 @@ jobs:
           command: sudo ls
       - run:
           name: Update npm
-          command: 'sudo npm install -g npm@latest'
+          command: 'sudo npm install npm@latest -g --silent'
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
