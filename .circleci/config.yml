@@ -15,28 +15,31 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/repo
+    working_directory: ~/
 
     steps:
       - checkout
       - run:
-          name: upgrade-npm
-          command: 'sudo npm install npm -g --silent'
+          name: ls
+          command: sudo ls
+      - run:
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install npm wee
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
       - run:
           name: ls
           command: sudo ls
       - run:
           name: version
           command: npm -v
-      - run:
-          name: install-npm-packages
-          command: sudo npm install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
       - run:
           name: gulp-dist
           command: gulp dist
