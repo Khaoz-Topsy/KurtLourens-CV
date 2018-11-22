@@ -11,6 +11,16 @@ jobs:
       - image: circleci/node:6.10.3
     environment:
       NPM_VERSION: "5.7.0"
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            sudo npm install -g npm@$NPM_VERSION
+            npm ci
+      - run: 
+            name: Install packages
+            command: npm install
   build:      
     docker:
       - image: circleci/node:6.10.3
