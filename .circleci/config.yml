@@ -28,6 +28,9 @@ jobs:
           name: ls
           command: sudo ls
       - run:
+          name: version
+          command: npm -v
+      - run:
           name: install-npm-packages
           command: sudo npm install
       - save_cache:
