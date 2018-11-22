@@ -15,7 +15,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "strip": "^3.0.0"
   },
   "devDependencies": {
     "gulp-purgecss": "^1.1.1",
