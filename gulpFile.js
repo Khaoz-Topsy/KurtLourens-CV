@@ -81,8 +81,9 @@ function purgeCssTask() {
 
 function uglifyJsTask() {
   return gulp.src([inputPaths.lib])
+    // .pipe(uglify())
     .pipe(concat('bundle.js'))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
