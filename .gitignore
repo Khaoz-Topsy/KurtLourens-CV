@@ -99,3 +99,5 @@ Thumbs.db
 !.editorconfig
 
 /dist
+/assets/js
+/assets/css
