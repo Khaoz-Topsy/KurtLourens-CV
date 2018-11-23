@@ -31,6 +31,15 @@ small {
 }
 
 #header {
+    h1 {
+        span {
+            font-size: 0.7em;
+            display: block;
+            small {
+                font-size: 0.9em;
+            }
+        }
+    }
     h4 {
         margin: 0;
         font-size: 1em;

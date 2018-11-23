@@ -1108,6 +1108,8 @@ input[type="button"],
     h1 {
         color: _palette(accent2, fg);
         margin: 0;
+        line-height: 1em;
+        margin-bottom: .5em;
     }
     .image.avatar {
         margin: 0 0 (_size(element-margin) * 0.5) 0;
