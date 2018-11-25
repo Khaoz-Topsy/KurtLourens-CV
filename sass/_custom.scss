@@ -65,3 +65,14 @@ small {
         bottom: 2em;
     }
 }
+
+@include breakpoint('<large') {
+    body {
+        &.is-loading {
+            overflow: visible;
+        }
+        .full-page-loader {
+            display: none;
+        }
+    }
+}
