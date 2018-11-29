@@ -19,3 +19,9 @@ RewriteRule .? https://kurtlourens.com [R=301,L]
 RewriteEngine On 
 RewriteCond %{SERVER_PORT} 80 
 RewriteRule ^(.*)$ https://kurtlourens.com/$1 [R,L]
+
+ErrorDocument 400 https://khaoznet.xyz/Error/404.html
+ErrorDocument 401 https://khaoznet.xyz/Error/404.html
+ErrorDocument 403 https://khaoznet.xyz/Error/404.html
+ErrorDocument 404 https://khaoznet.xyz/Error/404.html
+ErrorDocument 500 https://khaoznet.xyz/Error/404.html

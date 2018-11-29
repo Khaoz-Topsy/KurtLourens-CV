@@ -2,29 +2,3 @@ https://sitechecker.pro/
 https://suite.seotesteronline.com/seo-checker
 
 
-
-<body class="is-preload is-loading">
-
-	<div class="full-page-loader initial intro-background"></div>
-	<div class="full-page-loader initial">
-		<div class="cssload-container">
-			<ul class="cssload-flex-container">
-				<li style="list-style-type: none;">
-					<img src="/assets/images/loader.svg" alt="loading-animation">
-					<h2 class="largeHeading">Welcome</h2>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-
-
-    
-
-    window.setTimeout(removeLoader, 500);
-
-
-function removeLoader() {
-    $(".full-page-loader").remove();
-    $("body").removeClass("is-loading");
-}

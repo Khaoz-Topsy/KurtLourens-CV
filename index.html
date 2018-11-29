@@ -72,7 +72,7 @@
 	<style>.full-page-loader {position: fixed;top:0;right:0;bottom:0;left:0;z-index:2;display:flex;flex-direction:column;justify-content:center;text-align:center;background-color:#333333;opacity:0.85;}.full-page-loader .largeHeading {color: #FFF;}.full-page-loader img {height: 200px;}.is-loading{overflow: hidden;}</style>
 </head>
 
-<body class="is-preload is-loading">
+<body class="is-preload is-loading" itemscope itemtype="http://schema.org/Person">
 	<div class="full-page-loader initial intro-background"></div>
 	<div class="full-page-loader initial">
 		<div class="cssload-container">
@@ -86,16 +86,17 @@
 	</div>
 	<header id="header">
 		<div class="inner">
-			<a href="https://kurtlourens.com" class="image avatar" title="Kurt Lourens avatar"><img src="assets/images/loader.svg"
+			<a href="https://kurtlourens.com" class="image avatar" title="Kurt Lourens avatar" itemprop="url"><img src="assets/images/loader.svg"
 				 data-original="assets/images/KurtAvatar.svg" class="lazy" alt="Kurt Lourens Avatar" title="Kurt Lourens Avatar" /></a>
 			<h1>
-				<strong>Kurt Lourens</strong>&nbsp;<span>Software Engineer&nbsp;<br /><small>Red Ruby IT Co-Founder</small></span>
+				<strong itemprop="givenName name familyName">Kurt Lourens</strong>&nbsp;<span>Software Engineer&nbsp;<br /><small>Red
+						Ruby IT Co-Founder</small></span>
 			</h1>
-			<h4>.Net Core Advocate</h4>
-			<h4>Crazy about Javasript Frameworks</h4>
-			<h4>Implementing PWA everywhere</h4>
-			<h4>Arduino Tinkerer</h4>
-			<h4>💘 Lover of Emojis 💖</h4>
+			<h4 itemprop="description">.Net Core Advocate</h4>
+			<h4 itemprop="description">Crazy about Javasript Frameworks</h4>
+			<h4 itemprop="description">Implementing PWA everywhere</h4>
+			<h4 itemprop="description">Arduino Tinkerer</h4>
+			<h4 itemprop="description">💘 Lover of Emojis 💖</h4>
 			<img src="assets/images/loader.svg" data-original="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI"
 			 class="mt-1 lazy" alt="Website build status" />
 			<img src="assets/images/loader.svg" data-original="https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20"
@@ -110,11 +111,13 @@
 			</header>
 			<p>I found a love for computers in boarding school, I would spend many if not all break times playing games and
 				programming (then using Delphi). My interest in I.T. grew as I entered University to study a BSC I.T. to become a
-				Software Engineer. During my degree I found like minded individuals and joined Red Ruby IT as a co-founder.
-				I have learned so much from working at Red Ruby IT and I am so lucky to be doing something that I love. My goal
-				is to continue learning all that I can and to live on the bleeding edge of tech until it bites me in the ass 😂.
-				I am currently living in&nbsp;<a href="https://goo.gl/maps/94uXM5Mgd362" target="_blank" rel="noopener" title="Johannesburg, South africa">Johannesburg,
-					South africa 🌍</a>.
+				<span itemprop="jobTitle">Software Engineer</span>. During my degree I found like minded individuals and joined Red
+				Ruby IT as a co-founder. I have learned so much from working at <strong itemprop="owns" itemscope itemtype="http://schema.org/OwnershipInfo"><a
+					 href="http://www.redrubyit.co.za" class="color-ruby" target="_blank" rel="noopener" title="redrubyit" alt="redrubyit"
+					 itemprop="url"><span itemprop="name">Red Ruby IT</span></a></strong> and I am so lucky to be doing something that
+				I love. My goal is to continue learning all that I can and to live on the bleeding edge of tech until it bites me
+				in the ass 😂. I am currently living in&nbsp;<a href="https://goo.gl/maps/94uXM5Mgd362" target="_blank" rel="noopener"
+				 title="Johannesburg, South africa" itemprop="address">Johannesburg, South africa 🌍</a>.
 			</p>
 			<small>
 				P.S. I also have a <strong><a href="https://blog.khaoznet.xyz" target="_blank" rel="noopener" title="Kurt's blog">blog</a></strong>,
@@ -123,49 +126,56 @@
 					 href="https://blog.khaoznet.xyz/kurtlourens-com-redesigned/" target="_blank" rel="noopener" title="Kurt's blog">click
 						here to read it</a></strong>😁.
 			</small>
+			<small itemprop="nationality" itemscope itemtype="http://schema.org/Country">
+				<strong itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					Proudly <a itemprop="url" href="https://goo.gl/maps/hiGXkzqRBuz" target="_blank" rel="noopener" title="South Africa">
+						<span itemprop="addressCountry">South Africa</span>n
+					</a>
+				</strong>
+			</small>
 		</section>
 
 		<section id="two">
 			<h2>Work Experience</h2>
 			<div class="row">
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
-					<div class="card full2">
+					<div class="card full2" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
 						<div class="top-right">
 							<img src="assets/images/loader.svg" data-original="assets/images/company/Entelect.png" class="company lazy invert"
 							 alt="Entelect" />
 							<br />
 							<p class="label label-entelect">January 2017 – Present</p>
 						</div>
-						<h2>
+						<h2 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<strong>Software Engineer</strong>
-							<small>Johannesburg Area, South Africa</small>
+							<small itemprop="streetAddress">Johannesburg Area, <span itemprop="addressCountry">South Africa</span></small>
 						</h2>
 						<p>
-							<strong><a href="http://www.entelect.co.za" class="color-entelect" target="_blank" rel="noopener" title="entelect"
-								 alt="entelect">Entelect</a></strong> really encourages all of it's employees to continuously learn, and when
-							you are in I.T. that is extremely important. <strong><a href="http://www.entelect.co.za" class="color-entelect"
-								 target="_blank" rel="noopener" title="entelect" alt="entelect">Entelect</a></strong> has given me many
-							opportunities to grow my knowledge with the crazy amount of initiatives that they allow/provide. I have been
-							exposed to new ways of structuring code, (CI) continuous integration , (CD) Continuous delivery and much more. I
-							have worked on a few side projects for the teams that I have been a part of. Such as a Build Monitor and
-							Timesheet App.
+							<strong itemprop="legalName"><a href="http://www.entelect.co.za" class="color-entelect" target="_blank" rel="noopener"
+								 title="entelect" alt="entelect">Entelect</a></strong> really encourages all of it's employees to
+							continuously learn, and when you are in I.T. that is extremely important. <strong><a href="http://www.entelect.co.za"
+								 class="color-entelect" target="_blank" rel="noopener" title="entelect" alt="entelect">Entelect</a></strong>
+							has given me many opportunities to grow my knowledge with the crazy amount of initiatives that they
+							allow/provide. I have been exposed to new ways of structuring code, (CI) continuous integration , (CD)
+							Continuous delivery and much more. I have worked on a few side projects for the teams that I have been a part
+							of. Such as a Build Monitor and Timesheet App.
 						</p>
 					</div>
 				</article>
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
-					<div class="card full2">
+					<div class="card full2" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
 						<div class="top-right">
 							<img src="assets/images/loader.svg" data-original="assets/images/company/RedRubyIT.png" class="company lazy invert"
 							 alt="Red Ruby IT" />
 							<br />
 							<p class="label label-ruby">January 2014 – Present</p>
 						</div>
-						<h2>
+						<h2 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<strong>Co-Owner</strong>
-							<small>Johannesburg Area, South Africa</small>
+							<small itemprop="streetAddress">Johannesburg Area, <span itemprop="addressCountry">South Africa</span></small>
 						</h2>
-						<p>I joined <strong><a href="http://www.redrubyit.co.za" class="color-ruby" target="_blank" rel="noopener" title="redrubyit"
-								 alt="redrubyit">Red Ruby IT</a></strong> with a
+						<p>I joined <strong itemprop="legalName"><a href="http://www.redrubyit.co.za" class="color-ruby" target="_blank"
+								 rel="noopener" title="redrubyit" alt="redrubyit">Red Ruby IT</a></strong> with a
 							focus on Web Design and Web Hosting Management as well as looking into mobile application development for the
 							android platform, with multiple android applications on the Google Play Store that I designed, latest one
 							released was <strong> <a href="https://play.google.com/store/apps/details?id=whmcs.redrubyit.com&hl=en" class="color-ruby"
@@ -233,7 +243,7 @@
 							<p class="label label-uj">2013 – 2016 (4 Years)</p>
 						</div>
 						<h2>
-							<strong>Bsc Computer Science and Informatics</strong>
+							<strong itemprop="award">Bsc Computer Science and Informatics</strong>
 							<small>Johannesburg, South Africa</small>
 						</h2>
 						<p>4 Year degree, BSCIT Extended degree.</p>
@@ -268,7 +278,7 @@
 							<p class="label label-primary">March 2015 - March 2015 (1 Week)</p>
 						</div>
 						<h2>
-							<strong>BizSpark Start-up Business Development Programme</strong>
+							<strong itemprop="award">BizSpark Start-up Business Development Programme</strong>
 							<small>Johannesburg, South Africa</small>
 						</h2>
 						<p>I have completed the Microsoft BizSpark Programme, which was focused on Business Development.</p>
@@ -287,7 +297,7 @@
 							<p class="label label-kes">2008 - 2012 (5 Years)</p>
 						</div>
 						<h2>
-							<strong>Matriculated from King Edward VII School for Boys</strong>
+							<strong itemprop="award">Matriculated from King Edward VII School for Boys</strong>
 							<small>Johannesburg, South Africa</small>
 						</h2>
 						<p>Matriculated with university exemption.</p>
