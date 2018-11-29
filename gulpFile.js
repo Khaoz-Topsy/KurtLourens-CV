@@ -34,7 +34,7 @@ var outputPaths = {
 var delPaths = {
   css: "./assets/css/*",
   css_non_min: "!./assets/css/*.min.css",
-  js: "./assets/js/*",
+  js: "./assets/js/bundle.min.js",
   dist: "./dist/**/*",
 };
 
