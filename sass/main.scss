@@ -1359,9 +1359,6 @@ body.is-touch {
         width: $size-header-width;
         h1 {
             font-size: 1.25em;
-            br {
-                display: none;
-            }
         }
         >.inner {
             margin-bottom: 0;
@@ -1545,11 +1542,6 @@ body.is-touch {
     /* Header */
     #header {
         padding: $size-header-pad ($size-header-pad / 3);
-        h1 {
-            br {
-                display: none;
-            }
-        }
     }
     /* Footer */
     #footer {
