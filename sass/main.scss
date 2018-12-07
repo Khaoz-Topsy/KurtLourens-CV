@@ -643,7 +643,6 @@ input[type="radio"] {
     &:before {
         @include vendor('transition',
         'opacity #{_duration(transition)} ease-in-out');
-        background: url('/assets/images/overlay.png');
         border-radius: _size(border-radius);
         content: '';
         display: block;
@@ -676,15 +675,6 @@ input[type="radio"] {
             text-decoration: none;
             top: 50%;
             white-space: nowrap;
-        }
-        &:hover {
-            &:after {
-                opacity: 1.0;
-            }
-            &:before {
-                background: url('/assets/images/overlay.png'), url('/assets/images/overlay.png');
-                opacity: 1.0;
-            }
         }
     }
     img {
