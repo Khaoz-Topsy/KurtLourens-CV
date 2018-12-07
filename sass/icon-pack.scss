@@ -21,18 +21,26 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-envelope-o:before {
-    content: "\e900";
+.icon-instagram:before {
+    content: "\e905";
 }
 
-.icon-twitter:before {
-    content: "\ea96";
-}
-
-.icon-github:before {
-    content: "\eab0";
+.icon-facebook:before {
+    content: "\e902";
 }
 
 .icon-linkedin:before {
-    content: "\eac9";
+    content: "\e903";
+}
+
+.icon-github:before {
+    content: "\e904";
+}
+
+.icon-twitter:before {
+    content: "\e901";
+}
+
+.icon-envelope-o:before {
+    content: "\e900";
 }
