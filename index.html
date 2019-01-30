@@ -108,7 +108,7 @@
 	</header>
 
 	<div id="main">
-		<section id="one">
+		<section id="about">
 			<header class="major">
 				<h2>About Kurt Lourens</h2>
 			</header>
@@ -138,8 +138,8 @@
 			</small>
 		</section>
 
-		<section id="two">
-			<h2 class="noselect">Work Experience <i onclick="toggleChildRowVisibility('two')" class="icon icon-chevron-up"></i></h2>
+		<section id="work">
+			<h2 class="noselect">Work Experience <i onclick="toggleChildRowVisibility('work')" class="icon icon-chevron-up"></i></h2>
 			<div class="row">
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
 					<div class="card full2" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
@@ -234,8 +234,8 @@
 			</div>
 		</section>
 
-		<section id="three">
-			<h2>Certificates Received <i onclick="toggleChildRowVisibility('three')" class="icon icon-chevron-up upsideDown"></i></h2>
+		<section id="certificates">
+			<h2>Certificates Received <i onclick="toggleChildRowVisibility('certificates')" class="icon icon-chevron-up upsideDown"></i></h2>
 			<div class="row" style="display: none;">
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
 					<div class="card full2">
@@ -306,25 +306,87 @@
 				</article>
 			</div>
 		</section>
-		<!-- <section id="four">
-			<h2>Projects</h2>
+
+		<section id="projects">
+			<h2>Projects <i onclick="toggleChildRowVisibility('projects')" class="icon icon-chevron-up upsideDown"></i></h2>
 			<div class="row">
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
 					<div class="card full2">
 						<div class="top-right">
-							<img src="assets/images/loader.svg" data-src="assets/images/company/UJ.png" class="company lazy invert" alt="University of Johannesburg" />
+							<img src="assets/images/loader.svg" data-src="assets/images/company/Entelect.png" class="company lazy invert"
+							 alt="Entelect" />
 							<br />
-							<p class="label label-uj">2013 – 2016 (4 Years)</p>
+							<p class="label label-entelect">January 2019 – March 2019 (3 Months)</p>
 						</div>
 						<h2>
-							<strong itemprop="award">Bsc Computer Science and Informatics</strong>
+							<strong>Hollard Easy4Business</strong>
+							<small>Parktown North, Johannesburg, South Africa</small>
+						</h2>
+						<p>While I was working on the CQT team, a new project was started called Easy4Business. Which was formed from
+							some of CQT's members. CQT shared knowledge and helped set up Easy4Business. I mainly helped in setting up their
+							CI / CD and using Typescript and Redux as I had learned a lot about these from my home projects. I learned a lot
+							about starting projects on the right foot.</p>
+					</div>
+				</article>
+				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+					<div class="card full2">
+						<div class="top-right">
+							<img src="assets/images/loader.svg" data-src="assets/images/company/Entelect.png" class="company lazy invert"
+							 alt="Entelect" />
+							<br />
+							<p class="label label-entelect">August 2017 – March 2019 (20 Months)</p>
+						</div>
+						<h2>
+							<strong>Hollard CQT</strong>
+							<small>Parktown North, Johannesburg, South Africa</small>
+						</h2>
+						<p>CQT is an internal system to help Broker Consultants create quotes. We integrated into many services at
+							Hollard. The team had quite a lot of say in the technologies used. The technology stack that we ended up going
+							with (React frontend and C# MVC .Net Framework backend) caused us to spend a lot of time learning (mostly React)
+							and we ended up with quite a bit of technical debt due to time constraints and pressure from business. We were
+							one of the first teams in Hollard to have a fully automated CI / CD pipeline and we set the golden standard on
+							how to do deployments at Hollard. I grew a lot in this project. In the beginning I was the only Junior
+							in the team of 5. As the team grew I was able to take on some more responsibilites. I become known as the
+							'Senior Grad' up until my promotion to Intermediate Software Engineer</p>
+					</div>
+				</article>
+				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+					<div class="card full2">
+						<div class="top-right">
+							<img src="assets/images/loader.svg" data-src="assets/images/company/Entelect.png" class="company lazy invert"
+							 alt="Entelect" />
+							<br />
+							<p class="label label-entelect">March 2017 – July 2017 (5 Months)</p>
+						</div>
+						<h2>
+							<strong>Hollard Customer App</strong>
+							<small>Parktown North, Johannesburg, South Africa</small>
+						</h2>
+						<p>I joined a team at Hollard Insurance in Parktown North, where I worked on their Customer App built with
+							Xamarin. It was quite a tough fit as I did not have any real experience with Xamarin. This move was only
+							temporary, as Hollard wanted me for a project that was to start soon after I joined.</p>
+					</div>
+				</article>
+				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+					<div class="card full2">
+						<div class="top-right">
+							<img src="assets/images/loader.svg" data-src="assets/images/company/Entelect.png" class="company lazy invert"
+							 alt="Entelect" />
+							<br />
+							<p class="label label-entelect">February 2017 (1 Month)</p>
+						</div>
+						<h2>
+							<strong>Allan Grey FAIFA</strong>
 							<small>Johannesburg, South Africa</small>
 						</h2>
-						<p>4 Year degree, BSCIT Extended degree.</p>
+						<p>After completing <a href="http://www.entelect.co.za" class="color-entelect" target="_blank" rel="noopener"
+							 title="entelect" alt="entelect">Entelect's</a></strong> Grad Bootcamp, I joined the team working on Allan
+							Grey's FAIFA (Find An Independant Financial Advisor). It was my first introduction to React and Redux. My team
+							mates were very experienced in the technologies used and I learned a lot.</p>
 					</div>
 				</article>
 			</div>
-		</section> -->
+		</section>
 	</div>
 
 	<footer id="footer">
