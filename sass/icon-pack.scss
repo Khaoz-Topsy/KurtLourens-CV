@@ -21,6 +21,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevron-up.upsideDown:before {
+    content: "\e907";
+}
+
+.icon-chevron-up:before {
+    content: "\e906";
+}
+
 .icon-instagram:before {
     content: "\e905";
 }
