@@ -1,4 +1,4 @@
-let CACHE_NAME = 'kurtlourens-1.4.5';
+let CACHE_NAME = 'kurtlourens-1.4.6';
 let criticalResources = [
   '/',
   '/index.html',
@@ -12,6 +12,8 @@ let criticalResources = [
   '/assets/images/loader.svg',
   '/assets/images/KurtAvatar.svg',
   '/assets/js/bundle.min.js',
+  'https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI',
+  'https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20'
 ];
 let networkTimeout = 1000;
 let onlineFirst = true;
