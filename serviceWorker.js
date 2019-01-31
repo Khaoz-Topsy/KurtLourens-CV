@@ -13,7 +13,7 @@ let criticalResources = [
   '/assets/images/KurtAvatar.svg',
   '/assets/js/bundle.min.js',
 ];
-let networkTimeout = 500;
+let networkTimeout = 1000;
 let onlineFirst = true;
 
 let clearOldCaches = function () {
