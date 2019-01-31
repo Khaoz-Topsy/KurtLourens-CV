@@ -1,4 +1,4 @@
-let CACHE_NAME = 'kurtlourens-1.4.0';
+let CACHE_NAME = 'kurtlourens-1.4.5.dev2';
 let criticalResources = [
   '/',
   '/index.html',
@@ -13,8 +13,10 @@ let criticalResources = [
   '/assets/images/KurtAvatar.svg',
   '/assets/js/bundle.min.js',
 ];
+let networkTimeout = 500;
+let onlineFirst = true;
 
-const clearOldCaches = function () {
+let clearOldCaches = function () {
   return caches.keys().then(keys => {
     var keyToDelete = keys.filter(key => key !== CACHE_NAME);
     return keyToDelete.map(key => Promise.resolve(caches.delete(key)));
@@ -36,44 +38,38 @@ self.addEventListener('activate', function (event) {
   }));
 });
 
-// const addToCache = function(cacheName, request, response) { 
-//   caches.open(cacheName).then(cache => cache.put(request, response)); 
-// };
 
-// Default fetch
 self.addEventListener('fetch', function (event) {
-  event.respondWith(
-    caches.match(event.request).then(function (response) {
-      return response || fetch(event.request);
-    })
-  );
+  if (event.request.method !== 'GET') return;
+  if (event.request.url.includes('docs')) return;
+
+  if (onlineFirst) {
+    event.respondWith(fromNetwork(event.request, networkTimeout)
+      .catch(function () {
+        console.log('request took too long, serving from cache', event.request.url);
+        return fromCache(event.request);
+      })
+    );
+  }
+  else {
+    const cachedItem = fromCache(event.request);
+    event.respondWith(cachedItem || fetch(event.request));
+  }
 });
 
+function fromNetwork(request, timeout) {
+  return new Promise(function (fulfill, reject) {
+    var timeoutId = setTimeout(reject, timeout);
+    fetch(request).then(function (response) {
+      clearTimeout(timeoutId);
+      fulfill(response);
+    }, reject);
+  });
+}
 
-// Online first
-// self.addEventListener('fetch', function (event) { 
-//   event.respondWith(
-//     fetch(event.request).then(function (response) {
-//       let responseCopy = response.clone();
-//       addToCache(event.request, responseCopy);
-//       return response;
-//     }).catch(function () {
-//       return caches.match(event.request)
-//         .then(response => response || caches.match('/offline.html'));
-//     })
-//   );
-// });
-
-// Offline first
-// self.addEventListener('fetch', function (event) {
-//   event.respondWith(
-//     caches.match(event.request).then(function (response) {
-//       return response || fetch(event.request).then(function (response) {
-//         let responseCopy = response.clone();
-//         addToCache(event.request, responseCopy);
-//       }).catch(function () {
-//         return caches.match('/offline.html');
-//       });
-//     })
-//   );
-// });
+function fromCache(request) {
+  caches.match(request).then(function (response) {
+    return response;
+  });
+  return null;
+}
