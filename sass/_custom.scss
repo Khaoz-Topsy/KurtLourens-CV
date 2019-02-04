@@ -93,6 +93,26 @@ small {
     -ms-user-select: none;
     /* Internet Explorer/Edge */
     user-select: none;
-    /* Non-prefixed version, currently
-                                    supported by Chrome and Opera */
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+img,
+br {
+    @extend .noselect;
+}
+
+h2.noselect {
+    cursor: pointer;
+}
+
+::selection {
+    background: #505050;
+    color: white;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #505050;
+    color: white;
+    /* Gecko Browsers */
 }

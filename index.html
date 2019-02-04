@@ -72,7 +72,7 @@
 		<link rel="stylesheet" href="assets/css/icon-pack.min.css" />
 	</noscript>
 	<script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-97325462-2', 'auto'); ga('send', 'pageview');</script>
-	<style>.full-page-loader {position: fixed;top:0;right:0;bottom:0;left:0;z-index:2;display:flex;flex-direction:column;justify-content:center;text-align:center;background-color:#333333;opacity:0.85;}.full-page-loader .largeHeading {color: #FFF;}.full-page-loader img {height: 200px;}.is-loading{overflow: hidden;}</style>
+	<style>img {max-height: 200px; max-width: 200px} .full-page-loader {position: fixed;top:0;right:0;bottom:0;left:0;z-index:2;display:flex;flex-direction:column;justify-content:center;text-align:center;background-color:#333333;opacity:0.85;}.full-page-loader .largeHeading {color: #FFF;}.full-page-loader img {height: 200px;}.is-loading{overflow: hidden;}</style>
 </head>
 
 <body class="is-preload is-loading" itemscope itemtype="http://schema.org/Person">
@@ -142,7 +142,7 @@
 		</section>
 
 		<section id="work">
-			<h2 class="noselect">Work Experience <i onclick="toggleChildRowVisibility('work')" class="icon icon-chevron-up"></i></h2>
+			<h2 class="noselect" onclick="toggleChildRowVisibility('work')">Work Experience <i class="icon icon-chevron-up"></i></h2>
 			<div class="row">
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
 					<div class="card full2">
@@ -261,7 +261,7 @@
 		</section>
 
 		<section id="certificates">
-			<h2>Certificates Received <i onclick="toggleChildRowVisibility('certificates')" class="icon icon-chevron-up upsideDown"></i></h2>
+			<h2 class="noselect" onclick="toggleChildRowVisibility('certificates')">Certificates Received <i class="icon icon-chevron-up upsideDown"></i></h2>
 			<div class="row" style="display: none;">
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
 					<div class="card full2">
@@ -334,8 +334,8 @@
 		</section>
 
 		<section id="projects">
-			<h2>Projects <i onclick="toggleChildRowVisibility('projects')" class="icon icon-chevron-up"></i></h2>
-			<div class="row">
+			<h2 class="noselect" onclick="toggleChildRowVisibility('projects')">Projects <i class="icon icon-chevron-up upsideDown"></i></h2>
+			<div class="row" style="display: none;">
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
 					<div class="card full2">
 						<div class="top-right">
