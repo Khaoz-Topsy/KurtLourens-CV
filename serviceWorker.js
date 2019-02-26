@@ -15,7 +15,7 @@ let criticalResources = [
   'https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI',
   'https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20'
 ];
-let networkTimeout = 1000;
+let networkTimeout = 2500;
 let onlineFirst = true;
 
 let clearOldCaches = function () {
