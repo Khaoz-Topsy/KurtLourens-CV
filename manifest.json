@@ -3,7 +3,7 @@
   "short_name": "Kurt Lourens",
   "description": "A CV but in website form",
   "lang": "en-US",
-  "start_url": ".",
+  "start_url": "/?standalone",
   "display": "standalone",
   "icons": [
     {

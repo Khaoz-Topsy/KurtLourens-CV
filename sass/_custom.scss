@@ -117,8 +117,12 @@ h2.noselect {
     /* Gecko Browsers */
 }
 
-.custom-actions {
-    button {
+#custom-actions {
+    .button {
         color: white !important;
     }
+}
+
+.hidden {
+    display: none;
 }
