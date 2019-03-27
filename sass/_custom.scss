@@ -6,6 +6,7 @@ img.lazy[src*="loader.svg"] {
     padding: .5em;
     border-radius: 100%;
     background-color: transparent;
+
     &.invert {
         -webkit-filter: invert(.8);
         filter: invert(.8);
@@ -24,6 +25,7 @@ strong {
 
 small {
     font-size: .85em;
+
     a {
         text-decoration: none;
         border-bottom: unset;
@@ -36,14 +38,17 @@ small {
             font-size: 0.7em;
             display: block;
             margin-top: .25em;
+
             small {
                 font-size: 0.9em;
             }
         }
     }
+
     h4 {
         margin: 0;
         font-size: 1em;
+
         @include breakpoint('<=medium') {
             &:not(:last-child) {
                 display: inline-block;
@@ -52,6 +57,7 @@ small {
                 padding-left: 0.15em;
             }
         }
+
         @include breakpoint('<=small') {
             &:not(:last-child) {
                 display: block;
@@ -60,6 +66,7 @@ small {
             }
         }
     }
+
     footer {
         position: absolute;
         bottom: 2em;
@@ -71,6 +78,7 @@ small {
         &.is-loading {
             overflow: visible;
         }
+
         .full-page-loader {
             display: none;
         }
@@ -101,7 +109,8 @@ br {
     @extend .noselect;
 }
 
-h2.noselect {
+h2.noselect,
+.cursor-pointer {
     cursor: pointer;
 }
 
@@ -117,12 +126,10 @@ h2.noselect {
     /* Gecko Browsers */
 }
 
-#custom-actions {
-    .button {
-        color: white !important;
-    }
-}
-
 .hidden {
     display: none;
+}
+
+.max-h-50 {
+    max-height: 50px;
 }
