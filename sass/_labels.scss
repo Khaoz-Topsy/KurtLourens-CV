@@ -43,6 +43,12 @@
     background-color: #91C322;
 }
 
+.label-kurt,
+.label-kurt[href]:hover,
+.label-kurt[href]:focus {
+    background-color: #505050;
+}
+
 .label-ruby,
 .label-ruby[href]:hover,
 .label-ruby[href]:focus {

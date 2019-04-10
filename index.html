@@ -209,8 +209,8 @@
 
 		<section id="work">
 			<h2 class="noselect" onclick="toggleChildRowVisibility('work')">Work Experience <i
-					class="icon icon-chevron-up"></i></h2>
-			<div class="row">
+					class="icon icon-chevron-up upsideDown"></i></h2>
+			<div class="row" style="display: none;">
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
 					<div class="card full2">
 						<div class="top-right">
@@ -221,7 +221,7 @@
 						</div>
 						<h2>
 							<span><strong>Intermediate Software Engineer</strong></span>
-							<small>Johannesburg Area, South Africa</small>
+							<small>Johannesburg, South Africa</small>
 						</h2>
 						<p>
 							I am very thankful that <strong><a href="http://www.entelect.co.za" class="color-entelect"
@@ -249,7 +249,7 @@
 						</div>
 						<h2 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<span><strong>Software Engineer</strong></span>
-							<small itemprop="streetAddress">Johannesburg Area, <span itemprop="addressCountry">South
+							<small itemprop="streetAddress">Johannesburg, <span itemprop="addressCountry">South
 									Africa</span></small>
 						</h2>
 						<p>
@@ -279,7 +279,7 @@
 						</div>
 						<h2 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<span><strong>Co-Owner</strong></span>
-							<small itemprop="streetAddress">Johannesburg Area, <span itemprop="addressCountry">South
+							<small itemprop="streetAddress">Johannesburg, <span itemprop="addressCountry">South
 									Africa</span></small>
 						</h2>
 						<p>I joined <strong itemprop="legalName"><a href="http://www.redrubyit.co.za" class="color-ruby"
@@ -312,7 +312,7 @@
 						</div>
 						<h2>
 							<strong>Junior Sales Rep</strong>
-							<small>Johannesburg Area, South Africa</small>
+							<small>Johannesburg, South Africa</small>
 						</h2>
 						<p>Working for a great company trying to bring world class internet to South Africa, my role was
 							to speak to
@@ -440,6 +440,27 @@
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
 					<div class="card full2">
 						<div class="top-right">
+							<img src="assets/images/loader.svg" data-src="assets/images/company/flutter.png"
+								class="company lazy invert" alt="KurtLourens" />
+							<br />
+							<p class="label label-kurt">17 March 2019 - Present</p>
+						</div>
+						<h2>
+							<strong>Flutter CV App</strong>
+							<small><a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv"
+									target="_blank" rel="noopener" title="GooglePlayStoreKurtsCVApp"
+									alt="GooglePlayStoreKurtsCVApp">View on Google Play Store</a></small>
+						</h2>
+						<p>I still had the interest for building apps that was sparked by Hollard's Customer App, but I
+							had gotten tired of waiting for Xamarin to compile. I had a few small POCs of React Native
+							apps which I thought would be easy to create since I had React experience. During this time
+							Flutter had just been announced that it was production ready. So I decided to learn Flutter
+							and Dart with this project.</p>
+					</div>
+				</article>
+				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+					<div class="card full2">
+						<div class="top-right">
 							<img src="assets/images/loader.svg" data-src="assets/images/company/Entelect.png"
 								class="company lazy invert" alt="Entelect" />
 							<br />
@@ -447,24 +468,22 @@
 						</div>
 						<h2>
 							<strong>Hollard Easy4Business</strong>
-							<small>Parktown North, Johannesburg, South Africa</small>
+							<small>Johannesburg, South Africa</small>
 						</h2>
 						<p>While I was working on the CQT team, a new project was started called Easy4Business. Which
-							was formed from
-							some of CQT's members. CQT shared knowledge and helped set up Easy4Business. I mainly helped
-							in setting up their
-							CI / CD and using Typescript and Redux as I had learned a lot about these from my home
-							projects. I learned a lot
-							about starting projects on the right foot.</p>
+							was formed from some of CQT's members. CQT shared knowledge and helped set up Easy4Business.
+							I mainly helped in setting up their CI / CD and using Typescript and Redux as I had learned
+							a lot about these from my home projects. I learned a lot about starting projects on the
+							right foot.</p>
 					</div>
 				</article>
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
 					<div class="card full2">
 						<div class="top-right">
 							<img src="assets/images/loader.svg" data-src="assets/images/company/kurtlourens.png"
-								class="company lazy invert" alt="Entelect" />
+								class="company lazy invert" alt="KurtLourens" />
 							<br />
-							<p class="label label-entelect">22 March 2019 - Present</p>
+							<p class="label label-kurt">22 March 2018 - Present</p>
 						</div>
 						<h2>
 							<strong>Build Monitor</strong>
@@ -473,14 +492,11 @@
 									alt="KurtLourensBuildMonitor">monitor.kurtlourens.com</a></small>
 						</h2>
 						<p>While I was working on the CQT team, we had a Raspberry PI that was our build monitor. It was
-							just running the
-							VSTS (at the time, now Azure Devops) dashboard. However the PI would often become
-							overwhelmed and the web page
-							would go into not responding (we theorized that the dashboard webpage was just to heavy). I
-							created an AngularJS
-							app to serve as our build monitor. Eventually I recreated it in Angular 6. Ever since then
-							our team's PI has
-							been happily trudging along.</p>
+							just running the VSTS (at the time, now Azure Devops) dashboard. However the PI would often
+							become overwhelmed and the web page would go into not responding (we theorised that the
+							dashboard webpage was just to heavy). I created an AngularJS app to serve as our build
+							monitor. Eventually I recreated it in Angular 6. Ever since then our team's PI has been
+							happily trudging along.</p>
 					</div>
 				</article>
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
@@ -493,23 +509,18 @@
 						</div>
 						<h2>
 							<strong>Hollard CQT</strong>
-							<small>Parktown North, Johannesburg, South Africa</small>
+							<small>Johannesburg, South Africa</small>
 						</h2>
 						<p>CQT is an internal system to help Broker Consultants create quotes. We integrated into many
-							services at
-							Hollard. The team had quite a lot of say in the technologies used. The technology stack that
-							we ended up going
-							with (React frontend and C# MVC .Net Framework backend) caused us to spend a lot of time
-							learning (mostly React)
-							and we ended up with quite a bit of technical debt due to time constraints and pressure from
-							business. We were
-							one of the first teams in Hollard to have a fully automated CI / CD pipeline and we set the
-							golden standard on
-							how to do deployments at Hollard. I grew a lot in this project. In the beginning I was the
-							only Junior
-							in the team of 5. As the team grew I was able to take on some more responsibilites. I become
-							known as the
-							'Senior Grad' up until my promotion to Intermediate Software Engineer</p>
+							services at Hollard. The team had quite a lot of say in the technologies used. The
+							technology stack that we ended up going with (React frontend and C# MVC .Net Framework
+							backend) caused us to spend a lot of time learning (mostly React) and we ended up with quite
+							a bit of technical debt due to time constraints and pressure from business. We were one of
+							the first teams in Hollard to have a fully automated CI / CD pipeline and we set the golden
+							standard on how to do deployments at Hollard. I grew a lot in this project. In the beginning
+							I was the only Junior in the team of 5. As the team grew I was able to take on some more
+							responsibilites. I become known as the 'Senior Grad' up until my promotion to Intermediate
+							Software Engineer</p>
 					</div>
 				</article>
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
@@ -522,18 +533,14 @@
 						</div>
 						<h2>
 							<strong>Hollard Customer App</strong>
-							<small>Parktown North, Johannesburg, South Africa</small>
+							<small>Johannesburg, South Africa</small>
 						</h2>
 						<p>I joined a team at Hollard Insurance in Parktown North, where I worked on their Customer App
-							built with
-							Xamarin. It was quite a tough fit as I did not have any real experience with Xamarin. This
-							move was only
-							temporary, as Hollard wanted me for a project that was to start soon after I joined. I
-							learned a lot from
-							working on that team and it sparked an interest in App Development. I went on to create the
-							first version of
-							TennoDex (Xamarin app with a C# .Net Core Api backend) in my spare time using what I had
-							learned.</p>
+							built with Xamarin. It was quite a tough fit as I did not have any real experience with
+							Xamarin. This move was only temporary, as Hollard wanted me for a project that was to start
+							soon after I joined. I learned a lot from working on that team and it sparked an interest in
+							App Development. I went on to create the first version of TennoDex (Xamarin app with a C#
+							.Net Core Api backend) in my spare time using what I had learned.</p>
 					</div>
 				</article>
 				<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
@@ -551,12 +558,49 @@
 						<p>After completing <strong><a href="http://www.entelect.co.za" class="color-entelect"
 									target="_blank" rel="noopener" title="entelect"
 									alt="entelect">Entelect's</a></strong> Grad Bootcamp, I joined the team working on
-							Allan
-							Grey's FAIFA (Find An Independant Financial Advisor). It was my first introduction to React
-							and Redux. My team
-							mates were very experienced in the technologies used and I learned a lot.</p>
+							Allan Grey's FAIFA (Find An Independant Financial Advisor). It was my first introduction to
+							React and Redux. My team mates were very experienced in the technologies used and I learned
+							a lot.</p>
 					</div>
 				</article>
+			</div>
+		</section>
+
+		<section id="aboutThisSite">
+			<h2 class="noselect" onclick="toggleChildRowVisibility('aboutThisSite')">About this Website <i
+					class="icon icon-chevron-up upsideDown"></i></h2>
+			<div class="row" style="display: none;">
+				<p>I originally built this website while I was in university. I had very little understanding of html,
+					css, and javascript. I mostly copy-pasted html with inline styles and grabbed javascript
+					from Stack Overflow to make the site 'work'. Around the <small class="label label-kurt">19th
+						November 2019</small>&nbsp;I started rebuilding the site with the intention of making it small,
+					fast, SEO
+					friendly and to apply as much of what I had learned onto the new site. I wrote a blog post about the
+					redesign <strong><a href="https://blog.kurtlourens.com/kurtlourens-com-redesigned/" target="_blank"
+							rel="noopener" title="Kurt's blog post on kurtlourens.com redesign">click here to read
+							it</a></strong>.
+				</p>
+				<div>
+					<span>As part of the redesign this website has an automated CI / CD pipeline:</span>
+					<img src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI"
+						alt="Website build status" />
+					<img src="https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20"
+						alt="Website deployment status" />
+				</div>
+				<div>
+					<span>The <strong><a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv"
+								target="_blank" rel="noopener" title="GooglePlayStoreKurtsCVApp"
+								alt="GooglePlayStoreKurtsCVApp">Flutter CV App</a></strong>also has an automated CI / CD
+						pipeline:</span>
+					<img src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI"
+						alt="Website build status" />
+					<img src="https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20"
+						alt="Website deployment status" />
+				</div>
+				<p>I created a blog post about my Flutter App's CI / CD pipeline,<strong><a
+							href="https://blog.kurtlourens.com/flutter-with-ci-cd/" target="_blank" rel="noopener"
+							title="Kurt's blog post on Flutter with CI CD">click here to read it</a></strong>.
+				</p>
 			</div>
 		</section>
 	</div>
