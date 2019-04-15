@@ -135,3 +135,9 @@ h2.noselect,
 .max-h-50 {
     max-height: 50px;
 }
+
+li>a>img {
+    margin-bottom: -5px;
+    max-height: 40px;
+    max-width: 40px;
+}
