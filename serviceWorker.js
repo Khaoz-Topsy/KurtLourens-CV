@@ -1,4 +1,4 @@
-let CACHE_NAME = 'kurtlourens-1.5.2';
+let CACHE_NAME = 'kurtlourens-1.5.3';
 let criticalResources = [
   '/',
   '/index.html',
@@ -46,6 +46,7 @@ self.addEventListener('activate', function (event) {
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
   if (event.request.url.includes('docs')) return;
+  if (event.request.url.includes('azurewebsites')) return;
 
   if (onlineFirst) {
     event.respondWith(fromNetwork(event.request, networkTimeout)

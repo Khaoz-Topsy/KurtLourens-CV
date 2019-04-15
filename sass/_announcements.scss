@@ -48,14 +48,6 @@
     -ms-animation: announcement 1s ease forwards;
     -o-animation: announcement 1s ease forwards;
     animation: announcement 1s ease forwards;
-
-    &.noselect {
-        -webkit-animation: announcement 1s ease backwards;
-        -moz-animation: announcement 1s ease backwards;
-        -ms-animation: announcement 1s ease backwards;
-        -o-animation: announcement 1s ease backwards;
-        animation: announcement 1s ease backwards;
-    }
 }
 
 /* Animation */
