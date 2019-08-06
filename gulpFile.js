@@ -18,7 +18,7 @@ var inputPaths = {
     "./sitemap.xml", "./robots.txt", "./.htaccess",
     "./safari-pinned-tab.svg", "./apple-touch-icon.png", "./apple-touch-icon-precomposed.png",
     "./browserconfig.xml"],
-  arduino: "./arduino/**/*.*",
+  arduino: ["./arduino/**/*.*", "./arduino/.htaccess"],
   assets: "./assets/**/*.*",
   scss: "./sass/**/*.scss",
   css: "./assets/css/*.css",
@@ -124,7 +124,7 @@ function publishAssetsTask() {
     .pipe(gulp.dest(outputPaths.distassets));
 }
 function publishArduinoTask() {
-  return gulp.src([inputPaths.arduino])
+  return gulp.src(inputPaths.arduino)
     .pipe(gulp.dest(outputPaths.distarduino));
 }
 
