@@ -144,11 +144,18 @@
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
             "content": "During a few days while my home internet connection was down, I picked up the game No Man’s Sky again. While playing I was frustrated with the crafting mechanics of the game and how it expected the player to remember over 150 different crafting recipes. I wanted an app that would allow me to get those recipes as easily and fast as possible. There was one app on the Google Play Store, however a lot of its functionality was behind a pay wall. So I decided to build my own version using Flutter.",
-            "link": {
-                "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes",
-                "alt": "GooglePlayStoreNoMansSky",
-                "text": "View on Google Play Store"
-            }
+            "links": [
+                {
+                    "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes",
+                    "alt": "GooglePlayStoreNoMansSky",
+                    "text": "Google Play Store"
+                },
+                {
+                    "url": "https://nomanssky.kurtlourens.com",
+                    "alt": "NoMansSkyWebsite",
+                    "text": "Website"
+                }
+            ]
         },
         {
             "title": "Flutter CV App",
@@ -159,18 +166,20 @@
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
             "content": "I still had the interest for building apps that was sparked by Hollard's Customer App, but I had gotten tired of waiting for Xamarin to compile. I had a few small POCs of React Native apps which I thought would be easy to create since I had React experience. During this time Flutter had just been announced that it was production ready. So I decided to learn Flutter and Dart with this project.",
-            "link": {
-                "url": "https://play.google.com/store/apps/details?id=com.kurt_lourens_cv",
-                "alt": "GooglePlayStoreKurtsCVApp",
-                "text": "View on Google Play Store"
-            }
+            "links": [
+                {
+                    "url": "https://play.google.com/store/apps/details?id=com.kurt_lourens_cv",
+                    "alt": "GooglePlayStoreKurtsCVApp",
+                    "text": "View on Google Play Store"
+                }
+            ]
         },
         {
             "title": "Hollard Easy4Business",
             "image": "assets/images/company/Hollard.png",
             "imageAlt": "Hollard",
             "timePeriodText": "January 2019 – March 2019 (3 Months)",
-            "timePeriodClass": "label-entelect",
+            "timePeriodClass": "label-hollard",
             "timePeriodColour": "#4D2B6B",
             "timePeriodTextColour": "#FFFFFF",
             "content": "While I was working on the CQT team, a new project was started called Easy4Business. Which was formed from some of CQT's members. CQT shared knowledge and helped set up Easy4Business. I mainly helped in setting up their CI / CD and using Typescript and Redux as I had learned a lot about these from my home projects. I learned a lot about starting projects on the right foot.",
@@ -181,15 +190,17 @@
             "image": "assets/images/company/RemoteConfigs.png",
             "imageAlt": "KurtLourens",
             "timePeriodText": "July 2018 – Present",
-            "timePeriodClass": "label-kurt",
+            "timePeriodClass": "label-remoteconfigs",
             "timePeriodColour": "#45BB89",
             "timePeriodTextColour": "#FFFFFF",
             "content": "This project was started from a problem that a friend of mine had which was managing his configs across multiple apps. This solution allows users to save the configurations as key value pairs and then retrieve those values through a Restful Api. Some of the cool things we added was a Nuget package so our users could get started quickly and Variants (which allows a user to set up simple logic to return different configs based on the current date, day of the week or random percentage chance). In the future we aim to have asymmetric encryption, user based A/B testing, hit user webhooks on certain events, and an NPM package. \n\r This app makes use of RemoteConfigs to get the in App announcements.",
-            "link": {
-                "url": "https://remoteconfigs.com",
-                "alt": "RemoteConfigs",
-                "text": "remoteconfigs.com"
-            }
+            "links": [
+                {
+                    "url": "https://remoteconfigs.com",
+                    "alt": "RemoteConfigs",
+                    "text": "remoteconfigs.com"
+                }
+            ]
         },
         {
             "title": "Cards Against Humanity",
@@ -200,11 +211,13 @@
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
             "content": "I started this project because I wanted to learn about SignalR, as I was going to need it in the Build Monitor project. This project ended up being a really good learning opportunity. I got to learn some C# image manipulation (cutting the Cards from Cards Against Humanity's official Cards PDF) , some Optical character Recognition (using Microsoft's Cognitive services to read the words on each of the Cards), some in browser text to speech (HowlerJS reading the Card's text out loud), QR code generation and Reading (So that people wouldn’t have to enter the GameId manually) and A LOT of CSS animations. Some of the best animations that I have done in any project.",
-            "link": {
-                "url": "https://cah.kurtlourens.com",
-                "alt": "KurtLourensCardsAgainstHumanity",
-                "text": "cah.kurtlourens.com"
-            }
+            "links": [
+                {
+                    "url": "https://cah.kurtlourens.com",
+                    "alt": "KurtLourensCardsAgainstHumanity",
+                    "text": "cah.kurtlourens.com"
+                }
+            ]
         },
         {
             "title": "Build Monitor",
@@ -215,18 +228,20 @@
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
             "content": "While I was working on the CQT team, we had a Raspberry PI that was our build monitor. It was just running the VSTS (at the time, now Azure Devops) dashboard. However the PI would often become overwhelmed and the web page would go into not responding (we theorised that the dashboard webpage was just to heavy). I created an AngularJS app to serve as our build monitor. Eventually I recreated it in Angular 6. Ever since then our team's PI has been happily trudging along.",
-            "link": {
-                "url": "https://monitor.kurtlourens.com",
-                "alt": "KurtLourensBuildMonitor",
-                "text": "monitor.kurtlourens.com"
-            }
+            "links": [
+                {
+                    "url": "https://monitor.kurtlourens.com",
+                    "alt": "KurtLourensBuildMonitor",
+                    "text": "monitor.kurtlourens.com"
+                }
+            ]
         },
         {
             "title": "BTS Site Status",
             "image": "assets/images/company/BTS.png",
             "imageAlt": "BTS",
             "timePeriodText": "March 2018 – October 2018",
-            "timePeriodClass": "label-kurt",
+            "timePeriodClass": "label-bts",
             "timePeriodColour": "#227FDC",
             "timePeriodTextColour": "#FFFFFF",
             "content": "BTS was a small project which showed the status of cellphone towers in South Africa. BTS had about 300 devices with a range of meters each, that were attached to cellphone towers across South Africa. Each of these devices would inform PnPScada what the tower's voltage, amps, electricity usage, etc were. Myself and Morné created a .Net Core Api with an AngularJS front-end to display this data to BTS clients who wanted to know how much electricity their towers were using as well as the last time the specific tower was 'online'.",
@@ -237,22 +252,24 @@
             "image": "assets/images/company/IoT.png",
             "imageAlt": "IoT",
             "timePeriodText": "February 2018 – Present",
-            "timePeriodClass": "label-kurt",
+            "timePeriodClass": "label-iot",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
             "content": "In the begining of 2018 I attended an&nbsp;<strong><a href=\"http://www.entelect.co.za\" class=\"color-entelect\" target=\"_blank\" rel=\"noopener\" title=\"entelect\" alt=\"entelect\">Entelect</a></strong>&nbsp;Makers Club, it instantly sparked my interest in Arduinos. It felt like a whole new world had been opened up for me, one where my software could affect the real world. Since then I have made quite a few Arduino contraptions, such as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to switch the water on and off (which I plan to automate in the future).",
-            "link": {
-                "url": "https://iot.khaoznet.xyz",
-                "alt": "KurtLourensIoT",
-                "text": "iot.khaoznet.xyz"
-            }
+            "links": [
+                {
+                    "url": "https://iot.khaoznet.xyz",
+                    "alt": "KurtLourensIoT",
+                    "text": "iot.khaoznet.xyz"
+                }
+            ]
         },
         {
             "title": "Hollard CQT",
             "image": "assets/images/company/Hollard.png",
             "imageAlt": "Hollard",
             "timePeriodText": "August 2017 – March 2019",
-            "timePeriodClass": "label-entelect",
+            "timePeriodClass": "label-hollard",
             "timePeriodColour": "#4D2B6B",
             "timePeriodTextColour": "#FFFFFF",
             "content": "CQT is an internal system to help Broker Consultants create quotes. We integrated into many services at Hollard. The team had quite a lot of say in the technologies used. The technology stack that we ended up going with (React frontend and C# MVC .Net Framework backend) caused us to spend a lot of time learning (mostly React) and we ended up with quite a bit of technical debt due to time constraints and pressure from business. We were one of the first teams in Hollard to have a fully automated CI / CD pipeline and we set the golden standard on how to do deployments at Hollard. I grew a lot in this project. In the beginning I was the only Junior in the team of 5. As the team grew I was able to take on some more responsibilities. I become known as the 'Senior Grad' up until my promotion to Intermediate Software Engineer.",
@@ -263,22 +280,24 @@
             "image": "assets/images/company/TennoDex.png",
             "imageAlt": "TennoDex",
             "timePeriodText": "July 2017 – Present",
-            "timePeriodClass": "label-kurt",
+            "timePeriodClass": "label-tennodex",
             "timePeriodColour": "#7D42DB",
             "timePeriodTextColour": "#FFFFFF",
             "content": "TennoDex has been my longest running side project. It simply consumes a Web Api and displays data, but it's technology stack has grown as I have. TennoDex has been rebuilt from the ground up more than 3 times by now, each time with a new tech stack. Initially TennoDex was a .Net Framework Web Api with an AngularJS front-end, then it was a .Net Core Web Api with an Android App built with Xamarin. Currently TennoDex is a .Net Core Web Api with a ReactJS front-end and an Android App built with React-Native. What makes the latest version special is that the Web App and the Mobile App use the same Typescript objects that are generated by the Web Api as well as sharing the same logic (i.e. mostly only implementing the native presentation layer. For the web: HTML, CSS and Javascript. For Mobile: React Native Components).",
-            "link": {
-                "url": "https://tennodex.com",
-                "alt": "TennoDex",
-                "text": "tennodex.com"
-            }
+            "links": [
+                {
+                    "url": "https://tennodex.com",
+                    "alt": "TennoDex",
+                    "text": "tennodex.com"
+                }
+            ]
         },
         {
             "title": "Hollard Customer App",
             "image": "assets/images/company/Hollard.png",
             "imageAlt": "Hollard",
             "timePeriodText": "March 2017 – July 2017 (5 Months)",
-            "timePeriodClass": "label-entelect",
+            "timePeriodClass": "label-hollard",
             "timePeriodColour": "#4D2B6B",
             "timePeriodTextColour": "#FFFFFF",
             "content": "I joined a team at Hollard Insurance in Parktown North, where I worked on their Customer App built with Xamarin. It was quite a tough fit as I did not have any real experience with Xamarin. This move was only temporary, as Hollard wanted me for a project that was to start soon after I joined. I learned a lot from working on that team and it sparked an interest in App Development. I went on to create the first version of TennoDex (Xamarin app with a C# .Net Core Api backend) in my spare time using what I had learned.",

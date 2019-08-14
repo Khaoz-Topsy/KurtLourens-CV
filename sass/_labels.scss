@@ -115,3 +115,33 @@
 .label-danger[href]:focus {
     background-color: #c9302c;
 }
+
+.label-remoteconfigs,
+.label-remoteconfigs[href]:hover,
+.label-remoteconfigs[href]:focus {
+    background-color: #4BC18F;
+}
+
+.label-bts,
+.label-bts[href]:hover,
+.label-bts[href]:focus {
+    background-color: #227FDC;
+}
+
+.label-hollard,
+.label-hollard[href]:hover,
+.label-hollard[href]:focus {
+    background-color: #441E45;
+}
+
+.label-tennodex,
+.label-tennodex[href]:hover,
+.label-tennodex[href]:focus {
+    background-image: linear-gradient(135deg, #44C9FF, #960ACC);
+}
+
+.label-iot,
+.label-iot[href]:hover,
+.label-iot[href]:focus {
+    background-color: #4E9B94;
+}
