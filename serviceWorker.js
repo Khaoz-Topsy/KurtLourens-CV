@@ -1,8 +1,9 @@
-let CACHE_NAME = 'kurtlourens-1.5.3';
+let CACHE_NAME = 'kurtlourens-1.5.4';
 let criticalResources = [
   '/',
   '/index.html',
   '/offline.html',
+  '/purgeCssPleaseInclude.html.html',
   '/assets/css/main.min.css',
   '/assets/css/icon-pack.min.css',
   '/assets/fonts/icomoon.eot',
@@ -11,6 +12,7 @@ let criticalResources = [
   '/assets/fonts/icomoon.woff',
   '/assets/images/loader.svg',
   '/assets/images/KurtAvatar.svg',
+  '/assets/json/cv.json',
   '/assets/js/bundle.min.js',
   'https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI',
   'https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20',
