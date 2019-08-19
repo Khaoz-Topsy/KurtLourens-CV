@@ -1,9 +1,9 @@
-let CACHE_NAME = 'kurtlourens-1.5.4';
+let CACHE_NAME = 'kurtlourens-1.5.5';
 let criticalResources = [
   '/',
   '/index.html',
   '/offline.html',
-  '/purgeCssPleaseInclude.html.html',
+  '/purgeCssPleaseInclude.html',
   '/assets/css/main.min.css',
   '/assets/css/icon-pack.min.css',
   '/assets/fonts/icomoon.eot',
