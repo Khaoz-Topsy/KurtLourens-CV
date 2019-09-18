@@ -148,7 +148,7 @@
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "During a few days while my home internet connection was down, I picked up the game No Man’s Sky again. While playing I was frustrated with the crafting mechanics of the game and how it expected the player to remember over 150 different crafting recipes. I wanted an app that would allow me to get those recipes as easily and fast as possible. There was one app on the Google Play Store, however a lot of its functionality was behind a pay wall. So I decided to build my own version using Flutter.",
+            "content": "During a few days while my home internet connection was down, I picked up the game No Man’s Sky again. While playing I was frustrated with the crafting mechanics of the game and how it expected the player to remember over 300 different crafting recipes. I wanted an app that would allow me to get those recipes as easily and fast as possible. There was one app on the Google Play Store, however a lot of its functionality was behind a pay wall. So I decided to build my own version using Flutter.",
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes",
@@ -170,7 +170,7 @@
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "I still had the interest for building apps that was sparked by Hollard's Customer App, but I had gotten tired of waiting for Xamarin to compile. I had a few small POCs of React Native apps which I thought would be easy to create since I had React experience. During this time Flutter had just been announced that it was production ready. So I decided to learn Flutter and Dart with this project.",
+            "content": "I still had the interest for building apps that was sparked by Hollard's Customer App, but I had gotten tired of waiting for Xamarin to compile. I had a few small POCs of React Native apps which I thought would be easy to create since I had React experience. During this time Flutter had just been announced that it was production ready. So I decided to learn Flutter and Dart by making an App as my CV.",
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurt_lourens_cv",
