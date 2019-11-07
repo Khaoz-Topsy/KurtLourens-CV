@@ -141,9 +141,9 @@
     ],
     "projects": [
         {
-            "title": "No Man's Sky Recipes App",
+            "title": "No Man's Sky Assistant",
             "image": "assets/images/company/NoMansSky.png",
-            "imageAlt": "NoMansSkyRecipes",
+            "imageAlt": "NoMansSkyAssistant",
             "timePeriodText": "July 2019 - Present",
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
@@ -156,7 +156,12 @@
                     "text": "Google Play Store"
                 },
                 {
-                    "url": "https://nomanssky.kurtlourens.com",
+                    "url": "https://apps.apple.com/us/app/id1480287625",
+                    "alt": "AppleAppStoreNoMansSky",
+                    "text": "Apple App Store"
+                },
+                {
+                    "url": "https://nmsassistant.com",
                     "alt": "NoMansSkyWebsite",
                     "text": "Website"
                 }
