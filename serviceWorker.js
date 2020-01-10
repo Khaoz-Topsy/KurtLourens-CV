@@ -1,4 +1,4 @@
-let CACHE_NAME = 'kurtlourens-1.5.5';
+let CACHE_NAME = 'kurtlourens-1.5.6';
 let criticalResources = [
   '/',
   '/index.html',
