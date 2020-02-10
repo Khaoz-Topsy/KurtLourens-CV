@@ -19,6 +19,7 @@ var inputPaths = {
     "./safari-pinned-tab.svg", "./apple-touch-icon.png", "./apple-touch-icon-precomposed.png",
     "./browserconfig.xml"],
   arduino: ["./arduino/**/*.*", "./arduino/.htaccess"],
+  nms: ["./nms/**/*.*"],
   assets: "./assets/**/*.*",
   scss: "./sass/**/*.scss",
   css: "./assets/css/*.css",
@@ -35,6 +36,7 @@ var outputPaths = {
   distdocs: "./dist/docs/",
   distimages: "./dist/images/",
   distarduino: "./dist/arduino/",
+  distnms: "./dist/nms/",
 };
 var delPaths = {
   css: "./assets/css/*",
@@ -127,6 +129,10 @@ function publishArduinoTask() {
   return gulp.src(inputPaths.arduino)
     .pipe(gulp.dest(outputPaths.distarduino));
 }
+function publishNMSTask() {
+  return gulp.src(inputPaths.nms)
+    .pipe(gulp.dest(outputPaths.distnms));
+}
 
 function watchTask() {
   gulp.watch([[inputPaths.scss]], sassTask);
@@ -159,6 +165,6 @@ gulp.task('generateJsBundle', generateJsBundle);
 gulp.task('watch', watchTask);
 gulp.task('dev', gulp.series(createCssAndRemoveMinified, generateJsBundle, browserSyncTask));
 gulp.task('cleanDist', cleanDist);
-gulp.task('dist', gulp.series(cleanDist, createCssAndRemoveMinified, generateJsBundle, publishHtmlTask, publishMiscTask, publishDocsTask, publishImagesTask, publishAssetsTask, publishArduinoTask));
+gulp.task('dist', gulp.series(cleanDist, createCssAndRemoveMinified, generateJsBundle, publishHtmlTask, publishMiscTask, publishDocsTask, publishImagesTask, publishAssetsTask, publishArduinoTask, publishNMSTask));
 gulp.task('dist:min', gulp.series(cleanDist, createCssAndRemoveMinified, generateJsBundle, publishHtmlTask, publishMiscTask, publishAssetsTask));
 gulp.task('default', createCssAndRemoveMinified);
