@@ -1,4 +1,5 @@
 @import 'announcements';
+@import 'dark';
 
 .mt-1 {
     margin-top: 1em;
@@ -138,4 +139,8 @@ li>a>img {
     margin-bottom: -5px;
     max-height: 40px;
     max-width: 40px;
+}
+
+.icon.icon-2x {
+    font-size: 32pt;
 }
