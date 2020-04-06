@@ -4,7 +4,7 @@
   "description": "This is the source files for my cv page at kurtlourens.com",
   "main": "gulpFile.js",
   "dependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-cli": "github:gulpjs/gulp-cli",
@@ -17,7 +17,7 @@
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "jquery-lazyload": "^1.9.7",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "strip": "^3.0.0",
     "strip-ansi": "^5.0.0"
   },
