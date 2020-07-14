@@ -1,0 +1,22 @@
+{
+  "name": "assistantApps",
+  "version": "1.0.0",
+  "description": "AssistantApps Home Website",
+  "author": "Kurt Lourens",
+  "scripts": {
+    "sass": "sass assets/sass/main.scss assets/css/main.css",
+    "sass:noscript": "sass assets/sass/noscript.scss assets/css/noscript.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NMSCD/NMSCD.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NMSCD/NMSCD.github.io/issues"
+  },
+  "homepage": "https://NMSCD.github.io",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
+}
