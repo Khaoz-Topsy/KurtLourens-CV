@@ -19,17 +19,18 @@ $size: (border-radius: 5px,
         small: 2.5em));
 
 // Font.
-$font: (family: (NMSGeoSans, Helvetica, sans-serif),
-    family-fixed: ('Courier New', monospace),
-    family-heading: (NMSFuturaProBook, Helvetica, sans-serif),
+$font: (family: ('Raleway', sans-serif),
+    family-fixed: ('Raleway', sans-serif),
+    family-heading: ('Raleway', sans-serif),
     weight: 300,
     weight-bold: 600,
     weight-heading: 200,
     weight-heading-bold: 700,
-    kern-heading: 0.1em);
+    kern-heading: 0.4px);
 
 // Palette.
-$palette: (bg: #2e3141,
+$palette: (bg: #213166,
+    // $palette: (bg: #2e3141,
     fg: #ffffff,
     fg-bold: #ffffff,
     fg-light: rgba(255, 255, 255, 0.35),
@@ -37,6 +38,7 @@ $palette: (bg: #2e3141,
     border-bg: rgba(255, 255, 255, 0.025),
     border2: rgba(255, 255, 255, 0.25),
     border2-bg: rgba(255, 255, 255, 0.075),
-    accent: #008fa1);
+    accent: #393c50);
+// accent: #008fa1);
 // accent: #00bcd4);
 // accent: #4c5c96);

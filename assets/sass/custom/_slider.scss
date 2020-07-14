@@ -1,0 +1,120 @@
+.apps-word-slider::after {
+    content: "everything!";
+    animation: appsWordSliderText 5s infinite;
+    overflow: hidden;
+}
+
+@keyframes appsWordSliderText {
+    0% {
+        opacity: 0;
+        content: "No Man\'s Sky";
+    }
+
+    5% {
+        opacity: 1;
+        content: "No Man\'s Sky";
+    }
+
+    45% {
+        opacity: 1;
+        content: "No Man\'s Sky"
+    }
+
+    50% {
+        opacity: 0;
+        content: "No Man\'s Sky"
+    }
+
+    // ----- No Man's Sky -----
+    51% {
+        opacity: 0;
+        content: "Scrap Mechanic";
+    }
+
+    56% {
+        opacity: 1;
+        content: "Scrap Mechanic";
+    }
+
+    95% {
+        opacity: 1;
+        content: "Scrap Mechanic";
+    }
+
+    100% {
+        opacity: 0;
+        content: "Scrap Mechanic";
+    }
+}
+
+// @keyframes wordChangeAnimation {
+//     0% {
+//         opacity: 1;
+//         content: "No Man\'s Sky";
+//     }
+
+//     28% {
+//         opacity: 1;
+//         content: "No Man\'s Sky"
+//     }
+
+//     33% {
+//         opacity: 0;
+//         content: "No Man\'s Sky"
+//     }
+
+//     // ----- No Man's Sky -----
+//     34% {
+//         opacity: 0;
+//         content: "Scrap Mechanic";
+//     }
+
+//     39% {
+//         opacity: 1;
+//         content: "Scrap Mechanic";
+//     }
+
+//     60% {
+//         opacity: 1;
+//         content: "Scrap Mechanic";
+//     }
+
+//     66% {
+//         opacity: 0;
+//         content: "Scrap Mechanic";
+//     }
+
+//     // ----- Scrap Mechanic -----
+
+//     67% {
+//         opacity: 0;
+//         content: "Hytale";
+//     }
+
+//     72% {
+//         opacity: 1;
+//         content: "Hytale";
+//     }
+
+
+//     94% {
+//         opacity: 1;
+//         content: "Hytale";
+//     }
+
+//     100% {
+//         opacity: 0;
+//         content: "Hytale";
+//     }
+// }
+
+.apps-image-slider {
+    width: 50px;
+    height: 50px;
+    background-image: url("../../assets/img/assistantNMS.png");
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
