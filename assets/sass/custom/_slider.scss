@@ -1,164 +1,103 @@
+$assistantNMSTitle: "No Man\'s Sky";
+$assistantSMSTitle: "Scrap Mechanic";
+// $assistantHytTitle: "Hytale";
+$assistantNMSImage: url("../../assets/img/icon/assistantNMS.png");
+$assistantSMSImage: url("../../assets/img/icon/assistantSMS.png");
+// $assistantHytImage: url("../../assets/img/icon/assistantHyt.png");
+
+$appTitles: //
+$assistantNMSTitle,
+$assistantSMSTitle
+/*,$assistantHytTitle*/
+;
+
+$appImages: //
+$assistantNMSImage,
+$assistantSMSImage
+/*,$assistantHytImage*/
+;
+
+$appAnimationPerc: (100 / length($appTitles));
+$appAnimationGapPerc: 5;
+$appAnimationSecPerApp: 2.5;
+$appAnimationDuration: ($appAnimationSecPerApp * length($appTitles));
+
 .apps-word-slider::after {
     content: "everything!";
-    animation: appsWordSliderText 5s infinite;
+    animation: appsWordSliderText #{$appAnimationDuration}s infinite;
     overflow: hidden;
 }
 
 @keyframes appsWordSliderText {
-    0% {
-        opacity: 0;
-        content: "No Man\'s Sky";
-    }
+    @for $titleIndex from 1 through length($appTitles) {
+        $percentageLower: (($titleIndex - 1) * $appAnimationPerc)+1;
+        $percentage: ($titleIndex * $appAnimationPerc);
 
-    5% {
-        opacity: 1;
-        content: "No Man\'s Sky";
-    }
+        @if $titleIndex==1 {
+            $percentageLower: 0;
+        }
 
-    45% {
-        opacity: 1;
-        content: "No Man\'s Sky"
-    }
+        $title: nth($appTitles, $titleIndex);
 
-    50% {
-        opacity: 0;
-        content: "No Man\'s Sky"
-    }
+        #{$percentageLower}#{"%"} {
+            opacity: 0;
+            content: $title;
+        }
 
-    // ----- No Man's Sky -----
-    51% {
-        opacity: 0;
-        content: "Scrap Mechanic";
-    }
+        #{$percentageLower + $appAnimationGapPerc}#{"%"} {
+            opacity: 1;
+            content: $title;
+        }
 
-    56% {
-        opacity: 1;
-        content: "Scrap Mechanic";
-    }
+        #{$percentage - $appAnimationGapPerc}#{"%"} {
+            opacity: 1;
+            content: $title;
+        }
 
-    95% {
-        opacity: 1;
-        content: "Scrap Mechanic";
-    }
-
-    100% {
-        opacity: 0;
-        content: "Scrap Mechanic";
+        #{$percentage}#{"%"} {
+            opacity: 0;
+            content: $title;
+        }
     }
 }
-
-// @keyframes wordChangeAnimation {
-//     0% {
-//         opacity: 1;
-//         content: "No Man\'s Sky";
-//     }
-
-//     28% {
-//         opacity: 1;
-//         content: "No Man\'s Sky"
-//     }
-
-//     33% {
-//         opacity: 0;
-//         content: "No Man\'s Sky"
-//     }
-
-//     // ----- No Man's Sky -----
-//     34% {
-//         opacity: 0;
-//         content: "Scrap Mechanic";
-//     }
-
-//     39% {
-//         opacity: 1;
-//         content: "Scrap Mechanic";
-//     }
-
-//     60% {
-//         opacity: 1;
-//         content: "Scrap Mechanic";
-//     }
-
-//     66% {
-//         opacity: 0;
-//         content: "Scrap Mechanic";
-//     }
-
-//     // ----- Scrap Mechanic -----
-
-//     67% {
-//         opacity: 0;
-//         content: "Hytale";
-//     }
-
-//     72% {
-//         opacity: 1;
-//         content: "Hytale";
-//     }
-
-
-//     94% {
-//         opacity: 1;
-//         content: "Hytale";
-//     }
-
-//     100% {
-//         opacity: 0;
-//         content: "Hytale";
-//     }
-// }
-
-$assistantNMSImage: url("../../assets/img/icon/assistantNMS.png");
-$assistantSMSImage: url("../../assets/img/icon/assistantSMS.png");
 
 .apps-image-slider {
     width: 50px;
     height: 50px;
     background-image: $assistantNMSImage;
     background-repeat: round;
-    animation: appsImageSliderText 5s infinite;
+    animation: appsImageSliderText #{$appAnimationDuration}s infinite;
 }
 
-
 @keyframes appsImageSliderText {
-    0% {
-        opacity: 0;
-        background-image: $assistantNMSImage;
-    }
+    @for $imageIndex from 1 through length($appImages) {
+        $percentageLower: (($imageIndex - 1) * $appAnimationPerc) + 1;
+        $percentage: ($imageIndex * $appAnimationPerc);
 
-    5% {
-        opacity: 1;
-        background-image: $assistantNMSImage;
-    }
+        @if $imageIndex==1 {
+            $percentageLower: 0;
+        }
 
-    45% {
-        opacity: 1;
-        background-image: $assistantNMSImage;
-    }
+        $image: nth($appImages, $imageIndex);
 
-    50% {
-        opacity: 0;
-        background-image: $assistantNMSImage;
-    }
+        #{$percentageLower}#{"%"} {
+            opacity: 0;
+            background-image: $image;
+        }
 
-    // ----- No Man's Sky -----
-    51% {
-        opacity: 0;
-        background-image: $assistantSMSImage;
-    }
+        #{$percentageLower + $appAnimationGapPerc}#{"%"} {
+            opacity: 1;
+            background-image: $image;
+        }
 
-    56% {
-        opacity: 1;
-        background-image: $assistantSMSImage;
-    }
+        #{$percentage - $appAnimationGapPerc}#{"%"} {
+            opacity: 1;
+            background-image: $image;
+        }
 
-    95% {
-        opacity: 1;
-        background-image: $assistantSMSImage;
-    }
-
-    100% {
-        opacity: 0;
-        background-image: $assistantSMSImage;
+        #{$percentage}#{"%"} {
+            opacity: 0;
+            background-image: $image;
+        }
     }
 }

@@ -29,9 +29,8 @@ $font: (family: ('Raleway', sans-serif),
     kern-heading: 0.4px);
 
 // Palette.
-$palette: (bg: #213166,
-    // $palette: (bg: #2e3141,
-    fg: #ffffff,
+$palette: (bg: #213d66,
+    fg: #f0f0f0,
     fg-bold: #ffffff,
     fg-light: rgba(255, 255, 255, 0.35),
     border: rgba(255, 255, 255, 0.125),
@@ -39,6 +38,15 @@ $palette: (bg: #213166,
     border2: rgba(255, 255, 255, 0.25),
     border2-bg: rgba(255, 255, 255, 0.075),
     accent: #393c50);
-// accent: #008fa1);
-// accent: #00bcd4);
-// accent: #4c5c96);
+
+
+// Backup Palette.
+/* $palette: (bg: #213166,
+    fg: #ffffff,
+    fg-bold: #ffffff,
+    fg-light: rgba(255, 255, 255, 0.35),
+    border: rgba(255, 255, 255, 0.125),
+    border-bg: rgba(255, 255, 255, 0.25),
+    border2: rgba(255, 255, 255, 0.25),
+    border2-bg: rgba(255, 255, 255, 0.075),
+    accent: #393c50); */

@@ -57,7 +57,7 @@
             background-color: _palette(bg);
 
             background-image: linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
-                url('../../images/bg.jpg');
+                url('../img/bg.jpg');
 
             background-size: auto,
                 cover;
@@ -176,6 +176,7 @@
             margin: 0 _size(section-spacing, large) _size(element-margin) 0;
             width: 22em;
             overflow: hidden;
+            flex: 1;
             -ms-flex: 1;
 
             img {
@@ -186,6 +187,7 @@
 
         .content {
             width: 100%;
+            flex: 2;
             -ms-flex: 2;
         }
 
