@@ -15,7 +15,15 @@ steps:
     npm run sass
   displayName: 'npm install and build'
       
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: ''
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: './web.zip'
+    replaceExistingArchive: true
+
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '' 
+    pathtoPublish: './web.zip' 
     artifactName: 'web'
