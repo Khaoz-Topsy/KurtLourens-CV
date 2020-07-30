@@ -1,15 +1,19 @@
 @import './custom/slider';
-@import './custom/butttons';
+@import './custom/wrapper';
+@import './custom/buttons';
 @import './custom/icomoon';
 
-// .features article .image {
-//     text-align: center;
+#header h1 {
+    @include breakpoint('<xsmall') {
+        display: none;
+    }
+}
 
-//     img {
-//         max-width: 100%;
-//         max-height: 250px;
-//     }
-// }
+#banner>.inner {
+    @include breakpoint('<medium') {
+        text-align: center;
+    }
+}
 
 ul.contact {
     margin-top: 1em;
@@ -27,6 +31,7 @@ ul.contact {
 .font-weight-light {
     font-weight: 200;
 }
+
 .font-weight-heavy {
     font-weight: 500;
 }

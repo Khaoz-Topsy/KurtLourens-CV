@@ -22,10 +22,18 @@ $appAnimationGapPerc: 5;
 $appAnimationSecPerApp: 2.5;
 $appAnimationDuration: ($appAnimationSecPerApp * length($appTitles));
 
-.apps-word-slider::after {
-    content: "everything!";
-    animation: appsWordSliderText #{$appAnimationDuration}s infinite;
-    overflow: hidden;
+.apps-word-slider {
+    &::after {
+        content: "everything!";
+        animation: appsWordSliderText #{$appAnimationDuration}s infinite;
+        overflow: hidden;
+    }
+}
+
+#banner>.inner .apps-word-slider {
+    @include breakpoint('<medium') {
+        display: block;
+    }
 }
 
 @keyframes appsWordSliderText {
@@ -67,6 +75,10 @@ $appAnimationDuration: ($appAnimationSecPerApp * length($appTitles));
     background-image: $assistantNMSImage;
     background-repeat: round;
     animation: appsImageSliderText #{$appAnimationDuration}s infinite;
+
+    @include breakpoint('<medium') {
+        margin: 0 auto;
+    }
 }
 
 @keyframes appsImageSliderText {

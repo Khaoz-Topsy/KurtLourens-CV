@@ -47,10 +47,10 @@
     }
 
     @include breakpoint('<=small') {
+        display: block;
+
         article {
-            @include padding(1.5em, 1.5em);
-            margin: (_size(section-spacing, small) * 0.5) _size(section-spacing, small) (_size(section-spacing, small) * 0.5) 0;
-            width: calc(50% - #{_size(section-spacing, small) * 0.5} - 1px);
+            width: 100%;
 
             .image {
                 margin-bottom: 1.5em;
