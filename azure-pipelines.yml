@@ -14,9 +14,8 @@ steps:
     npm install
     npm run sass
   displayName: 'npm install and build'
-  
+      
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'web'
-    publishLocation: 'Container'
+    pathtoPublish: '' 
+    artifactName: 'web'
