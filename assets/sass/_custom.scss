@@ -15,6 +15,18 @@
     }
 }
 
+#menu .inner {
+    width: 95vw;
+
+    @include breakpoint('>=medium') {
+        width: 50vw;
+    }
+
+    ul.links li a {
+        text-transform: none;
+    }
+}
+
 ul.contact {
     margin-top: 1em;
 
