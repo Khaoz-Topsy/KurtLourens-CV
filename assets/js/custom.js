@@ -42,16 +42,18 @@ $(function () {
         var formObj = {
             name: $form[0][0]?.value || '',
             email: $form[0][1]?.value || '',
-            messasge: $form[0][2]?.value || ''
+            message: $form[0][2]?.value || ''
         };
 
         $.ajax({
             type: "POST",
             url: 'https://api.assistantapps.com/contact',
-            data: formObj,
+            // url: 'http://localhost:55555/contact',
+            data: JSON.stringify(formObj),
             success: formSuccess,
             error: formError,
-            dataType: 'json'
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
         });
     });
 });
