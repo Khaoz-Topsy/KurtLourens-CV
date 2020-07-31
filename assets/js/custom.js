@@ -1,28 +1,24 @@
 $(function () {
-    function formError(data) {
-        $('#success_message').hide();
-        $('#error_message').show();
-
-        //reverse the response on the button
-        $form.find('input#submit').each(function () {
-            $btn = $(this);
-            label = $btn.prop('orig_label');
-            if (label) {
-                $btn.prop('disabled', false);
-                $btn.val(label);
-                $btn.prop('orig_label', '');
-            }
-        });
-    }
-
-    function formSuccess(data) {
-        if (data.result == 'success') {
+    function formPostResult(data) {
+        if (data.status == 200) {
             $('form#contact-form').hide();
             $('#success_message').show();
             $('#error_message').hide();
-        }
-        else {
-            formError(data);
+        } else {
+
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $form.find('input#submit').each(function () {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if (label) {
+                    $btn.prop('disabled', false);
+                    $btn.val(label);
+                    $btn.prop('orig_label', '');
+                }
+            });
         }
     }
 
@@ -50,8 +46,8 @@ $(function () {
             url: 'https://api.assistantapps.com/contact',
             // url: 'http://localhost:55555/contact',
             data: JSON.stringify(formObj),
-            success: formSuccess,
-            error: formError,
+            success: formPostResult,
+            error: formPostResult,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
         });
