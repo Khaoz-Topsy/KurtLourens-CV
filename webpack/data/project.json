@@ -1,1 +1,108 @@
-{}
+{
+    "rootUrl": "https://assistantapps.com",
+    "kurt": {
+        "name": "Kurt Lourens",
+        "email": "mailto:hi@kurtlourens.com",
+        "website": "https://kurtlourens.com",
+        "twitter": "@KhaozTopsy"
+    },
+    "theme": {
+        "colour": "#4285f4",
+        "maskColour": "#2b5797"
+    },
+    "meta": {
+        "appName": "Assistant Apps",
+        "title": "Assistant Apps by Kurt Lourens",
+        "description": "Home page of the Assistant Apps. Get the apps on Google Play, Apple App Store and on the web"
+    },
+    "twitter": {
+        "handle": "@AssistantNMS",
+        "imageAlt": "Logo of the Assistant Apps"
+    },
+    "images": {
+        "maskIcon": "/safari-pinned-tab.svg",
+        "favicon": {
+            "x16": "assets/favicon/favicon-16x16.png",
+            "x32": "assets/favicon/favicon-32x32.png",
+            "x96": "assets/favicon/favicon-96x96.png",
+            "x192": "assets/favicon/android-icon-192x192.png"
+        },
+        "apple": {
+            "x57": "assets/favicon/apple-icon-57x57.png",
+            "x60": "assets/favicon/apple-icon-60x60.png",
+            "x72": "assets/favicon/apple-icon-72x72.png",
+            "x76": "assets/favicon/apple-icon-76x76.png",
+            "x114": "assets/favicon/apple-icon-114x114.png",
+            "x120": "assets/favicon/apple-icon-120x120.png",
+            "x144": "assets/favicon/apple-icon-144x144.png",
+            "x152": "assets/favicon/apple-icon-152x152.png",
+            "x180": "assets/favicon/apple-icon-180x180.png"
+        },
+        "twitter": "https://assistantapps.com/assets/img/twitter.png",
+        "facebook": "https://assistantapps.com/assets/img/fb.png"
+    },
+    "assistantApps": [
+        {
+            "game": "No Man's Sky",
+            "title": "Assistant for No Man's Sky",
+            "link": "https://nmsassistant.com",
+            "image": "./assets/img/assistantNMS.png",
+            "icon": "./assets/img/icon/assistantNMS.png",
+            "sectionStyle": "style1",
+            "description": "The first of the Assistant apps! This app was relased on the 12th of August 2019 and reached 40 000 active users on Android 1 year later. The app is available on Android, iOS and a simplified version is available for Web",
+            "links": [
+                {
+                    "title": "Apple App Store",
+                    "class": "special fit",
+                    "url": "https://apps.apple.com/us/app/id1480287625"
+                },
+                {
+                    "title": "Web App",
+                    "class": "special fit",
+                    "url": "https://app.nmsassistant.com"
+                },
+                {
+                    "title": "Google Play Store",
+                    "class": "special fit",
+                    "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes"
+                },
+                {
+                    "title": "Homepage",
+                    "class": "special fit",
+                    "url": "https://nmsassistant.com"
+                }
+            ]
+        },
+        {
+            "game": "Scrap Mechanic",
+            "title": "Assistant for Scrap Mechanic",
+            "link": "https://scrapassistant.com",
+            "image": "./assets/img/assistantSMS.png",
+            "icon": "./assets/img/icon/assistantSMS.png",
+            "sectionStyle": "alt style2",
+            "description": "The Assistant for Scrap Mechanic app would not have been started if the developers of the game did not make it easy for modders to look at and edit the game's files. This made reading the game files a lot easier than No Man's Sky and helped in completing this project in a short period of time (2-3 weeks part time). This is also the first completely open source project.",
+            "links": [
+                {
+                    "title": "Apple App Store",
+                    "class": "special fit",
+                    "url": "https://apps.apple.com/us/app/id1519215611"
+                },
+                {
+                    "title": "Web",
+                    "class": "special fit",
+                    "url": "https://scrapassistant.com"
+                },
+                {
+                    "title": "Google Play Store",
+                    "class": "special fit",
+                    "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.scrap_mechanic"
+                },
+                {
+                    "title": "Github",
+                    "class": "special fit",
+                    "url": "https://github.com/AssistantSMS"
+                }
+            ]
+        }
+    ]
+}

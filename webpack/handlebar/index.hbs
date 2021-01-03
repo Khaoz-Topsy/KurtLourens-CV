@@ -4,27 +4,25 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="application-name" content="Assistant Apps">
-    <title>Assistant Apps by Kurt Lourens</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <meta name="application-name" content="{{meta.appName}}">
+    <title>{{meta.title}}</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{images.favicon.x16}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{images.favicon.x32}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{images.favicon.x96}}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{images.favicon.x192}}">
 
-    <link rel="index" href="https://assistantapps.com">
-    <link rel="canonical" href="https://assistantapps.com">
+    <link rel="index" href="{{rootUrl}}">
+    <link rel="canonical" href="{{rootUrl}}">
     <meta name="referrer" content="no-referrer">
     <link rel="manifest" href="manifest.json">
     <link rel="author" href="humans.txt">
-    <link rel="me" href="mailto:hi@kurtlourens.com">
-    <link rel="me" href="https://kurtlourens.com" type="text/html">
+    <link rel="me" href="{{kurt.email}}">
+    <link rel="me" href="{{kurt.website}}" type="text/html">
     <link rel="search" href="open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
 
-    <meta name="theme-color" content="#4285f4">
-    <meta name="subject"
-        content="Home page of the Assistant Apps. Get the apps on Google Play, Apple App Store and on the web">
-    <meta name="description"
-        content="Home page of the Assistant Apps. Get the apps on Google Play, Apple App Store and on the web">
+    <meta name="theme-color" content="{{theme.colour}}">
+    <meta name="subject" content="{{meta.description}}">
+    <meta name="description" content="{{meta.description}}">
     <meta name="rating" content="General">
     <meta name="robots" content="index,follow">
 
@@ -34,16 +32,16 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <!-- Apple -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2b5797">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{images.apple.x57}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{images.apple.x60}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{images.apple.x72}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{images.apple.x76}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{images.apple.x114}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{images.apple.x120}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{images.apple.x144}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{images.apple.x152}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{images.apple.x180}}">
+    <link rel="mask-icon" href="{{images.maskIcon}}" color="{{theme.maskColour}}">
     <!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
     <!-- <meta name="apple-mobile-web-app-title" content="App Title"> -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -51,39 +49,38 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@AssistantNMS">
-    <meta name="twitter:creator" content="@KhaozTopsy">
-    <meta name="twitter:url" content="https://assistantapps.com">
-    <meta name="twitter:title" content="Content Title">
-    <meta name="twitter:description"
-        content="Home page of the Assistant Apps. Get the apps on Google Play, Apple App Store and on the web">
-    <meta name="twitter:image" content="https://assistantapps.com/assets/img/twitter.png">
-    <meta name="twitter:image:alt" content="Logo of the Assistant Apps">
+    <meta name="twitter:site" content="{{twitter.handle}}">
+    <meta name="twitter:creator" content="{{kurt.twitter}}">
+    <meta name="twitter:url" content="{{rootUrl}}">
+    <meta name="twitter:title" content="{{meta.appName}}">
+    <meta name="twitter:description" content="{{meta.description}}">
+    <meta name="twitter:image" content="{{images.twitter}}">
+    <meta name="twitter:image:alt" content="{{twitter.imageAlt}}">
 
     <!-- Facebook -->
-    <meta property="og:url" content="https://assistantapps.com">
+    <meta property="og:url" content="{{rootUrl}}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Assistant Apps by Kurt Lourens">
-    <meta property="og:image" content="https://assistantapps.com/assets/img/fb.png">
-    <meta property="og:image:alt" content="Logo of the Assistant Apps">
-    <meta property="og:description"
-        content="Home page of the Assistant Apps. Get the apps on Google Play, Apple App Store and on the web">
-    <meta property="og:site_name" content="Assistant Apps by Kurt Lourens">
+    <meta property="og:title" content="{{meta.title}}">
+    <meta property="og:image" content="{{images.facebook}}">
+    <meta property="og:image:alt" content="{{twitter.imageAlt}}">
+    <meta property="og:description" content="{{meta.description}}">
+    <meta property="og:site_name" content="{{meta.title}}">
     <meta property="og:locale" content="en_UK">
-    <meta property="article:author" content="Kurt Lourens">
+    <meta property="article:author" content="{{kurt.name}}">
 
     <!-- Microsoft -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
     <meta name="msapplication-config" content="browserconfig.xml">
-    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileColor" content="{{theme.maskColour}}">
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
-    <link rel="preload" href="./assets/img/icon/assistantNMS.png" as="image">
-    <link rel="preload" href="./assets/img/icon/assistantSMS.png" as="image">
+    {{#each assistantApps}}
+    <link rel="preload" href="{{icon}}" as="image">
+    {{/each}}
 </head>
 
 <body class="is-preload">
@@ -130,58 +127,26 @@
             </div>
         </section>
         <section id="wrapper">
-            <section class="wrapper spotlight style1">
+            {{#each assistantApps}}
+            <section class="wrapper spotlight {{sectionStyle}}">
                 <div class="inner">
-                    <a href="https://nmsassistant.com?ref=AssistantApps" title="Assistant for No Man's Sky"
-                        target="_blank" rel="noopener noreferrer" class="image">
-                        <img src="./assets/img/assistantNMS.png" alt="Assistant for No Man's Sky" />
+                    <a href="{{link}}?ref=AssistantApps" title="{{title}}" target="_blank" rel="noopener noreferrer"
+                        class="image">
+                        <img src="{{image}}" alt="{{title}}" />
                     </a>
                     <div class="content">
                         <h2 class="major font-weight-light">
-                            Assistant for <span class="font-weight-heavy">No Man's Sky</span>
+                            Assistant for <span class="font-weight-heavy">{{game}}</span>
                         </h2>
-                        <p>The first of the Assistant apps! This app was relased on the 12th of August 2019 and reached
-                            40 000 active users on Android 1 year later. The app is available on Android, iOS and a
-                            simplified version is available for Web</p>
-                        <a href="https://apps.apple.com/us/app/id1480287625?ref=AssistantApps" class="special fit"
-                            title="Apple App Store" target="_blank" rel="noopener noreferrer">Apple App Store</a>
-                        <a href="https://app.nmsassistant.com/?ref=AssistantApps" class="special fit" title="Web App"
-                            target="_blank" rel="noopener noreferrer">Web app</a>
-                        <a href="https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes&ref=AssistantApps"
-                            class="special fit" title="Google Play" target="_blank" rel="noopener noreferrer">Google
-                            Play Store</a>
-                        <a href="https://nmsassistant.com?ref=AssistantApps" class="special fit" title="Homepage"
-                            target="_blank" rel="noopener noreferrer">Homepage</a>
+                        <p>{{description}}</p>
+                        {{#each links}}
+                        <a href="{{url}}?ref=AssistantApps" class="{{class}}" title="{{title}}" target="_blank"
+                            rel="noopener noreferrer">{{title}}</a>
+                        {{/each}}
                     </div>
                 </div>
             </section>
-            <section class="wrapper alt spotlight style2">
-                <div class="inner">
-                    <a href="https://scrapassistant.com?ref=AssistantApps" class="image"
-                        title="Assistant for Scrap Mechanic" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/img/assistantSMS.png" alt="Assistant for Scrap Mechanic" />
-                    </a>
-                    <div class="content">
-                        <h2 class="major font-weight-light">
-                            Assistant for <span class="font-weight-heavy">Scrap Mechanic</span>
-                        </h2>
-                        <p>The Assistant for Scrap Mechanic app would not have been started if the developers of the
-                            game did not make it easy for modders to look at and edit the game's files. This made
-                            reading the game files a lot easier than No Man's Sky and helped in completing this project
-                            in a short period of time (2-3 weeks part time). This is also the first completely open
-                            source project.</p>
-                        <a href="https://apps.apple.com/us/app/id1519215611?ref=AssistantApps" class="special fit"
-                            title="Apple App Store" target="_blank" rel="noopener noreferrer">Apple App Store</a>
-                        <a href="https://scrapassistant.com?ref=AssistantApps" class="special fit" title="Web"
-                            target="_blank" rel="noopener noreferrer">Web</a>
-                        <a href="https://play.google.com/store/apps/details?id=com.kurtlourens.scrap_mechanic?ref=AssistantApps"
-                            class="special fit" title="Google Play" target="_blank" rel="noopener noreferrer">Google
-                            Play Store</a>
-                        <a href="https://github.com/AssistantSMS?ref=AssistantApps" class="special fit" title="Github"
-                            target="_blank" rel="noopener noreferrer">Github</a>
-                    </div>
-                </div>
-            </section>
+            {{/each}}
             <section class="wrapper spotlight style1">
                 <div class="inner">
                     <a href="#" title="Assistant for XYZ" class="image" target="_blank" rel="noopener noreferrer">
