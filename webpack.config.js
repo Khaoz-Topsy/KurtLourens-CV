@@ -41,10 +41,11 @@ module.exports = (env, argv) => {
                 ],
 
                 // register custom helpers. May be either a function or a glob-pattern
-                // helpers: {
-                //     nameOfHbsHelper: Function.prototype,
-                //     projectHelpers: path.join(process.cwd(), "webpack", "handlebar", "helpers", "*.helper.js")
-                // },
+                helpers: {
+                    nameOfHbsHelper: Function.prototype,
+                    urlref: require("./webpack/handlebar/helpers/urlref.helper"),
+                    loud: require("./webpack/handlebar/helpers/loud.helper")
+                },
 
                 // hooks
                 // getTargetFilepath: function (filepath, outputTemplate) {},

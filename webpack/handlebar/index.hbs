@@ -99,12 +99,12 @@
                 <ul class="links">
                     <li><a href="/" title="Home">Home</a></li>
                     <li>
-                        <a href="{{kurt.website}}?ref=AssistantApps" title="{{kurt.name}}" target="_blank"
+                        <a href="{{urlref kurt.website}}" title="{{kurt.name}}" target="_blank"
                             rel="noopener noreferrer">{{kurt.name}}</a>
                     </li>
                     {{#each assistantApps}}
                     <li>
-                        <a href="{{link}}?ref=AssistantApps" title="{{title}}" target="_blank"
+                        <a href="{{urlref link}}" title="{{title}}" target="_blank"
                             rel="noopener noreferrer">{{title}}</a>
                     </li>
                     {{/each}}
@@ -180,7 +180,7 @@
                 </form>
                 <ul class="contact">
                     {{#each links}}
-                    <li class="{{class}}"><a href="{{url}}?ref=AssistantApps" title="{{alt}}" target="_blank"
+                    <li class="{{class}}"><a href="{{urlref url}}" title="{{alt}}" target="_blank"
                             rel="noopener noreferrer">{{title}}</a>
                     </li>
                     {{/each}}

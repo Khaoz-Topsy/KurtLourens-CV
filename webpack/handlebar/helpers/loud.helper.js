@@ -1,3 +1,3 @@
-Handlebars.registerHelper('loud', function (aString) {
-    return aString.toUpperCase()
-})
+module.exports = function (context, options) {
+    return context.toUpperCase();
+};

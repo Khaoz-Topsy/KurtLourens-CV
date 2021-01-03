@@ -1,6 +1,6 @@
 <section class="wrapper spotlight {{sectionStyle}}">
     <div class="inner">
-        <a href="{{link}}?ref=AssistantApps" title="{{title}}" target="_blank" rel="noopener noreferrer" class="image">
+        <a href="{{urlref link}}" title="{{title}}" target="_blank" rel="noopener noreferrer" class="image">
             <img src="{{image}}" alt="{{title}}" />
         </a>
         <div class="content">
@@ -9,7 +9,7 @@
             </h2>
             <p>{{description}}</p>
             {{#each links}}
-            <a href="{{url}}?ref=AssistantApps" class="{{class}}" title="{{title}}" target="_blank"
+            <a href="{{urlref url}}" class="{{class}}" title="{{title}}" target="_blank"
                 rel="noopener noreferrer">{{title}}</a>
             {{/each}}
         </div>
