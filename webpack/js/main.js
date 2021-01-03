@@ -1,7 +1,6 @@
 import * as jQuery from './jquery.min.js';
 import { scrollex } from './jquery.scrollex.min.js';
 import breakpoints from './breakpoints.min.js';
-import browser from './browser.min.js';
 
 (function ($) {
 

@@ -15,6 +15,7 @@
         "title": "Assistant Apps by Kurt Lourens",
         "description": "Home page of the Assistant Apps. Get the apps on Google Play, Apple App Store and on the web"
     },
+    "subtitle": "Beautiful and fast cross-platform apps built to help you in your favourite games!",
     "twitter": {
         "handle": "@AssistantNMS",
         "imageAlt": "Logo of the Assistant Apps"
@@ -101,6 +102,66 @@
                     "title": "Github",
                     "class": "special fit",
                     "url": "https://github.com/AssistantSMS"
+                }
+            ]
+        }
+    ],
+    "links": [
+        {
+            "title": "Email",
+            "url": "mailto:support@assistantapps.com",
+            "class": "icon-envelope",
+            "alt": "support email"
+        },
+        {
+            "title": "Discord",
+            "url": "https://discord.gg/q3aFBQM",
+            "class": "icon-discord",
+            "alt": "Discord"
+        },
+        {
+            "title": "Twitter",
+            "url": "https://twitter.com/KhaozTopsy",
+            "class": "icon-twitter",
+            "alt": "Twitter"
+        },
+        {
+            "title": "Github",
+            "url": "https://github.com/Khaoz-Topsy",
+            "class": "icon-github",
+            "alt": "Github"
+        }
+    ],
+    "features": [
+        {
+            "title": "DevTalk",
+            "image": "./assets/img/devtalk.png",
+            "link": "https://www.youtube.com/playlist?list=PLIjFqYF1O-TDACR0Kz8h0OXfolRHCiUE5",
+            "description": "DevTalk is a weekly stream where we talked about what was happening in the No Man's Sky universe, coding, tech and developer stories.",
+            "subLinks": [
+                {
+                    "title": "DevTalk Playlist",
+                    "url": "https://www.youtube.com/playlist?list=PLIjFqYF1O-TDACR0Kz8h0OXfolRHCiUE5"
+                },
+                {
+                    "title": "Youtube Channel",
+                    "url": "https://www.youtube.com/channel/UCpKNMVk7ZWvBk-psQQZqz5w"
+                }
+            ]
+        },
+        {
+            "title": "NMSCD",
+            "image": "./assets/img/NMSCD.png",
+            "link": "https://github.com/NMSCD",
+            "description": "We founded the The No Man's Sky Community Developers and Designers. The NMSCD is a Github organisation for people making tools for the NMS players.",
+            "subLinks": [
+                {
+                    "title": "Homepage",
+                    "url": "https://nmscd.github.io"
+                },
+                {
+                    "title": "Github",
+                    "url": "https://github.com/NMSCD"
                 }
             ]
         }

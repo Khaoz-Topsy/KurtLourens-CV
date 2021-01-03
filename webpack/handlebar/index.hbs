@@ -102,16 +102,12 @@
                         <a href="https://kurtlourens.com?ref=AssistantApps" title="Kurt Lourens" target="_blank"
                             rel="noopener noreferrer">Kurt Lourens</a>
                     </li>
+                    {{#each assistantApps}}
                     <li>
-                        <a href="https://nmsassistant.com?ref=AssistantApps" title="AssistantNMS" target="_blank"
-                            rel="noopener noreferrer">Assistant for No
-                            Man's Sky</a>
+                        <a href="{{link}}?ref=AssistantApps" title="{{title}}" target="_blank"
+                            rel="noopener noreferrer">{{title}}</a>
                     </li>
-                    <li>
-                        <a href="https://scrapassistant.com?ref=AssistantApps" title="AssistantSMS" target="_blank"
-                            rel="noopener noreferrer">Assistant for
-                            Scrap Mechanic</a>
-                    </li>
+                    {{/each}}
                 </ul>
                 <a href="#" class="close" title="close">Close</a>
             </div>
@@ -123,7 +119,7 @@
                 </div>
                 <h2 class="font-weight-light">Assistant for <span class="apps-word-slider font-weight-heavy"></span>
                 </h2>
-                <p>Beautiful and fast cross-platform apps built to help you in your favourite games!</p>
+                <p>{{subtitle}}</p>
             </div>
         </section>
         <section id="wrapper">
@@ -166,34 +162,20 @@
                         streams and start organisations all aimed at entertaining and assisting gamers enjoy their games
                         to the fullest!!</p>
                     <section class="features">
+                        {{#each features}}
                         <article>
-                            <a href="https://www.youtube.com/playlist?list=PLIjFqYF1O-TDACR0Kz8h0OXfolRHCiUE5"
-                                class="image" title="DevTalk" target="_blank" rel="noopener noreferrer">
-                                <img src="./assets/img/devtalk.png" alt="DevTalk" />
-                            </a>
-                            <h3 class="major">DevTalk</h3>
-                            <p>DevTalk is a weekly stream where we talked about what was happening in the No Man's Sky
-                                universe, coding, tech and developer stories.</p>
-                            <a href="https://www.youtube.com/playlist?list=PLIjFqYF1O-TDACR0Kz8h0OXfolRHCiUE5"
-                                class="special" title="DevTalk Playlist" target="_blank"
-                                rel="noopener noreferrer">DevTalk playlist</a>
-                            <a href="https://www.youtube.com/channel/UCpKNMVk7ZWvBk-psQQZqz5w" class="special"
-                                title="Youtube Channel" target="_blank" rel="noopener noreferrer">Youtube Channel</a>
-                        </article>
-                        <article>
-                            <a href="https://github.com/NMSCD" class="image" title="NMSCD" target="_blank"
+                            <a href="{{link}}" class="image" title="{{title}}" target="_blank"
                                 rel="noopener noreferrer">
-                                <img src="./assets/img/NMSCD.png"
-                                    alt="NMSCD - No Man's Sky Community Developers and Designers" />
+                                <img src="{{image}}" alt="{{title}}" />
                             </a>
-                            <h3 class="major">NMSCD</h3>
-                            <p>We founded the The No Man's Sky Community Developers and Designers. The NMSCD is a Github
-                                organisation for people making tools for the NMS players.</p>
-                            <a href="https://nmscd.github.io" class="special" title="NMSCD Homepage" target="_blank"
-                                rel="noopener noreferrer">Homepage</a>
-                            <a href="https://github.com/NMSCD" class="special" title="NMSCD Github" target="_blank"
-                                rel="noopener noreferrer">Github</a>
+                            <h3 class="major">{{title}}</h3>
+                            <p>{{description}}</p>
+                            {{#each subLinks}}
+                            <a href="{{url}}" class="special" title="{{title}}" target="_blank"
+                                rel="noopener noreferrer">{{title}}</a>
+                            {{/each}}
                         </article>
+                        {{/each}}
                     </section>
                     <!-- <ul class="actions">
 						<li><a href="#" class="button">Browse All</a></li>
@@ -226,19 +208,11 @@
                     </ul>
                 </form>
                 <ul class="contact">
-                    <li class="icon-envelope"><a href="mailto:support@assistantapps.com?ref=AssistantApps"
-                            title="support email" target="_blank"
-                            rel="noopener noreferrer">support@assistantapps.com</a>
+                    {{#each links}}
+                    <li class="{{class}}"><a href="{{url}}?ref=AssistantApps" title="{{alt}}" target="_blank"
+                            rel="noopener noreferrer">{{title}}</a>
                     </li>
-                    <li class="icon-discord"><a href="https://discord.gg/q3aFBQM?ref=AssistantApps" title="Discord"
-                            target="_blank" rel="noopener noreferrer">Discord</a>
-                    </li>
-                    <li class="icon-twitter"><a href="https://twitter.com/KhaozTopsy?ref=AssistantApps" title="Twitter"
-                            target="_blank" rel="noopener noreferrer">Twitter</a>
-                    </li>
-                    <li class="icon-github"><a href="https://github.com/Khaoz-Topsy?ref=AssistantApps" title="Github"
-                            target="_blank" rel="noopener noreferrer">Github</a>
-                    </li>
+                    {{/each}}
                 </ul>
                 <div id="success_message">
                     <h2>Successfully submitted contact form!</h2>
@@ -247,7 +221,7 @@
                     <h2>Sorry!! Something went wrong, please try sending an email instead.</h2>
                 </div>
                 <ul class="copyright">
-                    <li>&copy; Assistant Apps. All rights reserved.</li>
+                    <li>&copy; {{meta.appName}}. All rights reserved.</li>
                     <li>Design: <a href="http://html5up.net" title="html5up" target="_blank"
                             rel="noopener noreferrer">HTML5 UP</a></li>
                 </ul>

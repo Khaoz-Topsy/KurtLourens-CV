@@ -11,6 +11,7 @@ module.exports = (env, argv) => {
         entry: [
             './webpack/js/main.js',
             './webpack/js/util.js',
+            './webpack/js/browser.min.js',
             './webpack/js/custom.js',
         ],
         output: {
