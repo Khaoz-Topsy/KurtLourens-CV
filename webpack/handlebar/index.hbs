@@ -99,8 +99,8 @@
                 <ul class="links">
                     <li><a href="/" title="Home">Home</a></li>
                     <li>
-                        <a href="https://kurtlourens.com?ref=AssistantApps" title="Kurt Lourens" target="_blank"
-                            rel="noopener noreferrer">Kurt Lourens</a>
+                        <a href="{{kurt.website}}?ref=AssistantApps" title="{{kurt.name}}" target="_blank"
+                            rel="noopener noreferrer">{{kurt.name}}</a>
                     </li>
                     {{#each assistantApps}}
                     <li>
@@ -157,9 +157,8 @@
         </section>
         <section id="footer">
             <div class="inner">
-                <h2 class="major">Get in touch</h2>
-                <p>Feel free to get in contact with us! we have a Discord server if you would like to talk directly to
-                    us. Otherwise you can use the form below and we will get back to you as soon as we can.</p>
+                <h2 class="major">{{footer}}</h2>
+                <p>{{footerDescription}}</p>
                 <form id="contact_form">
                     <div class="fields">
                         <div class="field">
