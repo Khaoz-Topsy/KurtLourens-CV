@@ -1,8 +1,12 @@
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/* $palette: (bg: #213166,
+    fg: #ffffff,
+    fg-bold: #ffffff,
+    fg-light: rgba(255, 255, 255, 0.35),
+    border: rgba(255, 255, 255, 0.125),
+    border-bg: rgba(255, 255, 255, 0.25),
+    border2: rgba(255, 255, 255, 0.25),
+    border2-bg: rgba(255, 255, 255, 0.075),
+    accent: #393c50); */
 /* Banner */
 body.is-preload #banner .logo {
   -moz-transform: none;

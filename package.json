@@ -1,22 +1,29 @@
 {
-  "name": "assistantApps",
+  "name": "assistant_apps",
   "version": "1.0.0",
   "description": "AssistantApps Home Website",
   "author": "Kurt Lourens",
   "scripts": {
-    "sass": "sass assets/sass/main.scss assets/css/main.css",
-    "sass:noscript": "sass assets/sass/noscript.scss assets/css/noscript.css"
+    "build": "npm-run-all javascript:* sass:*",
+    "javascript:main": "webpack --progress --profile --mode production",
+    "sass:main": "sass webpack/scss/main.scss assets/css/main.css",
+    "sass:noscript": "sass webpack/scss/noscript.scss assets/css/noscript.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NMSCD/NMSCD.github.io.git"
+    "url": "git+https://github.com/AssistantApps/Home.git"
   },
   "bugs": {
-    "url": "https://github.com/NMSCD/NMSCD.github.io/issues"
+    "url": "https://github.com/AssistantApps/Home/issues"
   },
-  "homepage": "https://NMSCD.github.io",
+  "homepage": "https://assistantapps.com",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.26.10"
+  "dependencies": {},
+  "devDependencies": {
+    "handlebars-webpack-plugin": "^2.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.26.10",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
   }
 }

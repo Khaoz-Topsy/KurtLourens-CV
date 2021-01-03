@@ -1,5 +1,8 @@
+import * as $ from './jquery.min.js';
+
 $(function () {
     function formPostResult(data) {
+        debugger;
         if (data.status == 200) {
             $('form#contact-form').hide();
             $('#success_message').show();
@@ -9,14 +12,15 @@ $(function () {
             $('#success_message').hide();
             $('#error_message').show();
 
+            var form = $('#contact_form');
             //reverse the response on the button
-            $form.find('input#submit').each(function () {
-                $btn = $(this);
-                label = $btn.prop('orig_label');
+            form.find('input#submit').each(function () {
+                var btn = $(this);
+                var label = btn.prop('orig_label');
                 if (label) {
-                    $btn.prop('disabled', false);
-                    $btn.val(label);
-                    $btn.prop('orig_label', '');
+                    btn.prop('disabled', false);
+                    btn.val(label);
+                    btn.prop('orig_label', '');
                 }
             });
         }
@@ -27,18 +31,18 @@ $(function () {
     $('#contact_form').submit(function (e) {
         e.preventDefault();
 
-        $form = $(this);
-        $form.find('input#submit').each(function () {
-            $btn = $(this);
-            $btn.prop('orig_label', $btn.val());
-            $btn.prop('disabled', true);
-            $btn.val('Sending ...');
+        var form = $(this);
+        form.find('input#submit').each(function () {
+            var btn = $(this);
+            btn.prop('orig_label', btn.val());
+            btn.prop('disabled', true);
+            btn.val('Sending ...');
         });
 
         var formObj = {
-            name: $form[0][0]?.value || '',
-            email: $form[0][1]?.value || '',
-            message: $form[0][2]?.value || ''
+            name: form[0][0]?.value || '',
+            email: form[0][1]?.value || '',
+            message: form[0][2]?.value || ''
         };
 
         $.ajax({
