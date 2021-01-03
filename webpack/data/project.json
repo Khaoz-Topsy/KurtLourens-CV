@@ -16,6 +16,8 @@
         "description": "Home page of the Assistant Apps. Get the apps on Google Play, Apple App Store and on the web"
     },
     "subtitle": "Beautiful and fast cross-platform apps built to help you in your favourite games!",
+    "additional": "Additional work",
+    "additionalDescription": "Working on these projects has opened up opportunities to talk to other community developers, host streams and start organisations all aimed at entertaining and assisting gamers enjoy their games to the fullest!!",
     "twitter": {
         "handle": "@AssistantNMS",
         "imageAlt": "Logo of the Assistant Apps"
