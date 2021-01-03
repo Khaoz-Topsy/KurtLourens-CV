@@ -124,24 +124,8 @@
         </section>
         <section id="wrapper">
             {{#each assistantApps}}
-            <section class="wrapper spotlight {{sectionStyle}}">
-                <div class="inner">
-                    <a href="{{link}}?ref=AssistantApps" title="{{title}}" target="_blank" rel="noopener noreferrer"
-                        class="image">
-                        <img src="{{image}}" alt="{{title}}" />
-                    </a>
-                    <div class="content">
-                        <h2 class="major font-weight-light">
-                            Assistant for <span class="font-weight-heavy">{{game}}</span>
-                        </h2>
-                        <p>{{description}}</p>
-                        {{#each links}}
-                        <a href="{{url}}?ref=AssistantApps" class="{{class}}" title="{{title}}" target="_blank"
-                            rel="noopener noreferrer">{{title}}</a>
-                        {{/each}}
-                    </div>
-                </div>
-            </section>
+            {{> components/appSection }}
+
             {{/each}}
             <section class="wrapper spotlight style1">
                 <div class="inner">
@@ -163,18 +147,8 @@
                         to the fullest!!</p>
                     <section class="features">
                         {{#each features}}
-                        <article>
-                            <a href="{{link}}" class="image" title="{{title}}" target="_blank"
-                                rel="noopener noreferrer">
-                                <img src="{{image}}" alt="{{title}}" />
-                            </a>
-                            <h3 class="major">{{title}}</h3>
-                            <p>{{description}}</p>
-                            {{#each subLinks}}
-                            <a href="{{url}}" class="special" title="{{title}}" target="_blank"
-                                rel="noopener noreferrer">{{title}}</a>
-                            {{/each}}
-                        </article>
+                        {{> components/appFeature }}
+
                         {{/each}}
                     </section>
                     <!-- <ul class="actions">

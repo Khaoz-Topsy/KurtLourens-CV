@@ -37,7 +37,7 @@ module.exports = (env, argv) => {
 
                 // globbed path to partials, where folder/filename is unique
                 partials: [
-                    path.join(process.cwd(), "webpack", "handlebar", "components", "*", "*.hbs")
+                    path.join(process.cwd(), "webpack", "handlebar", "*", "*.hbs")
                 ],
 
                 // register custom helpers. May be either a function or a glob-pattern
