@@ -5,6 +5,8 @@ const bundleFileName = 'bundle';
 const dirName = 'dist';
 const distPath = path.resolve(__dirname, dirName);
 
+const packageVersion = require('./package.json').version || '1.0.0';
+
 module.exports = (env, argv) => {
     return {
         mode: argv.mode === "production" ? "production" : "development",
@@ -44,7 +46,8 @@ module.exports = (env, argv) => {
                 helpers: {
                     nameOfHbsHelper: Function.prototype,
                     urlref: require("./webpack/handlebar/helpers/urlref.helper"),
-                    loud: require("./webpack/handlebar/helpers/loud.helper")
+                    loud: require("./webpack/handlebar/helpers/loud.helper"),
+                    version: require("./webpack/handlebar/helpers/version.helper")(packageVersion)
                 },
 
                 // hooks
@@ -56,7 +59,7 @@ module.exports = (env, argv) => {
                 onBeforeRender: function (Handlebars, data, filename) { },
                 onBeforeSave: function (Handlebars, resultHtml, filename) { },
                 onDone: function (Handlebars, filename) { }
-            })
+            }),
         ],
     };
 };
