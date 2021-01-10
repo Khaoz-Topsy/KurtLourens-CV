@@ -4,6 +4,8 @@
         "name": "Kurt Lourens",
         "email": "mailto:hi@kurtlourens.com",
         "website": "https://kurtlourens.com",
+        "image": "https://kurtlourens.com/assets/images/KurtAvatar.svg",
+        "additionalName": "KhaozTopsy",
         "twitter": "@KhaozTopsy"
     },
     "theme": {
@@ -27,6 +29,7 @@
     "images": {
         "maskIcon": "/safari-pinned-tab.svg",
         "favicon": {
+            "ico": "assets/favicon/favicon.ico",
             "x16": "assets/favicon/favicon-16x16.png",
             "x32": "assets/favicon/favicon-32x32.png",
             "x96": "assets/favicon/favicon-96x96.png",

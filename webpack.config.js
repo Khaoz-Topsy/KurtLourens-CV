@@ -47,6 +47,7 @@ module.exports = (env, argv) => {
                     nameOfHbsHelper: Function.prototype,
                     urlref: require("./webpack/handlebar/helpers/urlref.helper"),
                     loud: require("./webpack/handlebar/helpers/loud.helper"),
+                    date: require("./webpack/handlebar/helpers/date.helper"),
                     version: require("./webpack/handlebar/helpers/version.helper")(packageVersion)
                 },
 

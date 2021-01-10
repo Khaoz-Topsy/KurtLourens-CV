@@ -43,7 +43,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{images.apple.x180}}">
     <link rel="mask-icon" href="{{images.maskIcon}}" color="{{theme.maskColour}}">
     <!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
-    <!-- <meta name="apple-mobile-web-app-title" content="App Title"> -->
+    <meta name="apple-mobile-web-app-title" content="{{meta.appName}}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -81,6 +81,95 @@
     {{#each assistantApps}}
     <link rel="preload" href="{{icon}}" as="image">
     {{/each}}
+
+    {{!-- JSON-LD --}}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "SoftwareApplication",
+            "name": "{{kurt.name}}",
+            "url": "{{rootUrl}}",
+            "about": "{{meta.description}}",
+            "description": "{{meta.description}}",
+            "image": "{{images.favicon.x192}}",
+            "applicationCategory": "Application",
+            "operatingSystem": "Android Lollipop, iOS, Chrome, Firefox, Opera, Internet Explorer, Edge",
+            "softwareVersion": "{{version}}",
+            "version": "{{version}}",
+            "author": {
+                "@type": "Person",
+                "name": "{{kurt.name}}",
+                "givenName": "{{kurt.name}}",
+                "familyName": "{{kurt.name}}",
+                "additionalName": "{{kurt.additionalName}}",
+                "url": "{{kurt.website}}",
+                "image": "{{kurt.image}}",
+                "description": "{{meta.description}}",
+                "jobTitle": "Software Engineer"
+            },
+            "creator": {
+                "@type": "Person",
+                "name": "{{kurt.name}}",
+                "givenName": "{{kurt.name}}",
+                "familyName": "{{kurt.name}}",
+                "additionalName": "{{kurt.additionalName}}",
+                "url": "{{kurt.website}}",
+                "image": "{{kurt.image}}",
+                "description": "{{meta.description}}",
+                "jobTitle": "Software Engineer"
+            },
+            "offers": {
+                "@type": "offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "name": "{{meta.appName}}",
+                "url": "{{rootUrl}}",
+                "image": "{{images.favicon.x192}}",
+                "description": "{{meta.description}}",
+                "itemOffered": {
+                    "@type": "service",
+                    "name": "{{meta.appName}}",
+                    "brand": {
+                        "@type": "brand",
+                        "name": "{{meta.appName}}",
+                        "url": "{{rootUrl}}",
+                        "logo": "{{images.favicon.x192}}",
+                        "image": "{{images.favicon.x192}}",
+                        "description": "{{meta.description}}"
+                    },
+                    "url": "{{rootUrl}}",
+                    "logo": "{{images.favicon.x192}}",
+                    "image": "{{images.favicon.x192}}",
+                    "description": "{{meta.description}}",
+                    "offers": [
+                        {{#each assistantApps as |app index|}}
+                            {{#if @index}},{{/if}}
+                            {
+                                "@type": "offer",
+                                "price": "0",
+                                "priceCurrency": "USD",
+                                "name": "{{app.title}}",
+                                "url": "{{app.link}}",
+                                "image": "{{app.image}}",
+                                "description": "{{app.description}}"
+                            }
+                        {{/each}}
+                    ]
+                }
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "bestRating": "5",
+                "ratingCount": "1",
+                "reviewCount": "5",
+                "ratingValue": "5"
+            },
+            "inLanguage": "en",
+            "dateCreated": "{{date}}",
+            "dateModified": "{{date}}",
+            "datePublished": "{{date}}"
+        }
+    </script>
 </head>
 
 <body class="is-preload">
