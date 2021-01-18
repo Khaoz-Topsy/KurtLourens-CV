@@ -1,6 +1,6 @@
 {
   "name": "assistant_apps",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "AssistantApps Home Website",
   "author": "Kurt Lourens",
   "scripts": {
@@ -22,6 +22,7 @@
   "devDependencies": {
     "handlebars-webpack-plugin": "^2.2.1",
     "npm-run-all": "^4.1.5",
+    "move-file": "^2.0.0",
     "sass": "^1.26.10",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1"

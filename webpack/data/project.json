@@ -172,5 +172,19 @@
                 }
             ]
         }
+    ],
+    "redirects": [
+        {
+            "pattern": "discord",
+            "url": "https://discord.gg/q3aFBQM"
+        },
+        {
+            "pattern": "github",
+            "url": "https://github.com/AssistantApps"
+        },
+        {
+            "pattern": "kurt",
+            "url": "https://kurtlourens.com"
+        }
     ]
 }

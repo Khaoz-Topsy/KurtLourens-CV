@@ -13,24 +13,14 @@
             </customHeaders>
         </httpProtocol>
         <rewrite>
+            {{#each redirects}}
             <rules>
                 <rule name="RedirectToDiscord" stopProcessing="true">
-                    <match url="^(.*)discord(.*)" ignoreCase="true" />
-                    <action type="Redirect" url="https://discord.gg/q3aFBQM?ref=AssistantApps" appendQueryString="false" redirectType="Permanent" />
+                    <match url="^(.*){{pattern}}(.*)" ignoreCase="true" />
+                    <action type="Redirect" url="{{{urlref url}}}" appendQueryString="false" redirectType="Permanent" />
                 </rule>
             </rules>
-            <rules>
-                <rule name="RedirectToDiscord" stopProcessing="true">
-                    <match url="^(.*)github(.*)" ignoreCase="true" />
-                    <action type="Redirect" url="https://github.com/AssistantApps?ref=AssistantApps" appendQueryString="false" redirectType="Permanent" />
-                </rule>
-            </rules>
-            <rules>
-                <rule name="RedirectToDiscord" stopProcessing="true">
-                    <match url="^(.*)kurt(.*)" ignoreCase="true" />
-                    <action type="Redirect" url="https://kurtlourens.com?ref=AssistantApps" appendQueryString="false" redirectType="Permanent" />
-                </rule>
-            </rules>
+            {{/each}}
         </rewrite>
     </system.webServer>
 </configuration>

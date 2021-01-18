@@ -1,5 +1,6 @@
 const path = require('path');
 const HandlebarsPlugin = require("handlebars-webpack-plugin");
+const moveFile = require('move-file');
 
 const bundleFileName = 'bundle';
 const dirName = 'dist';
@@ -59,7 +60,14 @@ module.exports = (env, argv) => {
                 onBeforeCompile: function (Handlebars, templateContent) { },
                 onBeforeRender: function (Handlebars, data, filename) { },
                 onBeforeSave: function (Handlebars, resultHtml, filename) { },
-                onDone: function (Handlebars, filename) { }
+                onDone: function (Handlebars, filename) {
+                    if (filename.includes('web.config.html')) {
+                        (async () => {
+                            await moveFile('web.config.html', 'web.config');
+                            console.log('The web.config file has been renamed');
+                        })();
+                    }
+                }
             }),
         ],
     };
