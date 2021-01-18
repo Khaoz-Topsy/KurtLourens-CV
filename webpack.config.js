@@ -46,6 +46,7 @@ module.exports = (env, argv) => {
                 // register custom helpers. May be either a function or a glob-pattern
                 helpers: {
                     nameOfHbsHelper: Function.prototype,
+                    sectionclass: require("./webpack/handlebar/helpers/sectionclass.helper"),
                     urlref: require("./webpack/handlebar/helpers/urlref.helper"),
                     loud: require("./webpack/handlebar/helpers/loud.helper"),
                     date: require("./webpack/handlebar/helpers/date.helper"),
@@ -65,6 +66,12 @@ module.exports = (env, argv) => {
                         (async () => {
                             await moveFile('web.config.html', 'web.config');
                             console.log('The web.config file has been renamed');
+                        })();
+                    }
+                    if (filename.includes('_slider-generated.sass')) {
+                        (async () => {
+                            await moveFile('_slider-generated.sass.html', 'webpack/scss/custom/_slider-generated.sass');
+                            console.log('The _slider-generated.sass file has been renamed');
                         })();
                     }
                 }

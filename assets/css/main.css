@@ -3440,7 +3440,7 @@ body.is-preload #banner p {
 .apps-image-slider {
   width: 50px;
   height: 50px;
-  background-image: url("../../assets/img/icon/assistantNMS.png");
+  background-image: url("https://cdn.assistantapps.com/icon/assistantNMS.png");
   background-repeat: round;
   animation: appsImageSliderText 5s infinite;
 }
@@ -3453,35 +3453,35 @@ body.is-preload #banner p {
 @keyframes appsImageSliderText {
   0% {
     opacity: 0;
-    background-image: url("../../assets/img/icon/assistantNMS.png");
+    background-image: url("https://cdn.assistantapps.com/icon/assistantNMS.png");
   }
   5% {
     opacity: 1;
-    background-image: url("../../assets/img/icon/assistantNMS.png");
+    background-image: url("https://cdn.assistantapps.com/icon/assistantNMS.png");
   }
   45% {
     opacity: 1;
-    background-image: url("../../assets/img/icon/assistantNMS.png");
+    background-image: url("https://cdn.assistantapps.com/icon/assistantNMS.png");
   }
   50% {
     opacity: 0;
-    background-image: url("../../assets/img/icon/assistantNMS.png");
+    background-image: url("https://cdn.assistantapps.com/icon/assistantNMS.png");
   }
   51% {
     opacity: 0;
-    background-image: url("../../assets/img/icon/assistantSMS.png");
+    background-image: url("https://cdn.assistantapps.com/icon/assistantSMS.png");
   }
   56% {
     opacity: 1;
-    background-image: url("../../assets/img/icon/assistantSMS.png");
+    background-image: url("https://cdn.assistantapps.com/icon/assistantSMS.png");
   }
   95% {
     opacity: 1;
-    background-image: url("../../assets/img/icon/assistantSMS.png");
+    background-image: url("https://cdn.assistantapps.com/icon/assistantSMS.png");
   }
   100% {
     opacity: 0;
-    background-image: url("../../assets/img/icon/assistantSMS.png");
+    background-image: url("https://cdn.assistantapps.com/icon/assistantSMS.png");
   }
 }
 @media screen and (max-width: 736px) {

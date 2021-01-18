@@ -1,11 +1,11 @@
-<section class="wrapper spotlight {{sectionStyle}}">
+<section class="wrapper spotlight {{sectionclass @index}}">
     <div class="inner">
         <a href="{{urlref link}}" title="{{title}}" target="_blank" rel="noopener noreferrer" class="image">
             <img src="{{image}}" alt="{{title}}" />
         </a>
         <div class="content">
             <h2 class="major font-weight-light">
-                Assistant for <span class="font-weight-heavy">{{game}}</span>
+                {{#unless @last}}Assistant for&nbsp;{{/unless}}<span class="font-weight-heavy">{{game}}</span>
             </h2>
             <p>{{description}}</p>
             {{#each links}}

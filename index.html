@@ -78,8 +78,9 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
-    <link rel="preload" href="./assets/img/icon/assistantNMS.png" as="image">
-    <link rel="preload" href="./assets/img/icon/assistantSMS.png" as="image">
+    <link rel="preload" href="https://cdn.assistantapps.com/icon/assistantNMS.png" as="image">
+    <link rel="preload" href="https://cdn.assistantapps.com/icon/assistantSMS.png" as="image">
+    <link rel="preload" href="/assets/img/unknown.png" as="image">
 
     <script type="application/ld+json">
         {
@@ -92,8 +93,8 @@
             "image": "assets/favicon/android-icon-192x192.png",
             "applicationCategory": "Application",
             "operatingSystem": "Android Lollipop, iOS, Chrome, Firefox, Opera, Internet Explorer, Edge",
-            "softwareVersion": "1.0.7",
-            "version": "1.0.7",
+            "softwareVersion": "1.0.8",
+            "version": "1.0.8",
             "author": {
                 "@type": "Person",
                 "name": "Kurt Lourens",
@@ -147,7 +148,7 @@
                                 "priceCurrency": "USD",
                                 "name": "Assistant for No Man&#x27;s Sky",
                                 "url": "https://nmsassistant.com",
-                                "image": "./assets/img/assistantNMS.png",
+                                "image": "https://cdn.assistantapps.com/assistantNMS.png",
                                 "description": "The first of the Assistant apps! This app was relased on the 12th of August 2019 and reached 40 000 active users on Android 1 year later. The app is available on Android, iOS and a simplified version is available for Web"
                             }
                             ,
@@ -157,8 +158,18 @@
                                 "priceCurrency": "USD",
                                 "name": "Assistant for Scrap Mechanic",
                                 "url": "https://scrapassistant.com",
-                                "image": "./assets/img/assistantSMS.png",
+                                "image": "https://cdn.assistantapps.com/assistantSMS.png",
                                 "description": "The Assistant for Scrap Mechanic app would not have been started if the developers of the game did not make it easy for modders to look at and edit the game&#x27;s files. This made reading the game files a lot easier than No Man&#x27;s Sky and helped in completing this project in a short period of time (2-3 weeks part time). This is also the first completely open source project."
+                            }
+                            ,
+                            {
+                                "@type": "offer",
+                                "price": "0",
+                                "priceCurrency": "USD",
+                                "name": "Assistant for Unknown",
+                                "url": "#",
+                                "image": "/assets/img/unknown.png",
+                                "description": "Yet another Assistant app is under development. Can you guess what game it will be about? Let us know what you think we are working on 😁"
                             }
                     ]
                 }
@@ -223,11 +234,11 @@
             <section class="wrapper spotlight style1">
                 <div class="inner">
                     <a href="https://nmsassistant.com?ref&#x3D;AssistantApps" title="Assistant for No Man&#x27;s Sky" target="_blank" rel="noopener noreferrer" class="image">
-                        <img src="./assets/img/assistantNMS.png" alt="Assistant for No Man&#x27;s Sky" />
+                        <img src="https://cdn.assistantapps.com/assistantNMS.png" alt="Assistant for No Man&#x27;s Sky" />
                     </a>
                     <div class="content">
                         <h2 class="major font-weight-light">
-                            Assistant for <span class="font-weight-heavy">No Man&#x27;s Sky</span>
+                            Assistant for&nbsp;<span class="font-weight-heavy">No Man&#x27;s Sky</span>
                         </h2>
                         <p>The first of the Assistant apps! This app was relased on the 12th of August 2019 and reached 40 000 active users on Android 1 year later. The app is available on Android, iOS and a simplified version is available for Web</p>
                         <a href="https://apps.apple.com/us/app/id1480287625?ref&#x3D;AssistantApps" class="special fit" title="Apple App Store" target="_blank"
@@ -244,11 +255,11 @@
             <section class="wrapper spotlight alt style2">
                 <div class="inner">
                     <a href="https://scrapassistant.com?ref&#x3D;AssistantApps" title="Assistant for Scrap Mechanic" target="_blank" rel="noopener noreferrer" class="image">
-                        <img src="./assets/img/assistantSMS.png" alt="Assistant for Scrap Mechanic" />
+                        <img src="https://cdn.assistantapps.com/assistantSMS.png" alt="Assistant for Scrap Mechanic" />
                     </a>
                     <div class="content">
                         <h2 class="major font-weight-light">
-                            Assistant for <span class="font-weight-heavy">Scrap Mechanic</span>
+                            Assistant for&nbsp;<span class="font-weight-heavy">Scrap Mechanic</span>
                         </h2>
                         <p>The Assistant for Scrap Mechanic app would not have been started if the developers of the game did not make it easy for modders to look at and edit the game&#x27;s files. This made reading the game files a lot easier than No Man&#x27;s Sky and helped in completing this project in a short period of time (2-3 weeks part time). This is also the first completely open source project.</p>
                         <a href="https://apps.apple.com/us/app/id1519215611?ref&#x3D;AssistantApps" class="special fit" title="Apple App Store" target="_blank"
@@ -264,17 +275,18 @@
             </section>
             <section class="wrapper spotlight style1">
                 <div class="inner">
-                    <a href="#" title="Assistant for XYZ" class="image" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/img/unknown.png" alt="Assistant for XYZ" />
+                    <a href="#?ref&#x3D;AssistantApps" title="Assistant for Unknown" target="_blank" rel="noopener noreferrer" class="image">
+                        <img src="/assets/img/unknown.png" alt="Assistant for Unknown" />
                     </a>
                     <div class="content">
-                        <h2 class="major">Coming soon</h2>
-                        <p>Yet another Assistant app is under development. Can you guess what game it will be
-                            about? Let us know what you think we are working on 😁</p>
+                        <h2 class="major font-weight-light">
+                            <span class="font-weight-heavy">Coming Soon</span>
+                        </h2>
+                        <p>Yet another Assistant app is under development. Can you guess what game it will be about? Let us know what you think we are working on 😁</p>
                     </div>
                 </div>
             </section>
-            <section class="wrapper alt primary-colour style1">
+            <section class="wrapper primary-colour alt style2">
                 <div class="inner">
                     <h2 class="major">Additional work</h2>
                     <p>Working on these projects has opened up opportunities to talk to other community developers, host streams and start organisations all aimed at entertaining and assisting gamers enjoy their games to the fullest!!</p>
@@ -351,7 +363,7 @@
                     <li>&copy; Assistant Apps. All rights reserved.</li>
                     <li>Design: <a href="http://html5up.net" title="html5up" target="_blank"
                             rel="noopener noreferrer">HTML5 UP</a></li>
-                    <li>1.0.7</li>
+                    <li>1.0.8</li>
                 </ul>
             </div>
         </section>

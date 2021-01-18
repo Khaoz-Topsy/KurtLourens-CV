@@ -192,10 +192,12 @@
                             rel="noopener noreferrer">{{kurt.name}}</a>
                     </li>
                     {{#each assistantApps}}
+                    {{#unless @last}}
                     <li>
                         <a href="{{urlref link}}" title="{{title}}" target="_blank"
                             rel="noopener noreferrer">{{title}}</a>
                     </li>
+                    {{/unless}}
                     {{/each}}
                 </ul>
                 <a href="#" class="close" title="close">Close</a>
@@ -216,19 +218,7 @@
             {{> components/appSection }}
 
             {{/each}}
-            <section class="wrapper spotlight style1">
-                <div class="inner">
-                    <a href="#" title="Assistant for XYZ" class="image" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/img/unknown.png" alt="Assistant for XYZ" />
-                    </a>
-                    <div class="content">
-                        <h2 class="major">Coming soon</h2>
-                        <p>Yet another Assistant app is under development. Can you guess what game it will be
-                            about? Let us know what you think we are working on 😁</p>
-                    </div>
-                </div>
-            </section>
-            <section class="wrapper alt primary-colour style1">
+            <section class="wrapper primary-colour {{sectionclass assistantApps.length}}">
                 <div class="inner">
                     <h2 class="major">{{additional}}</h2>
                     <p>{{additionalDescription}}</p>
