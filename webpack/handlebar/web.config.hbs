@@ -13,14 +13,14 @@
             </customHeaders>
         </httpProtocol>
         <rewrite>
-            {{#each redirects}}
             <rules>
-                <rule name="RedirectToDiscord" stopProcessing="true">
+                {{#each redirects}}
+                <rule name="RedirectTo{{pattern}}" stopProcessing="true">
                     <match url="^(.*){{pattern}}(.*)" ignoreCase="true" />
                     <action type="Redirect" url="{{{urlref url}}}" appendQueryString="false" redirectType="Permanent" />
                 </rule>
+                {{/each}}
             </rules>
-            {{/each}}
         </rewrite>
     </system.webServer>
 </configuration>
