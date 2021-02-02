@@ -129,7 +129,7 @@
         },
         {
             "title": "Discord",
-            "url": "https://discord.gg/q3aFBQM",
+            "url": "https://assistantapps.com/discord",
             "class": "icon-discord",
             "alt": "Discord"
         },
@@ -138,6 +138,12 @@
             "url": "https://twitter.com/KhaozTopsy",
             "class": "icon-twitter",
             "alt": "Twitter"
+        },
+        {
+            "title": "Github",
+            "url": "https://assistantapps.com/github",
+            "class": "icon-github",
+            "alt": "Github"
         },
         {
             "title": "Github",
@@ -192,6 +198,24 @@
         {
             "pattern": "Kurt",
             "url": "https://kurtlourens.com"
+        }
+    ],
+    "headers": [
+        {
+            "name": "Content-Security-Policy",
+            "value": "default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com/css2; img-src 'self' data: cdn.assistantapps.com; font-src 'self' fonts.gstatic.com; manifest-src https://assistantapps.com/manifest.json; connect-src api.assistantapps.com; base-uri 'self'; report-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;"
+        },
+        {
+            "name": "X-Content-Security-Policy",
+            "value": "default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com/css2; img-src 'self' data: cdn.assistantapps.com; font-src 'self' fonts.gstatic.com; manifest-src https://assistantapps.com/manifest.json; connect-src api.assistantapps.com; base-uri 'self'; report-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;"
+        },
+        {
+            "name": "X-WebKit-CSP",
+            "value": "default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com/css2; img-src 'self' data: cdn.assistantapps.com; font-src 'self' fonts.gstatic.com; manifest-src https://assistantapps.com/manifest.json; connect-src api.assistantapps.com; base-uri 'self'; report-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;"
+        },
+        {
+            "name": "Set-Cookie",
+            "value": "cross-site-cookie=name; SameSite=None; Secure"
         }
     ]
 }
