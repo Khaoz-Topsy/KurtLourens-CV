@@ -24,7 +24,8 @@
     "footerDescription": "Feel free to get in contact with us! we have a Discord server if you would like to talk directly to us. Otherwise you can use the form below and we will get back to you as soon as we can.",
     "twitter": {
         "handle": "@AssistantNMS",
-        "imageAlt": "Logo of the Assistant Apps"
+        "imageAlt": "Logo of the Assistant Apps",
+        "metaImageSize": "summary_large_image"
     },
     "images": {
         "maskIcon": "/safari-pinned-tab.svg",
@@ -46,8 +47,8 @@
             "x152": "assets/favicon/apple-icon-152x152.png",
             "x180": "assets/favicon/apple-icon-180x180.png"
         },
-        "twitter": "https://assistantapps.com/assets/img/twitter.png",
-        "facebook": "https://assistantapps.com/assets/img/fb.png"
+        "twitter": "https://mugshotbot.com/m/zkrIydZc",
+        "facebook": "https://mugshotbot.com/m/zkrIydZc"
     },
     "assistantApps": [
         {
