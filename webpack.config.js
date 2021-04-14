@@ -3,8 +3,11 @@ const HandlebarsPlugin = require("handlebars-webpack-plugin");
 const moveFile = require('move-file');
 
 const bundleFileName = 'bundle';
-const dirName = 'dist';
+const dirName = 'public';
 const distPath = path.resolve(__dirname, dirName);
+
+const jsDirName = 'public/assets/js';
+const jsDistPath = path.resolve(__dirname, jsDirName);
 
 const packageVersion = require('./package.json').version || '1.0.0';
 
@@ -12,15 +15,13 @@ module.exports = (env, argv) => {
     return {
         mode: argv.mode === "production" ? "production" : "development",
         entry: [
-            './webpack/js/main.js',
-            './webpack/js/util.js',
-            './webpack/js/browser.min.js',
-            './webpack/js/custom.js',
+            './webpack/lib/main.js',
+            './webpack/lib/custom.js',
         ],
         output: {
             filename: bundleFileName + '.js',
-            path: distPath,
-            library: 'AssistantApps',
+            path: jsDistPath,
+            library: 'KurtLourens',
             // libraryTarget: 'window'
         },
         plugins: [
@@ -29,7 +30,7 @@ module.exports = (env, argv) => {
                 entry: path.join(process.cwd(), "webpack", "handlebar", "*.hbs"),
                 // output path and filename(s). This should lie within the webpacks output-folder
                 // if ommited, the input filepath stripped of its extension will be used
-                output: path.join(process.cwd(), "[name].html"),
+                output: path.join(distPath, "[name].html"),
                 // you can also add a [path] variable, which will emit the files with their relative path, like
                 // output: path.join(process.cwd(), "build", [path], "[name].html"),
 
@@ -63,17 +64,17 @@ module.exports = (env, argv) => {
                 onBeforeSave: function (Handlebars, resultHtml, filename) { },
                 onDone: function (Handlebars, filename) {
                     if (filename.includes('web.config.html')) {
-                        (async () => {
-                            await moveFile('web.config.html', 'web.config');
-                            console.log('The web.config file has been renamed');
-                        })();
+                        moveFile(`${distPath}/web.config.html`, `${distPath}/web.config`)
+                            .then(() => console.log('The web.config file has been renamed'))
+                            .catch(() => console.error('The web.config was file has been renamed'));
                     }
-                    if (filename.includes('_slider-generated.sass')) {
-                        (async () => {
-                            await moveFile('_slider-generated.sass.html', 'webpack/scss/custom/_slider-generated.sass');
-                            console.log('The _slider-generated.sass file has been renamed');
-                        })();
-                    }
+                    // if (filename.includes('_slider-generated.sass')) {
+                    //     console.log(filename);
+                    //     (async () => {
+                    //         await moveFile(filename, 'webpack/scss/custom/_slider-generated.sass');
+                    //         console.log('The _slider-generated.sass file has been renamed');
+                    //     })();
+                    // }
                 }
             }),
         ],

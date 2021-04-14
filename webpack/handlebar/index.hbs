@@ -1,16 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
+    <title>Kurt Lourens: Software Engineer - Red Ruby IT Co-Owner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="application-name" content="{{meta.appName}}">
     <title>{{meta.title}}</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="{{images.favicon.x16}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{images.favicon.x32}}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{images.favicon.x96}}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{images.favicon.x192}}">
-
+    <link rel="icon" type="image/png" href="favicon.ico">
     <link rel="index" href="{{rootUrl}}">
     <link rel="canonical" href="{{rootUrl}}">
     <meta name="referrer" content="no-referrer">
@@ -32,20 +29,18 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <!-- Apple -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{{images.apple.x57}}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{images.apple.x60}}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{images.apple.x72}}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{images.apple.x76}}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{images.apple.x114}}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{images.apple.x120}}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{images.apple.x144}}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{images.apple.x152}}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{images.apple.x180}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="{{images.apple.x76}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="{{images.apple.x120}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="{{images.apple.x128}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{images.apple.x152}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="{{images.apple.x192}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="{{images.apple.x256}}">
+    <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="{{images.apple.x512}}">
     <link rel="mask-icon" href="{{images.maskIcon}}" color="{{theme.maskColour}}">
     <!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
     <meta name="apple-mobile-web-app-title" content="{{meta.appName}}">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="{{theme.appleStatusBar}}">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="{{twitter.metaImageSize}}">
@@ -73,216 +68,748 @@
     <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
     <meta name="msapplication-config" content="browserconfig.xml">
     <meta name="msapplication-TileColor" content="{{theme.maskColour}}">
+    <meta name="msapplication-starturl" content="/?pwa-app" />
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
-    {{#each assistantApps}}
-    <link rel="preload" href="{{icon}}" as="image">
-    {{/each}}
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/icon-pack.css" />
 
     {{!-- JSON-LD --}}
     <script type="application/ld+json">
         {
             "@context": "https://schema.org/",
-            "@type": "SoftwareApplication",
-            "name": "{{meta.appName}}",
+            "@type": "Person",
+            "name": "{{kurt.name}}",
+            "givenName": "{{kurt.name}}",
+            "familyName": "{{kurt.name}}",
+            "additionalName": "{{kurt.additionalName}}",
             "url": "{{rootUrl}}",
-            "about": "{{meta.description}}",
+            "image": "{{kurt.image}}",
             "description": "{{meta.description}}",
-            "image": "{{images.favicon.x192}}",
-            "applicationCategory": "Application",
-            "operatingSystem": "Android Lollipop, iOS, Chrome, Firefox, Opera, Internet Explorer, Edge",
-            "softwareVersion": "{{version}}",
-            "version": "{{version}}",
-            "author": {
-                "@type": "Person",
-                "name": "{{kurt.name}}",
-                "givenName": "{{kurt.name}}",
-                "familyName": "{{kurt.name}}",
-                "additionalName": "{{kurt.additionalName}}",
-                "url": "{{kurt.website}}",
-                "image": "{{kurt.image}}",
-                "description": "{{meta.description}}",
-                "jobTitle": "Software Engineer"
-            },
-            "creator": {
-                "@type": "Person",
-                "name": "{{kurt.name}}",
-                "givenName": "{{kurt.name}}",
-                "familyName": "{{kurt.name}}",
-                "additionalName": "{{kurt.additionalName}}",
-                "url": "{{kurt.website}}",
-                "image": "{{kurt.image}}",
-                "description": "{{meta.description}}",
-                "jobTitle": "Software Engineer"
-            },
-            "offers": {
-                "@type": "offer",
-                "price": "0",
-                "priceCurrency": "USD",
-                "name": "{{meta.appName}}",
-                "url": "{{rootUrl}}",
-                "image": "{{images.favicon.x192}}",
-                "description": "{{meta.description}}",
-                "itemOffered": {
-                    "@type": "service",
-                    "name": "{{meta.appName}}",
-                    "brand": {
-                        "@type": "brand",
-                        "name": "{{meta.appName}}",
-                        "url": "{{rootUrl}}",
-                        "logo": "{{images.favicon.x192}}",
-                        "image": "{{images.favicon.x192}}",
-                        "description": "{{meta.description}}"
-                    },
-                    "url": "{{rootUrl}}",
-                    "logo": "{{images.favicon.x192}}",
-                    "image": "{{images.favicon.x192}}",
-                    "description": "{{meta.description}}",
-                    "offers": [
-                        {{#each assistantApps as |app index|}}
-                            {{#if @index}},{{/if}}
-                            {
-                                "@type": "offer",
-                                "price": "0",
-                                "priceCurrency": "USD",
-                                "name": "{{app.title}}",
-                                "url": "{{app.link}}",
-                                "image": "{{app.image}}",
-                                "description": "{{app.description}}"
-                            }
-                        {{/each}}
-                    ]
+            "jobTitle": "Software Engineer",
+            "worksFor": [
+                {
+                    "@type": "Organization",
+                    "name": "Entelect",
+                    "legalName": "Entelect",
+                    "url": "https://entelect.co.za",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "url": "https://goo.gl/maps/94uXM5Mgd362",
+                        "streetAddress": "Johannesburg, South Africa",
+                        "addressCountry": {
+                            "@type": "Country",
+                            "name": "South Africa"
+                        }
+                    }
+                },
+                {
+                    "@type": "Organization",
+                    "name": "Red Ruby IT",
+                    "legalName": "Red Ruby IT",
+                    "url": "https://redrubyit.co.za",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "url": "https://goo.gl/maps/94uXM5Mgd362",
+                        "streetAddress": "Johannesburg, South Africa",
+                        "addressCountry": {
+                            "@type": "Country",
+                            "name": "South Africa"
+                        }
+                    }
                 }
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "bestRating": "5",
-                "ratingCount": "1",
-                "reviewCount": "5",
-                "ratingValue": "5"
-            },
-            "inLanguage": "en",
-            "dateCreated": "{{date}}",
-            "dateModified": "{{date}}",
-            "datePublished": "{{date}}"
+            ],
+            "owns": [
+                {
+                    "@type": "OwnershipInfo",
+                    "name": "Red Ruby IT",
+                    "url": "https://redrubyit.co.za"
+                }, 
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "{{assistantAppsMeta.appName}}",
+                    "url": "{{assistantAppsMeta.rootUrl}}",
+                    "about": "{{assistantAppsMeta.description}}",
+                    "description": "{{assistantAppsMeta.description}}",
+                    "image": "{{assistantAppsMeta.favicon.x192}}",
+                    "applicationCategory": "Application",
+                    "operatingSystem": "Android Lollipop, iOS, Chrome, Firefox, Opera, Internet Explorer, Edge",
+                    "softwareVersion": "{{assistantAppsMeta.version}}",
+                    "version": "{{assistantAppsMeta.version}}",
+                    "author": {
+                        "@type": "Person",
+                        "name": "{{kurt.name}}",
+                        "givenName": "{{kurt.name}}",
+                        "familyName": "{{kurt.name}}",
+                        "additionalName": "{{kurt.additionalName}}",
+                        "url": "{{kurt.website}}",
+                        "image": "{{kurt.image}}",
+                        "description": "{{meta.description}}",
+                        "jobTitle": "Software Engineer"
+                    },
+                    "creator": {
+                        "@type": "Person",
+                        "name": "{{kurt.name}}",
+                        "givenName": "{{kurt.name}}",
+                        "familyName": "{{kurt.name}}",
+                        "additionalName": "{{kurt.additionalName}}",
+                        "url": "{{kurt.website}}",
+                        "image": "{{kurt.image}}",
+                        "description": "{{meta.description}}",
+                        "jobTitle": "Software Engineer"
+                    },
+                    "offers": {
+                        "@type": "offer",
+                        "price": "0",
+                        "priceCurrency": "USD",
+                        "name": "{{assistantAppsMeta.appName}}",
+                        "url": "{{assistantAppsMeta.rootUrl}}",
+                        "image": "{{assistantAppsMeta.favicon.x192}}",
+                        "description": "{{assistantAppsMeta.description}}",
+                        "itemOffered": {
+                            "@type": "service",
+                            "name": "{{assistantAppsMeta.appName}}",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "{{assistantAppsMeta.appName}}",
+                                "url": "{{assistantAppsMeta.rootUrl}}",
+                                "logo": "{{assistantAppsMeta.favicon.x192}}",
+                                "image": "{{assistantAppsMeta.favicon.x192}}",
+                                "description": "{{assistantAppsMeta.description}}"
+                            },
+                            "url": "{{assistantAppsMeta.rootUrl}}",
+                            "logo": "{{assistantAppsMeta.favicon.x192}}",
+                            "image": "{{assistantAppsMeta.favicon.x192}}",
+                            "description": "{{assistantAppsMeta.description}}",
+                            "offers": [
+                                {{#each assistantApps as |app index|}}
+                                    {{#if @index}},{{/if}}
+                                    {
+                                        "@type": "offer",
+                                        "price": "0",
+                                        "priceCurrency": "USD",
+                                        "name": "{{app.title}}",
+                                        "url": "{{app.link}}",
+                                        "image": "{{app.image}}",
+                                        "description": "{{app.description}}"
+                                    }
+                                {{/each}}
+                            ]
+                        }
+                    },
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "bestRating": "5",
+                        "ratingCount": "1",
+                        "reviewCount": "5",
+                        "ratingValue": "5"
+                    },
+                    "inLanguage": "en",
+                    "dateCreated": "{{date}}",
+                    "dateModified": "{{date}}",
+                    "datePublished": "{{date}}"
+                }
+            ],
+            "nationality": {
+                "@type": "Country",
+                "address": {
+                    "@type": "PostalAddress",
+                    "url": "https://goo.gl/maps/94uXM5Mgd362",
+                    "streetAddress": "Johannesburg, South Africa",
+                    "addressCountry": {
+                        "@type": "Country",
+                        "name": "South Africa"
+                    }
+                }
+            }
         }
     </script>
+    <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-97325462-2', 'auto'); ga('send', 'pageview');</script>
+    <style>
+        .full-page-loader img {
+            height: 150px;
+            margin-bottom: 1em;
+        }
+
+        .full-page-loader {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #333333;
+            opacity: 0.85;
+        }
+
+        .full-page-loader .largeHeading {
+            color: #FFF;
+        }
+
+        .is-loading {
+            overflow: hidden;
+        }
+    </style>
 </head>
 
-<body class="is-preload">
-    <div id="page-wrapper">
-        <header id="header" class="alt">
-            <h1>
-                <a href="/" class="font-weight-light" title="Assistant for XYZ">Assistant for <span
-                        class="apps-word-slider font-weight-heavy"></span></a>
-            </h1>
-            <nav>
-                <a href="#menu" title="Menu">Menu</a>
-            </nav>
-        </header>
-        <nav id="menu">
-            <div class="inner">
-                <ul class="links">
-                    <li><a href="/" title="Home">Home</a></li>
-                    <li>
-                        <a href="{{urlref kurt.website}}" title="{{kurt.name}}" target="_blank"
-                            rel="noopener noreferrer">{{kurt.name}}</a>
-                    </li>
-                    {{#each assistantApps}}
-                    {{#unless @last}}
-                    <li>
-                        <a href="{{urlref link}}" title="{{title}}" target="_blank"
-                            rel="noopener noreferrer">{{title}}</a>
-                    </li>
-                    {{/unless}}
-                    {{/each}}
-                </ul>
-                <a href="#" class="close" title="close">Close</a>
-            </div>
-        </nav>
-        <section id="banner">
-            <div class="inner">
-                <div class="logo">
-                    <div class="apps-image-slider"></div>
-                </div>
-                <h2 class="font-weight-light">Assistant for <span class="apps-word-slider font-weight-heavy"></span>
-                </h2>
-                <p>{{subtitle}}</p>
-            </div>
-        </section>
-        <section id="wrapper">
-            {{#each assistantApps}}
-            {{> components/appSection }}
-
-            {{/each}}
-            <section class="wrapper primary-colour {{sectionclass assistantApps.length}}">
-                <div class="inner">
-                    <h2 class="major">{{additional}}</h2>
-                    <p>{{additionalDescription}}</p>
-                    <section class="features">
-                        {{#each features}}
-                        {{> components/appFeature }}
-
-                        {{/each}}
-                    </section>
-                    <!-- <ul class="actions">
-						<li><a href="#" class="button">Browse All</a></li>
-					</ul> -->
-                </div>
-            </section>
-        </section>
-        <section id="footer">
-            <div class="inner">
-                <h2 class="major">{{footer}}</h2>
-                <p>{{footerDescription}}</p>
-                <form id="contact_form">
-                    <div class="fields">
-                        <div class="field">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" />
-                        </div>
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input id="submit" type="submit" value="Send Message" /></li>
-                    </ul>
-                </form>
-                <ul class="contact">
-                    {{#each links}}
-                    <li class="{{class}}"><a href="{{urlref url}}" title="{{alt}}" target="_blank"
-                            rel="noopener noreferrer">{{title}}</a>
-                    </li>
-                    {{/each}}
-                </ul>
-                <div id="success_message">
-                    <h2>Successfully submitted contact form!</h2>
-                </div>
-                <div id="error_message">
-                    <h2>Sorry!! Something went wrong, please try sending an email instead.</h2>
-                </div>
-                <ul class="copyright">
-                    <li>&copy; {{meta.appName}}. All rights reserved.</li>
-                    <li>Design: <a href="http://html5up.net" title="html5up" target="_blank"
-                            rel="noopener noreferrer">HTML5 UP</a></li>
-                    <li>{{version}}</li>
-                </ul>
-            </div>
-        </section>
-
+<body class="is-preload is-loading">
+    <div class="full-page-loader"></div>
+    <div class="full-page-loader">
+        <ul>
+            <li style="list-style-type: none;"><img src="assets/images/loader.svg" alt="loading-animation">
+                <h2 class="largeHeading">Loading</h2>
+            </li>
+        </ul>
     </div>
-
-    <!-- Scripts -->
-    <script src="/dist/bundle.js"></script>
+    <div style="display: none">
+        <div class="h-card"><a class="p-name u-url" href="https://kurtlourens.com/" title="Kurt Lourens">Kurt
+                Lourens</a><img class="u-logo u-photo" src="/assets/images/KurtAvatar.svg" alt="Kurt Logo" />
+            <div class="p-category">Software Engineer</div>
+            <div class="p-note">
+                My goal is to continue learning all that I can and to live on the bleeding edge of tech.
+            </div>
+        </div>
+    </div>
+    <div id="announcements" onclick="KurtLourens.clearAnnouncements()"></div>
+    <header id="header"><i id="darkModeSwitch" onclick="KurtLourens.darkModeToggle()"
+            class="cursor-pointer icon icon-2x icon-brightness_4"></i>
+        <div class="inner"><a href="https://kurtlourens.com" class="image avatar" title="Kurt Lourens avatar"><img
+                    src="assets/images/loader.svg" data-src="{{kurt.image}}" class="lazy" alt="Kurt Lourens Avatar"
+                    title="Kurt Lourens Avatar" /></a>
+            <h1><strong>{{kurt.name}}</strong>&nbsp;
+                <span>Software Engineer&nbsp;<br /><small>Red Ruby IT Co-Owner</small></span>
+            </h1>
+            {{#each details.descriptions}}
+            <h4>{{this}}</h4>
+            {{/each}}
+            <div id="pwa-install" class="mt-1 hidden cursor-pointer" onclick="KurtLourens.addToHomeScreen()"><img
+                    src="assets/images/loader.svg" data-src="assets/images/pwa.png" class="max-h-50 lazy"
+                    alt="Install as PWA" /></div>
+            <div><a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv" class="image"
+                    title="Kurt Lourens CV App" alt="PlayStoreBadge" target="_blank" rel="noopener noreferrer"><img
+                        src="assets/images/loader.svg" data-src="assets/images/playStore.png" class="max-h-50 lazy"
+                        alt="PlayStoreBadge" /></a></div>
+        </div>
+    </header>
+    <div id="main">
+        <section id="about">
+            <header class="major">
+                <h2>About Kurt Lourens&nbsp;</h2><i><a href="https://about.me/kurt.lourens" target="_blank"
+                        rel="noopener noreferrer" title="about.me" alt="about.me">about.me/kurt.lourens</a></i>
+            </header>
+            <p>
+                I found a love for computers in boarding school, I would spend many if not all break times playing games
+                and programming (then using Delphi). My interest in I.T. grew as I entered University to study a BSC
+                I.T. to become a&nbsp;Software Engineer. During my degree I found like minded individuals and
+                joined&nbsp;
+                <strong><a href="https://www.redrubyit.co.za" class="color-ruby" target="_blank"
+                        rel="noopener noreferrer" title="RedRubyIT" alt="RedRubyIT">Red Ruby IT</a></strong>&nbsp;as a
+                Co-Owner. I have learned so much from working at&nbsp;
+                <strong><a href="https://www.redrubyit.co.za" class="color-ruby" target="_blank"
+                        rel="noopener noreferrer" title="RedRubyIT" alt="RedRubyIT">
+                        Red Ruby IT
+                    </a></strong>&nbsp; and I am so lucky to be doing something that I love. My goal is to continue
+                learning all that I can and to live on the bleeding edge of tech until it bites me in the ass 😂. I am
+                currently living in&nbsp;<a href="https://goo.gl/maps/94uXM5Mgd362" target="_blank"
+                    rel="noopener noreferrer" title="Johannesburg, South africa">
+                    &nbsp;Johannesburg, South Africa 🌍
+                </a>.
+            </p><small>
+                P.S. I also have a&nbsp;
+                <strong><a href="https://blog.kurtlourens.com" target="_blank" rel="noopener noreferrer"
+                        title="Kurt's blog">blog</a></strong>, Inside my Mind - by Kurt Lourens. I haven't been making
+                use of it as much as I could have, but I have written an article on it about how I made this site and
+                all the effort I put in to make it the best that it could be&nbsp;
+                <strong><a href="https://blog.kurtlourens.com/kurtlourens-com-redesigned/" target="_blank"
+                        rel="noopener noreferrer" title="Kurt's blog">click here to read it</a></strong>&nbsp;😁.
+            </small>
+        </section>
+        <section id="work">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('work')">
+                Work Experience&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row" style="display: none;">
+                {{#each workExperiences}}
+                {{> components/workExperience }}
+                {{/each}}
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('projects')">
+                Projects&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row" style="display: none;">
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/NoMansSky.png" class="company lazy invert"
+                                alt="NoMansSkyAssistant"><br>
+                            <p class="label label-kurt">Jul 2019 - Present</p>
+                        </div>
+                        <h2><strong>Assistant for No Man&#x27;s Sky</strong><small><a
+                                    href="https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes&amp;ref=kurtlourens.com"
+                                    target="_blank" rel="noopener noreferrer" title="GooglePlayStoreNoMansSky"
+                                    alt="GooglePlayStoreNoMansSky">
+                                    Google Play Store </a><a
+                                    href="https://apps.apple.com/us/app/id1480287625?ref=kurtlourens.com"
+                                    target="_blank" rel="noopener noreferrer" title="AppleAppStoreNoMansSky"
+                                    alt="AppleAppStoreNoMansSky">
+                                    , Apple App Store </a><a href="https://nmsassistant.com?ref=kurtlourens.com"
+                                    target="_blank" rel="noopener noreferrer" title="NoMansSkyWebsite"
+                                    alt="NoMansSkyWebsite">
+                                    , Website </a><a href="https://nmsassistant.com?ref=kurtlourens.com" target="_blank"
+                                    rel="noopener noreferrer" title="NoMansSkyYoutube" alt="NoMansSkyYoutube">
+                                    , Youtube </a></small></h2>
+                        <p>During a few days while my home internet connection was down, I picked up the game No
+                            Man&#x2019;s Sky again. While playing I was frustrated with the crafting mechanics of the
+                            game and how it expected the player to remember over 1200 different items and crafting
+                            recipes. I wanted an app that would allow me to get those recipes as easily and fast as
+                            possible. There was one app on the Google Play Store, however a lot of its functionality was
+                            behind a pay wall. So I decided to build my own version using Flutter. As of August 2020 (1
+                            year later) the apps reached 45 000 active users! &#x1F389;</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/Flutter.png" class="company lazy invert"
+                                alt="KurtLourens"><br>
+                            <p class="label label-kurt">March 2019 - Present</p>
+                        </div>
+                        <h2><strong>Flutter CV App</strong><small><a
+                                    href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv&amp;ref=kurtlourens.com"
+                                    target="_blank" rel="noopener noreferrer" title="GooglePlayStoreKurtsCVApp"
+                                    alt="GooglePlayStoreKurtsCVApp">
+                                    View on Google Play Store </a></small></h2>
+                        <p>I still had the interest for building apps that was sparked by Hollard&#x27;s Customer App,
+                            but I had gotten tired of waiting for Xamarin to compile. I had a few small POCs of React
+                            Native apps which I thought would be easy to create since I had React experience. During
+                            this time Flutter had just been announced that it was production ready. So I decided to
+                            learn Flutter and Dart by making an App as my CV.</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/BTS.png" class="company lazy invert" alt="BTS"><br>
+                            <p class="label label-bts">February 2019 &#x2013; Present</p>
+                        </div>
+                        <h2><strong>BTS Portal</strong><small><a href="https://app.btsra.co.za?ref=kurtlourens.com"
+                                    target="_blank" rel="noopener noreferrer" title="bts portal" alt="bts portal">
+                                    app.btsra.co.za </a></small></h2>
+                        <p>This project was the second version of the BTS Site Status website. It was rebuilt with
+                            dotnet Core and Angular 7. It was quite a challenging project as we needed have all the same
+                            functionality of the old project as well as add new features, while maintaining the old
+                            project. </p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/Hollard.png" class="company lazy invert"
+                                alt="Hollard"><br><span class="tool" data-tip="3 Months">
+                                <p class="label label-hollard">January 2019 &#x2013; March 2019</p>
+                            </span></div>
+                        <h2><strong>Hollard Easy4Business</strong><small>Johannesburg, South Africa</small></h2>
+                        <p>While I was working on the CQT team, a new project was started called Easy4Business. Which
+                            was formed from some of CQT&#x27;s members. CQT shared knowledge and helped set up
+                            Easy4Business. I mainly helped in setting up their CI / CD and using Typescript and Redux as
+                            I had learned a lot about these from my home projects. I learned a lot about starting
+                            projects on the right foot.</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/RemoteConfigs.png" class="company lazy invert"
+                                alt="KurtLourens"><br>
+                            <p class="label label-remoteconfigs">July 2018 &#x2013; Present</p>
+                        </div>
+                        <h2><strong>RemoteConfigs</strong><small><a href="https://remoteconfigs.com?ref=kurtlourens.com"
+                                    target="_blank" rel="noopener noreferrer" title="RemoteConfigs" alt="RemoteConfigs">
+                                    remoteconfigs.com </a></small></h2>
+                        <p>This project was started from a problem that a friend of mine had which was managing his
+                            configs across multiple apps. This solution allows users to save the configurations as key
+                            value pairs and then retrieve those values through a Restful Api. Some of the cool things we
+                            added was a Nuget package so our users could get started quickly and Variants (which allows
+                            a user to set up simple logic to return different configs based on the current date, day of
+                            the week or random percentage chance). In the future we aim to have asymmetric encryption,
+                            user based A/B testing, hit user webhooks on certain events, and an NPM package. &#xA;&#xD;
+                            This app makes use of RemoteConfigs to get the in App announcements.</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/CAH.png" class="company lazy invert" alt="CAH"><br><span
+                                class="tool" data-tip="1 Month">
+                                <p class="label label-kurt">June 2018 - July 2018</p>
+                            </span></div>
+                        <h2><strong>Cards Against Humanity</strong><small><a
+                                    href="https://cah.kurtlourens.com?ref=kurtlourens.com" target="_blank"
+                                    rel="noopener noreferrer" title="KurtLourensCardsAgainstHumanity"
+                                    alt="KurtLourensCardsAgainstHumanity">
+                                    cah.kurtlourens.com </a></small></h2>
+                        <p>I started this project because I wanted to learn about SignalR, as I was going to need it in
+                            the Build Monitor project. This project ended up being a really good learning opportunity. I
+                            got to learn some C# image manipulation (cutting the Cards from Cards Against
+                            Humanity&#x27;s official Cards PDF) , some Optical character Recognition (using
+                            Microsoft&#x27;s Cognitive services to read the words on each of the Cards), some in browser
+                            text to speech (HowlerJS reading the Card&#x27;s text out loud), QR code generation and
+                            Reading (So that people wouldn&#x2019;t have to enter the GameId manually) and A LOT of CSS
+                            animations. Some of the best animations that I have done in any project.</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/Monitor.png" class="company lazy invert"
+                                alt="BuildMonitor"><br><span class="tool" data-tip="1 year, 9 months">
+                                <p class="label label-kurt">March 2018 - December 2019</p>
+                            </span></div>
+                        <h2><strong>Build Monitor</strong><small><a
+                                    href="https://monitor.kurtlourens.com?ref=kurtlourens.com" target="_blank"
+                                    rel="noopener noreferrer" title="KurtLourensBuildMonitor"
+                                    alt="KurtLourensBuildMonitor">
+                                    monitor.kurtlourens.com </a></small></h2>
+                        <p>While I was working on the CQT team, we had a Raspberry PI that was our build monitor. It was
+                            just running the VSTS (at the time, now Azure Devops) dashboard. However the PI would often
+                            become overwhelmed and the web page would go into not responding (we theorised that the
+                            dashboard webpage was just to heavy). I created an AngularJS app to serve as our build
+                            monitor. Eventually I recreated it in Angular 6. Ever since then our team&#x27;s PI has been
+                            happily trudging along.</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/BTS.png" class="company lazy invert" alt="BTS"><br><span
+                                class="tool" data-tip="8 Months">
+                                <p class="label label-bts">March 2018 &#x2013; October 2018</p>
+                            </span></div>
+                        <h2><strong>BTS Site Status</strong><small>
+                                &#x336;p&#x336;o&#x336;r&#x336;t&#x336;a&#x336;l&#x336;.&#x336;b&#x336;t&#x336;s&#x336;r&#x336;a&#x336;.&#x336;c&#x336;o&#x336;.&#x336;z&#x336;a&#x336;</small>
+                        </h2>
+                        <p>BTS was a small project which showed the status of cellphone towers in South Africa. BTS had
+                            about 300 devices with a range of meters each, that were attached to cellphone towers across
+                            South Africa. Each of these devices would inform PnPScada what the tower&#x27;s voltage,
+                            amps, electricity usage, etc were. Myself and Morn&#xE9; created a .Net Core Api with an
+                            AngularJS front-end to display this data to BTS clients who wanted to know how much
+                            electricity their towers were using as well as the last time the specific tower was
+                            &#x27;online&#x27;.</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/IoT.png" class="company lazy invert" alt="IoT"><br>
+                            <p class="label label-iot">February 2018 &#x2013; Present</p>
+                        </div>
+                        <h2><strong>KhaozNet IoT</strong><small><a href="https://iot.khaoznet.xyz?ref=kurtlourens.com"
+                                    target="_blank" rel="noopener noreferrer" title="KurtLourensIoT"
+                                    alt="KurtLourensIoT">
+                                    iot.khaoznet.xyz </a></small></h2>
+                        <p>In the beginning of 2018 I attended an Entelect Makers Club, it instantly sparked my interest
+                            in Arduino. It felt like a whole new world had been opened up for me, one where my software
+                            could affect the real world. Since then I have made quite a few Arduino contraptions, such
+                            as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the
+                            world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to
+                            switch the water on and off (which I plan to automate in the future).</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/Hollard.png" class="company lazy invert"
+                                alt="Hollard"><br><span class="tool" data-tip="1 year, 7 Months">
+                                <p class="label label-hollard">August 2017 &#x2013; March 2019</p>
+                            </span></div>
+                        <h2><strong>Hollard CQT</strong><small>Johannesburg, South Africa</small></h2>
+                        <p>CQT is an internal system to help Broker Consultants create quotes. We integrated into many
+                            services at Hollard. The team had quite a lot of say in the technologies used. The
+                            technology stack that we ended up going with (React frontend and C# MVC .Net Framework
+                            backend) caused us to spend a lot of time learning (mostly React) and we ended up with quite
+                            a bit of technical debt due to time constraints and pressure from business. We were one of
+                            the first teams in Hollard to have a fully automated CI / CD pipeline and we set the golden
+                            standard on how to do deployments at Hollard. I grew a lot in this project. In the beginning
+                            I was the only Junior in the team of 5. As the team grew I was able to take on some more
+                            responsibilities. I become known as the &#x27;Senior Grad&#x27; up until my promotion to
+                            Intermediate Software Engineer.</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/TennoDex.png" class="company lazy invert"
+                                alt="TennoDex"><br><span class="tool" data-tip="2 years, 1 Month">
+                                <p class="label label-tennodex">July 2017 &#x2013; August 2019</p>
+                            </span></div>
+                        <h2><strong>TennoDex</strong><small><a href="https://tennodex.com?ref=kurtlourens.com"
+                                    target="_blank" rel="noopener noreferrer" title="TennoDex" alt="TennoDex">
+                                    tennodex.com </a></small></h2>
+                        <p>TennoDex has been my longest running side project. It simply consumes a Web Api and displays
+                            data, but it&#x27;s technology stack has grown as I have. TennoDex has been rebuilt from the
+                            ground up more than 3 times by now, each time with a new tech stack. Initially TennoDex was
+                            a .Net Framework Web Api with an AngularJS front-end, then it was a .Net Core Web Api with
+                            an Android App built with Xamarin. Currently TennoDex is a .Net Core Web Api with a ReactJS
+                            front-end and an Android App built with React-Native. What makes the latest version special
+                            is that the Web App and the Mobile App use the same Typescript objects that are generated by
+                            the Web Api as well as sharing the same logic (i.e. mostly only implementing the native
+                            presentation layer. For the web: HTML, CSS and Javascript. For Mobile: React Native
+                            Components).</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/Hollard.png" class="company lazy invert"
+                                alt="Hollard"><br><span class="tool" data-tip="5 Months">
+                                <p class="label label-hollard">March 2017 &#x2013; July 2017</p>
+                            </span></div>
+                        <h2><strong>Hollard Customer App</strong><small>Johannesburg, South Africa</small></h2>
+                        <p>I joined a team at Hollard Insurance in Parktown North, where I worked on their Customer App
+                            built with Xamarin. It was quite a tough fit as I did not have any real experience with
+                            Xamarin. This move was only temporary, as Hollard wanted me for a project that was to start
+                            soon after I joined. I learned a lot from working on that team and it sparked an interest in
+                            App Development. I went on to create the first version of TennoDex (Xamarin app with a C#
+                            .Net Core Api backend) in my spare time using what I had learned.</p>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/Entelect.png" class="company lazy invert"
+                                alt="Entelect"><br><span class="tool" data-tip="1 Month">
+                                <p class="label label-entelect">February 2017</p>
+                            </span></div>
+                        <h2><strong>Allan Grey FAIFA</strong><small>Johannesburg, South Africa</small></h2>
+                        <p>After completing Entelect&#x27;s Grad Bootcamp, I joined the team working on Allan
+                            Grey&#x27;s FAIFA (Find An Independent Financial Advisor). It was my first introduction to
+                            React and Redux. My team mates were very experienced in the technologies used and I learned
+                            a lot.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="certificates">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('certificates')">
+                Certificates&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row" style="display: none;">
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/UJ.png" class="company lazy invert"
+                                alt="University of Johannesburg"><br><span class="tool" data-tip="4 Years">
+                                <p class="label label-uj">2013 &#x2013; 2016</p>
+                            </span></div>
+                        <h2><strong>Bsc Computer Science and Informatics</strong><small>Johannesburg, South
+                                Africa</small></h2>
+                        <p>4 Year degree, BSCIT Extended degree.</p>
+                        <div class="pretty-button-container"></div>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/UJ.png" class="company lazy invert"
+                                alt="University of Johannesburg"><br><span class="tool" data-tip="6 months">
+                                <p class="label label-uj">February 2014 &#x2013; July 2014</p>
+                            </span></div>
+                        <h2><strong>Assistant / Tutor</strong><small>Johannesburg, South Africa</small></h2>
+                        <p>My responsibilities included helping students find the resources they required to complete
+                            their weekly practical assignments. Give advice on their practicals and to not do the
+                            practicals for them</p>
+                        <div class="pretty-button-container"><a
+                                href="/docs/UniversityofJohannesburg-CertificationofAssitant.jpg" target="_blank"
+                                rel="noopener noreferrer" class="pretty-button -blue" title="CertificationofAssitant"
+                                alt="CertificationofAssitant">Certificate</a></div>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/BizSpark.png" class="company lazy invert"
+                                alt="BizSpark"><br><span class="tool" data-tip="1 Week">
+                                <p class="label label-primary">March 2015 - March 2015</p>
+                            </span></div>
+                        <h2><strong>BizSpark Start-up Business Development Programme</strong><small>Johannesburg, South
+                                Africa</small></h2>
+                        <p>I have completed the Microsoft BizSpark Programme, which was focused on Business Development.
+                        </p>
+                        <div class="pretty-button-container"><a href="/docs/BizSpark-CertificateofCompletion.jpg"
+                                target="_blank" rel="noopener noreferrer" class="pretty-button -blue"
+                                title="CertificateofCompletion" alt="CertificateofCompletion">Certificate</a></div>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="top-right"><img src="assets/images/loader.svg"
+                                data-src="assets/images/company/KES.png" class="company lazy invert"
+                                alt="K.E.S."><br><span class="tool" data-tip="5 Years">
+                                <p class="label label-kes">2008 - 2012</p>
+                            </span></div>
+                        <h2><strong>Matriculated from King Edward VII School for Boys</strong><small>Johannesburg, South
+                                Africa</small></h2>
+                        <p>Matriculated with university exemption.</p>
+                        <div class="pretty-button-container"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="recentPosts">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('recentPosts')">
+                Latest Blog Posts&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row" style="display: none;">
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="card-image"><img src="assets/images/loader.svg" class="lazy"
+                                data-src="https://blog.kurtlourens.com/content/images/2021/01/main1.png"
+                                alt="Localization / Localisation - Part 1" /></div>
+                        <div class="tag-list ta-center">
+                            <p class="label label-kurt">Localisation</p>
+                            <p class="label label-kurt">Non-Technical</p>
+                            <p class="label label-kurt">Side Project</p>
+                            <p class="label label-kurt">Management</p>
+                        </div>
+                        <h2 class="m-0 ta-center"><strong>Localization / Localisation - Part 1</strong></h2>
+                        <p class="ta-center">Localisation is one of the parts of designing software that can be very
+                            difficult and can be extremely costly when overlooked. As with most...</p>
+                        <div class="pretty-button-container"><a
+                                href="https://blog.kurtlourens.com/localization-localisation/"
+                                class="pretty-button -blue" target="_blank" rel="noopener noreferrer"
+                                title="Localization / Localisation - Part 1"
+                                alt="Localization / Localisation - Part 1">Read on blog.kurtlourens.com</a></div>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="card-image"><img src="assets/images/loader.svg" class="lazy"
+                                data-src="https://blog.kurtlourens.com/content/images/2021/01/small1.jpg"
+                                alt="1 Year since launching the Assistant for No Man&#x27;s Sky" /></div>
+                        <div class="tag-list ta-center">
+                            <p class="label label-kurt">Flutter</p>
+                            <p class="label label-kurt">iOS</p>
+                            <p class="label label-kurt">NMS</p>
+                            <p class="label label-kurt">Android</p>
+                        </div>
+                        <h2 class="m-0 ta-center"><strong>1 Year since launching the Assistant for No Man&#x27;s
+                                Sky</strong></h2>
+                        <p class="ta-center">1 year after the release of the Assistant for No Man&#x27;s Sky app, called
+                            No Man&#x27;s Sky Recipes back then, I take a look at how the app has changed and what I
+                            have learned in the process of building and maintaining the apps</p>
+                        <div class="pretty-button-container"><a
+                                href="https://blog.kurtlourens.com/1-year-since-launching-the-assistant-for-no-mans-sky/"
+                                class="pretty-button -blue" target="_blank" rel="noopener noreferrer"
+                                title="1 Year since launching the Assistant for No Man&#x27;s Sky"
+                                alt="1 Year since launching the Assistant for No Man&#x27;s Sky">Read on
+                                blog.kurtlourens.com</a></div>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="card-image"><img src="assets/images/loader.svg" class="lazy"
+                                data-src="https://blog.kurtlourens.com/content/images/2021/01/small1.png"
+                                alt="Static Site generation the hard way" /></div>
+                        <div class="tag-list ta-center">
+                            <p class="label label-kurt">Performance</p>
+                            <p class="label label-kurt">Getting Started</p>
+                            <p class="label label-kurt">NMS</p>
+                            <p class="label label-kurt">CI</p>
+                            <p class="label label-kurt">CD</p>
+                        </div>
+                        <h2 class="m-0 ta-center"><strong>Static Site generation the hard way</strong></h2>
+                        <p class="ta-center">How I used MVC Razor pages to generate a static website from dynamic data
+                            for the Assistant for No Man&#x27;s Sky website</p>
+                        <div class="pretty-button-container"><a
+                                href="https://blog.kurtlourens.com/static-site-generation-the-hard-way/"
+                                class="pretty-button -blue" target="_blank" rel="noopener noreferrer"
+                                title="Static Site generation the hard way"
+                                alt="Static Site generation the hard way">Read on blog.kurtlourens.com</a></div>
+                    </div>
+                </article>
+                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+                    <div class="card">
+                        <div class="card-image"><img src="assets/images/loader.svg" class="lazy"
+                                data-src="https://blog.kurtlourens.com/content/images/2021/01/small-2.png"
+                                alt="AssistantNMS Incident 2020-03-31" /></div>
+                        <div class="tag-list ta-center">
+                            <p class="label label-kurt">Management</p>
+                            <p class="label label-kurt">NMS</p>
+                            <p class="label label-kurt">Side Project</p>
+                            <p class="label label-kurt">Android</p>
+                            <p class="label label-kurt">iOS</p>
+                            <p class="label label-kurt">WebApi</p>
+                        </div>
+                        <h2 class="m-0 ta-center"><strong>AssistantNMS Incident 2020-03-31</strong></h2>
+                        <p class="ta-center">In this post I explain how a simple mistake took down a whole feature in
+                            the App, how I picked up there was an issue and how I resolved it</p>
+                        <div class="pretty-button-container"><a
+                                href="https://blog.kurtlourens.com/assistantnms-incident-1/" class="pretty-button -blue"
+                                target="_blank" rel="noopener noreferrer" title="AssistantNMS Incident 2020-03-31"
+                                alt="AssistantNMS Incident 2020-03-31">Read on blog.kurtlourens.com</a></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="aboutThisSite">
+            <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('aboutThisSite')">
+                About this Website <i class="icon icon-chevron-up upsideDown"></i></h2>
+            <div class="row" style="display: none;">
+                <p>
+                    I originally built this website while I was in university. I had very little understanding of html,
+                    css, and javascript. I mostly copy-pasted html with inline styles and grabbed javascript from Stack
+                    Overflow to make the site 'work'. Around the&nbsp;
+                    <small class="label label-kurt">19th November 2018</small>
+                    &nbsp;I started rebuilding the site with the intention of making it small, fast, SEO friendly and to
+                    apply as much of what I had learned onto the new site. I wrote a blog post about the redesign&nbsp;
+                    <strong><a href="https://blog.kurtlourens.com/kurtlourens-com-redesigned/" target="_blank"
+                            rel="noopener noreferrer" title="Kurt's blog post on kurtlourens.com redesign"> click here
+                            to read it</a></strong>.
+                </p>
+                <div class="col-12"><span>As part of the redesign this website has an automated CI / CD
+                        pipeline:&nbsp;</span><img src="assets/images/loader.svg" class="lazy"
+                        data-src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI"
+                        alt="Website build status" /><img src="assets/images/loader.svg" class="lazy"
+                        data-src="https://vsrm.dev.azure.com/khaoznet/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20"
+                        alt="Website deployment status" /></div>
+                <div class="col-12"><span>
+                        The&nbsp;
+                        <strong><a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv"
+                                target="_blank" rel="noopener noreferrer" title="GooglePlayStoreKurt'sCVApp"
+                                alt="GooglePlayStoreKurt'sCVApp">Flutter CV App</a></strong>&nbsp;also has an automated
+                        CI / CD pipeline:&nbsp;
+                    </span><img src="assets/images/loader.svg" class="lazy"
+                        data-src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.FlutterCV%20-%20CI"
+                        alt="Website build status" /><img src="assets/images/loader.svg" class="lazy"
+                        data-src="https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/18/25"
+                        alt="Website deployment status" /></div>
+                <div class="col-12">
+                    <p>
+                        I created a blog post about my Flutter App's CI / CD pipeline,&nbsp;
+                        <strong><a href="https://blog.kurtlourens.com/flutter-with-ci-cd/" target="_blank"
+                                rel="noopener noreferrer" title="Kurt's blog post on Flutter with CI CD">click here to
+                                read it</a></strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                {{#each details.socialLinks}}
+                {{> components/iconLink }}
+                {{/each}}
+            </ul>
+            <ul class="copyright">
+                <li>
+                    &copy;&nbsp;{{kurt.name}}
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script async defer src="/assets/js/bundle.js?{{date}}" type="text/javascript"></script>
 </body>
 
 </html>

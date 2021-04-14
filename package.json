@@ -1,22 +1,17 @@
 {
-  "name": "assistant_apps",
+  "name": "kurt_lourens_cv",
   "version": "1.0.9",
-  "description": "AssistantApps Home Website",
+  "description": "Kurt Lourens CV Website",
   "author": "Kurt Lourens",
   "scripts": {
     "build": "npm-run-all --sequential javascript:* sass:*",
+    "dev": "cd public && live-server",
+    "generateProjectData": "node webpack/node/getGeneratedProjectJson.js",
     "javascript:main": "webpack --progress --profile --mode production",
-    "sass:main": "sass webpack/scss/main.scss assets/css/main.css",
-    "sass:noscript": "sass webpack/scss/noscript.scss assets/css/noscript.css"
+    "sass:main": "sass webpack/scss/main.scss public/assets/css/main.css",
+    "sass:icons": "sass webpack/scss/icon-pack.scss public/assets/css/icon-pack.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AssistantApps/Home.git"
-  },
-  "bugs": {
-    "url": "https://github.com/AssistantApps/Home/issues"
-  },
-  "homepage": "https://assistantapps.com",
+  "homepage": "https://kurtlourens.com",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
