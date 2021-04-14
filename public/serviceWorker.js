@@ -1,13 +1,11 @@
-let CACHE_NAME = 'kurtlourens-1.5.7';
+let CACHE_NAME = 'kurtlourens-4.0.1';
 let criticalResources = [
   '/',
-  // '/index.html',
-  '/dist/bundle.css',
-  '/dist/bundle.js',
-  '/dist/fonts/icomoon.eot',
-  '/dist/fonts/icomoon.svg',
-  '/dist/fonts/icomoon.ttf',
-  '/dist/fonts/icomoon.woff',
+  '/assets/js/bundle.js',
+  '/assets/fonts/icomoon.eot',
+  '/assets/fonts/icomoon.svg',
+  '/assets/fonts/icomoon.ttf',
+  '/assets/fonts/icomoon.woff',
   '/assets/images/loader.svg',
   '/assets/images/KurtAvatar.svg',
   'https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI',

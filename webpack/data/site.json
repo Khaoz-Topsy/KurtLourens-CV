@@ -18,6 +18,9 @@
         "title": "Kurt Lourens: Software Engineer - Red Ruby IT Co-Owner",
         "description": "Kurt Lourens CV Website. Red Ruby IT Co-Owner. South African Software Engineer in johannesburg. Lists Experiences, Certificates and Career Development."
     },
+    "preconnectLinks": [
+        "https://fonts.gstatic.com"
+    ],
     "subtitle": "Beautiful and fast cross-platform apps built to help you in your favourite games!",
     "additional": "Additional work",
     "additionalDescription": "Working on these projects has opened up opportunities to talk to other community developers, host streams and start organisations all aimed at entertaining and assisting gamers enjoy their games to the fullest!!",
