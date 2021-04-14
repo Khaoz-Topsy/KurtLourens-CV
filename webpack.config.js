@@ -11,6 +11,14 @@ const jsDistPath = path.resolve(__dirname, jsDirName);
 
 const packageVersion = require('./package.json').version || '1.0.0';
 
+const moveNonHtmlHandlebarGeneratedFile = (filename, handlebarFilename) => {
+    if (handlebarFilename.includes(`${filename}.html`)) {
+        moveFile(`${distPath}/${filename}.html`, `${distPath}/${filename}`)
+            .then(() => console.log(`The ${filename} file has been renamed`))
+            .catch(() => console.error(`The ${filename} was file has been renamed`));
+    }
+}
+
 module.exports = (env, argv) => {
     return {
         mode: argv.mode === "production" ? "production" : "development",
@@ -63,18 +71,10 @@ module.exports = (env, argv) => {
                 onBeforeRender: function (Handlebars, data, filename) { },
                 onBeforeSave: function (Handlebars, resultHtml, filename) { },
                 onDone: function (Handlebars, filename) {
-                    if (filename.includes('web.config.html')) {
-                        moveFile(`${distPath}/web.config.html`, `${distPath}/web.config`)
-                            .then(() => console.log('The web.config file has been renamed'))
-                            .catch(() => console.error('The web.config was file has been renamed'));
-                    }
-                    // if (filename.includes('_slider-generated.sass')) {
-                    //     console.log(filename);
-                    //     (async () => {
-                    //         await moveFile(filename, 'webpack/scss/custom/_slider-generated.sass');
-                    //         console.log('The _slider-generated.sass file has been renamed');
-                    //     })();
-                    // }
+                    moveNonHtmlHandlebarGeneratedFile('web.config', filename);
+                    moveNonHtmlHandlebarGeneratedFile('sitemap.xml', filename);
+                    moveNonHtmlHandlebarGeneratedFile('opensearch.xml', filename);
+                    moveNonHtmlHandlebarGeneratedFile('humans.txt', filename);
                 }
             }),
         ],
