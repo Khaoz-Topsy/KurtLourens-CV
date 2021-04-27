@@ -1,7 +1,7 @@
 {
-  "name": "kurt_lourens_cv",
+  "name": "assistant_apps_web",
   "version": "4.0.1",
-  "description": "Kurt Lourens CV Website",
+  "description": "AssistantApps Home Website",
   "author": "Kurt Lourens",
   "scripts": {
     "build": "npm-run-all --sequential generateProjectData javascript:* sass:* minifyGeneratedFiles",
@@ -12,7 +12,7 @@
     "sass:main": "sass webpack/scss/main.scss public/assets/css/main.css",
     "sass:icons": "sass webpack/scss/icon-pack.scss public/assets/css/icon-pack.css"
   },
-  "homepage": "https://kurtlourens.com",
+  "homepage": "https://assistantapps.com",
   "license": "ISC",
   "devDependencies": {
     "handlebars-webpack-plugin": "^2.2.1",
