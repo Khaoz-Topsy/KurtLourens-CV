@@ -1,7 +1,7 @@
 {
-  "name": "assistant_apps_web",
-  "version": "4.0.1",
-  "description": "AssistantApps Home Website",
+  "name": "kurtlourens_cv",
+  "version": "4.0.2",
+  "description": "Kurt Lourens CV Website",
   "author": "Kurt Lourens",
   "scripts": {
     "build": "npm-run-all --sequential generateProjectData javascript:* sass:* minifyGeneratedFiles",
