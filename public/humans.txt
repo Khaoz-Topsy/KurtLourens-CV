@@ -5,7 +5,7 @@ Twitter: @KhaozTopsy
 From: Johannesburg, South Africa
 
 /* SITE */
-Last update: 2021-05-04
+Last update: 2021-07-27
 Language: English
 Doctype:HTML5
 IDE: Visual Studio Code

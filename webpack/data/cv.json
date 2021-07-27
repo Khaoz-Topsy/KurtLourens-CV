@@ -135,6 +135,23 @@
     ],
     "certificates": [
         {
+            "isAward": false,
+            "title": "Demystifying IoT",
+            "image": "assets/images/company/Entelect.png",
+            "imageAlt": "Entelect",
+            "timePeriodText": "Aug 2021",
+            "timePeriodClass": "label-entelect",
+            "content": "I contributed to a publication on IoT, which introduces you to what IoT is, what components and projects are common and popular, and gives you an overview of designing an IoT solution and the difficulties and complications inherent in this type of IT project.",
+            "location": "Johannesburg, South Africa",
+            "buttons": [
+                {
+                    "url": "/docs/Entelect-Demystifying-IoT.pdf",
+                    "alt": "Demystifying-IoT",
+                    "text": "Demystifying IoT.pdf"
+                }
+            ]
+        },
+        {
             "isAward": true,
             "title": "Bsc Computer Science and Informatics",
             "image": "assets/images/company/UJ.png",
