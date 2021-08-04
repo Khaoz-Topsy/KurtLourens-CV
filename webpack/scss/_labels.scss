@@ -17,6 +17,10 @@
     color: #004C8E;
 }
 
+a[class^="color-"] {
+    font-weight: 600;
+}
+
 .label-vuma,
 .label-vuma[href]:hover,
 .label-vuma[href]:focus {

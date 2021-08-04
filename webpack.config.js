@@ -59,6 +59,8 @@ module.exports = (env, argv) => {
                     urlref: require("./webpack/handlebar/helpers/urlref.helper"),
                     loud: require("./webpack/handlebar/helpers/loud.helper"),
                     date: require("./webpack/handlebar/helpers/date.helper"),
+                    handleshortcode: require("./webpack/handlebar/helpers/shortcode.helper"),
+                    workitemclass: require("./webpack/handlebar/helpers/workitemclass.helper"),
                     version: require("./webpack/handlebar/helpers/version.helper")(packageVersion)
                 },
 

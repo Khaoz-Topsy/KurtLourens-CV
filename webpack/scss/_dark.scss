@@ -34,6 +34,14 @@ body {
         transition: all 200ms;
     }
 
+    a {
+        color: lighten(_palette(accent1, fg), 40%);
+
+        &:hover {
+            color: lighten(_palette(accent1, fg), 50%) !important;
+        }
+    }
+
     section .row article>div.card {
         transition: all 200ms;
     }

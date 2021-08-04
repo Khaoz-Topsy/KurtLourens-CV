@@ -1,4 +1,4 @@
-<article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall work-item">
+<article class="{{workitemclass isSideProject}}">
     <div class="card">
         <div class="top-right">
             <img src="assets/images/loader.svg" draggable="false" data-src="{{image}}" class="company lazy invert"
@@ -27,7 +27,7 @@
         <h2><strong>{{title}}</strong><small>{{location}}</small></h2>
         {{/if}}
 
-        <p>{{content}}</p>
+        <p>{{{handleshortcode content}}}</p>
 
         {{#if buttons}}
         <div class="pretty-button-container">

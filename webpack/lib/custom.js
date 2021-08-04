@@ -7,7 +7,7 @@ window.onload = function () {
     // if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
     // else window.addEventListener('load', loadDeferredStyles);
 
-    updateLazyLoadedImagesFromSelector(".inner img.lazy[data-src]");
+    updateLazyLoadedImagesFromSelector('.inner img.lazy[data-src]');
 
     removeLoader();
     announcement.getAnnouncements();
@@ -87,7 +87,13 @@ export function hideOrShowInstallPwaButton(hasDeferredPromptLocal) {
 
 export function toggleChildRowVisibility(selector) {
     $('#' + selector + '>h2>i').toggleClass('upsideDown');
-    $('#' + selector).children('.row').toggle();
+    $('#' + selector).children('.row').toggleClass('collapse');
+
+    updateLazyLoadedImagesPerSection(selector);
+}
+
+export function toggleChildRowItemVisibility(selector, secondSelector) {
+    $('#' + selector + ' .items').toggleClass(secondSelector);
 
     updateLazyLoadedImagesPerSection(selector);
 }

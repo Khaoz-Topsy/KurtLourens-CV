@@ -1,6 +1,8 @@
 {
     "details": {
         "image": "assets/images/KurtAvatar.svg",
+        "intro": "Full Stack Engineer with [workDuration] of experience working for large companies on various technology solutions. I find that the best way to learn is to build! I love creating beautiful and striking front-end user experiences, blazing fast APIs, services, etc, that follow best practices and building amazing user experiences for mobile. Working on so many projects as well as joining [redRubyIt] as a Co-Owner has taught me so much, not just about code, but also how to mentor, present, manage expectations and run projects. My goal is to continue learning all that I can and use that knowledge to create more opportunities to learn! 😂 \nCurrently living in",
+        "postSript": "P.S. I also have a [blog], Inside my Mind - by Kurt Lourens. I haven't been making use of it as much as I could have, but I have written an article on it about how I made this site and all the effort I put in to make it the best that it could be [blogCvArticle] 😁.",
         "descriptions": [
             ".Net Core Advocate",
             "Crazy about Javascript Frameworks",
@@ -50,17 +52,31 @@
     },
     "workExperiences": [
         {
+            "title": "Senior Software Engineer",
+            "company": "Entelect",
+            "icon": "person_add",
+            "image": "assets/images/company/Entelect.png",
+            "imageAlt": "Entelect",
+            "timePeriodText": "July 2021 – Present",
+            "timePeriodTextAlt": "Current position - Full time",
+            "timePeriodClass": "label-entelect",
+            "timePeriodColour": "#004C8E",
+            "timePeriodTextColour": "#FFFFFF",
+            "content": "___ I am very thankful [entelect] recognised my abilities and promoted me to an Intermediate Software Engineer. Entelect gave me a lot of opportunities to use and improve my soft skills. Such as organising of team lunches, building relationships with clients and their employees, being in charge of onboarding new members, taking large chunks of work as if they were mini projects and so on.",
+            "location": "Johannesburg, South Africa"
+        },
+        {
             "title": "Intermediate Software Engineer",
             "company": "Entelect",
             "icon": "person_add",
             "image": "assets/images/company/Entelect.png",
             "imageAlt": "Entelect",
-            "timePeriodText": "January 2019 – Present",
-            "timePeriodTextAlt": "Current position - Full time",
+            "timePeriodText": "January 2019 – June 2021",
+            "timePeriodTextAlt": "2.5 years",
             "timePeriodClass": "label-entelect",
             "timePeriodColour": "#004C8E",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "I am very thankful Entelect recognised my abilities and promoted me to an Intermediate Software Engineer. Entelect gave me a lot of opportunities to use and improve my soft skills. Such as organising of team lunches, building relationships with clients and their employees, being in charge of onboarding new members, taking large chunks of work as if they were mini projects and so on.",
+            "content": "I am very thankful [entelect] recognised my abilities and promoted me to an Intermediate Software Engineer. [entelect] gave me a lot of opportunities to use and improve my soft skills. Such as organising of team lunches, building relationships with clients and their employees, being in charge of onboarding new members, taking large chunks of work as if they were mini projects and so on.",
             "location": "Johannesburg, South Africa"
         },
         {
@@ -74,7 +90,7 @@
             "timePeriodClass": "label-entelect",
             "timePeriodColour": "#004C8E",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "Entelect really encourages all of it's employees to continuously learn, and when you are in I.T. that is extremely important. Entelect has given me many opportunities to grow my knowledge with the crazy amount of initiatives that they allow/provide. I have been exposed to new ways of structuring code, (CI) continuous integration, (CD) Continuous delivery and much more. I have worked on a few side projects for the teams that I have been a part of. Such as a Build Monitor and Timesheet App.",
+            "content": "[entelect] really encourages all of it's employees to continuously learn, and when you are in I.T. that is extremely important. [entelect] has given me many opportunities to grow my knowledge with the crazy amount of initiatives that they allow/provide. I have been exposed to new ways of structuring code, (CI) continuous integration, (CD) Continuous delivery and much more. I have worked on a few side projects for the teams that I have been a part of. Such as a Build Monitor and Timesheet App.",
             "location": "Johannesburg, South Africa"
         },
         {
@@ -89,7 +105,7 @@
             "timePeriodClass": "label-ruby",
             "timePeriodColour": "#BE1F25",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "I joined Red Ruby IT with a focus on Web Design and Web Hosting Management as well as looking into mobile application development for the android platform, with multiple android applications on the Google Play Store that I designed, latest one released was Red Ruby IT Client which allowed our clients to view details about their domains such as registration date, expiry date, recurring fee and so on. I did some work as a developer (up until December 2016), performing Website Development using ASP.Net and Mobile development with Xamarin as well as making use of Ionic to create hybrid apps.",
+            "content": "I joined [redRubyIt] with a focus on Web Design and Web Hosting Management as well as looking into mobile application development for the android platform, with multiple android applications on the Google Play Store that I designed, latest one released was [redRubyIt] Client which allowed our clients to view details about their domains such as registration date, expiry date, recurring fee and so on. I did some work as a developer (up until December 2016), performing Website Development using ASP.Net and Mobile development with Xamarin as well as making use of Ionic to create hybrid apps.",
             "location": "Johannesburg, South Africa"
         },
         {
@@ -137,12 +153,18 @@
         {
             "isAward": false,
             "title": "Demystifying IoT",
-            "image": "assets/images/company/Entelect.png",
+            "image": "assets/images/company/DemystifyingIoT.png",
             "imageAlt": "Entelect",
             "timePeriodText": "Aug 2021",
             "timePeriodClass": "label-entelect",
-            "content": "I contributed to a publication on IoT, which introduces you to what IoT is, what components and projects are common and popular, and gives you an overview of designing an IoT solution and the difficulties and complications inherent in this type of IT project.",
-            "location": "Johannesburg, South Africa",
+            "content": "I contributed to a publication on IoT managed by [entelect]. It introduces you to what IoT is, what components and projects are common and popular, and gives you an overview of designing an IoT solution and the difficulties and complications inherent in this type of IT project.",
+            "links": [
+                {
+                    "url": "/docs/Entelect-Demystifying-IoT.pdf",
+                    "alt": "Demystifying-IoT",
+                    "text": "Demystifying IoT.pdf"
+                }
+            ],
             "buttons": [
                 {
                     "url": "/docs/Entelect-Demystifying-IoT.pdf",
@@ -219,7 +241,8 @@
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "During a few days while my home internet connection was down, I picked up the game No Man’s Sky again. While playing I was frustrated with the crafting mechanics of the game and how it expected the player to remember over 1200 different items and crafting recipes. I wanted an app that would allow me to get those recipes as easily and fast as possible. There was one app on the Google Play Store, however a lot of its functionality was behind a pay wall. So I decided to build my own version using Flutter. As of August 2020 (1 year later) the apps reached 45 000 active users! 🎉",
+            "content": "During a few days while my home internet connection was down, I picked up the game No Man’s Sky again. While playing I was frustrated with the crafting mechanics of the game and how it expected the player to remember over 1200 different items and crafting recipes. I wanted an app that would allow me to get those recipes as easily and fast as possible. There was one app on the Google Play Store, however a lot of its functionality was behind a pay wall. So I decided to build my own version using [flutter]. As of August 2020 (1 year later) the apps reached 45 000 active users! 🎉",
+            "isSideProject": true,
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes",
@@ -252,7 +275,8 @@
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "I still had the interest for building apps that was sparked by Hollard's Customer App, but I had gotten tired of waiting for Xamarin to compile. I had a few small POCs of React Native apps which I thought would be easy to create since I had React experience. During this time Flutter had just been announced that it was production ready. So I decided to learn Flutter and Dart by making an App as my CV.",
+            "content": "I still had the interest for building apps that was sparked by Hollard's Customer App, but I had gotten tired of waiting for Xamarin to compile. I had a few small POCs of React Native apps which I thought would be easy to create since I had React experience. During this time [flutter] had just been announced that it was production ready. So I decided to learn [flutter] and Dart by making an App as my CV.",
+            "isSideProject": true,
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurt_lourens_cv",
@@ -271,6 +295,7 @@
             "timePeriodColour": "#227FDC",
             "timePeriodTextColour": "#FFFFFF",
             "content": "This project was the second version of the BTS Site Status website. It was rebuilt with dotnet Core and Angular 7. It was quite a challenging project as we needed have all the same functionality of the old project as well as add new features, while maintaining the old project. ",
+            "isSideProject": true,
             "links": [
                 {
                     "url": "https://app.btsra.co.za",
@@ -290,7 +315,8 @@
             "timePeriodColour": "#4D2B6B",
             "timePeriodTextColour": "#FFFFFF",
             "content": "While I was working on the CQT team, a new project was started called Easy4Business. Which was formed from some of CQT's members. CQT shared knowledge and helped set up Easy4Business. I mainly helped in setting up their CI / CD and using Typescript and Redux as I had learned a lot about these from my home projects. I learned a lot about starting projects on the right foot.",
-            "location": "Johannesburg, South Africa"
+            "location": "Johannesburg, South Africa",
+            "isSideProject": false
         },
         {
             "title": "RemoteConfigs",
@@ -303,6 +329,7 @@
             "timePeriodColour": "#45BB89",
             "timePeriodTextColour": "#FFFFFF",
             "content": "This project was started from a problem that a friend of mine had which was managing his configs across multiple apps. This solution allows users to save the configurations as key value pairs and then retrieve those values through a Restful Api. Some of the cool things we added was a Nuget package so our users could get started quickly and Variants (which allows a user to set up simple logic to return different configs based on the current date, day of the week or random percentage chance). In the future we aim to have asymmetric encryption, user based A/B testing, hit user webhooks on certain events, and an NPM package. \n\r This app makes use of RemoteConfigs to get the in App announcements.",
+            "isSideProject": true,
             "links": [
                 {
                     "url": "https://remoteconfigs.com",
@@ -321,6 +348,7 @@
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
             "content": "I started this project because I wanted to learn about SignalR, as I was going to need it in the Build Monitor project. This project ended up being a really good learning opportunity. I got to learn some C# image manipulation (cutting the Cards from Cards Against Humanity's official Cards PDF) , some Optical character Recognition (using Microsoft's Cognitive services to read the words on each of the Cards), some in browser text to speech (HowlerJS reading the Card's text out loud), QR code generation and Reading (So that people wouldn’t have to enter the GameId manually) and A LOT of CSS animations. Some of the best animations that I have done in any project.",
+            "isSideProject": true,
             "links": [
                 {
                     "url": "https://cah.kurtlourens.com",
@@ -339,6 +367,7 @@
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
             "content": "While I was working on the CQT team, we had a Raspberry PI that was our build monitor. It was just running the VSTS (at the time, now Azure Devops) dashboard. However the PI would often become overwhelmed and the web page would go into not responding (we theorised that the dashboard webpage was just to heavy). I created an AngularJS app to serve as our build monitor. Eventually I recreated it in Angular 6. Ever since then our team's PI has been happily trudging along.",
+            "isSideProject": true,
             "links": [
                 {
                     "url": "https://monitor.kurtlourens.com",
@@ -357,7 +386,8 @@
             "timePeriodColour": "#227FDC",
             "timePeriodTextColour": "#FFFFFF",
             "content": "BTS was a small project which showed the status of cellphone towers in South Africa. BTS had about 300 devices with a range of meters each, that were attached to cellphone towers across South Africa. Each of these devices would inform PnPScada what the tower's voltage, amps, electricity usage, etc were. Myself and Morné created a .Net Core Api with an AngularJS front-end to display this data to BTS clients who wanted to know how much electricity their towers were using as well as the last time the specific tower was 'online'.",
-            "location": " ̶p̶o̶r̶t̶a̶l̶.̶b̶t̶s̶r̶a̶.̶c̶o̶.̶z̶a̶"
+            "location": " ̶p̶o̶r̶t̶a̶l̶.̶b̶t̶s̶r̶a̶.̶c̶o̶.̶z̶a̶",
+            "isSideProject": true
         },
         {
             "title": "KhaozNet IoT",
@@ -369,8 +399,9 @@
             "timePeriodClass": "label-iot",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "In the beginning of 2018 I attended an Entelect Makers Club, it instantly sparked my interest in Arduino. It felt like a whole new world had been opened up for me, one where my software could affect the real world. Since then I have made quite a few Arduino contraptions, such as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to switch the water on and off (which I plan to automate in the future).",
+            "content": "In the beginning of 2018 I attended an [entelect] Makers Club, it instantly sparked my interest in Arduino. It felt like a whole new world had been opened up for me, one where my software could affect the real world. Since then I have made quite a few Arduino contraptions, such as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to switch the water on and off (which I plan to automate in the future).",
             "contentHtml": "<p>In the beginning of 2018 I attended an&nbsp;<strong><a href=\"http://www.entelect.co.za\" class=\"color-entelect\" target=\"_blank\" rel=\"noopener\" title=\"entelect\" alt=\"entelect\">Entelect</a></strong>&nbsp;Makers Club, it instantly sparked my interest in Arduino. It felt like a whole new world had been opened up for me, one where my software could affect the real world. Since then I have made quite a few Arduino contraptions, such as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to switch the water on and off (which I plan to automate in the future).<p>",
+            "isSideProject": true,
             "links": [
                 {
                     "url": "https://iot.khaoznet.xyz",
@@ -390,7 +421,8 @@
             "timePeriodColour": "#4D2B6B",
             "timePeriodTextColour": "#FFFFFF",
             "content": "CQT is an internal system to help Broker Consultants create quotes. We integrated into many services at Hollard. The team had quite a lot of say in the technologies used. The technology stack that we ended up going with (React frontend and C# MVC .Net Framework backend) caused us to spend a lot of time learning (mostly React) and we ended up with quite a bit of technical debt due to time constraints and pressure from business. We were one of the first teams in Hollard to have a fully automated CI / CD pipeline and we set the golden standard on how to do deployments at Hollard. I grew a lot in this project. In the beginning I was the only Junior in the team of 5. As the team grew I was able to take on some more responsibilities. I become known as the 'Senior Grad' up until my promotion to Intermediate Software Engineer.",
-            "location": "Johannesburg, South Africa"
+            "location": "Johannesburg, South Africa",
+            "isSideProject": false
         },
         {
             "title": "TennoDex",
@@ -402,6 +434,7 @@
             "timePeriodColour": "#7D42DB",
             "timePeriodTextColour": "#FFFFFF",
             "content": "TennoDex has been my longest running side project. It simply consumes a Web Api and displays data, but it's technology stack has grown as I have. TennoDex has been rebuilt from the ground up more than 3 times by now, each time with a new tech stack. Initially TennoDex was a .Net Framework Web Api with an AngularJS front-end, then it was a .Net Core Web Api with an Android App built with Xamarin. Currently TennoDex is a .Net Core Web Api with a ReactJS front-end and an Android App built with React-Native. What makes the latest version special is that the Web App and the Mobile App use the same Typescript objects that are generated by the Web Api as well as sharing the same logic (i.e. mostly only implementing the native presentation layer. For the web: HTML, CSS and Javascript. For Mobile: React Native Components).",
+            "isSideProject": true,
             "links": [
                 {
                     "url": "https://tennodex.com",
@@ -421,7 +454,8 @@
             "timePeriodColour": "#4D2B6B",
             "timePeriodTextColour": "#FFFFFF",
             "content": "I joined a team at Hollard Insurance in Parktown North, where I worked on their Customer App built with Xamarin. It was quite a tough fit as I did not have any real experience with Xamarin. This move was only temporary, as Hollard wanted me for a project that was to start soon after I joined. I learned a lot from working on that team and it sparked an interest in App Development. I went on to create the first version of TennoDex (Xamarin app with a C# .Net Core Api backend) in my spare time using what I had learned.",
-            "location": "Johannesburg, South Africa"
+            "location": "Johannesburg, South Africa",
+            "isSideProject": false
         },
         {
             "title": "Allan Grey FAIFA",
@@ -432,8 +466,9 @@
             "timePeriodClass": "label-entelect",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "After completing Entelect's Grad Bootcamp, I joined the team working on Allan Grey's FAIFA (Find An Independent Financial Advisor). It was my first introduction to React and Redux. My team mates were very experienced in the technologies used and I learned a lot.",
-            "location": "Johannesburg, South Africa"
+            "content": "After completing [entelect]'s Grad Bootcamp, I joined the team working on Allan Grey's FAIFA (Find An Independent Financial Advisor). It was my first introduction to React and Redux. My team mates were very experienced in the technologies used and I learned a lot.",
+            "location": "Johannesburg, South Africa",
+            "isSideProject": false
         }
     ]
 }

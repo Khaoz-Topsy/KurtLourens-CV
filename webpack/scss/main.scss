@@ -209,7 +209,7 @@ a {
     @include vendor('transition',
         ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
     border-bottom: dotted 1px;
-    color: _palette(accent1, bg);
+    color: lighten(_palette(accent1, fg), 25%);
     text-decoration: none;
 
     &:hover {
@@ -231,7 +231,7 @@ i {
 }
 
 p {
-    margin: 0 0 _size(element-margin) 0;
+    margin: 0 0 1.5em 0;
 }
 
 h1,
@@ -246,7 +246,6 @@ h6 {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
 
     a {
-        color: inherit;
         text-decoration: none;
     }
 }
@@ -556,7 +555,7 @@ input[type="radio"] {
         display: inline-block;
         font-size: 1em;
         font-weight: _font(weight);
-        padding-left: (_size(element-height) * 0.6) + 0.75em;
+        padding-left: (_size(element-height) * 0.6) + 0.35em;
         padding-right: 0.75em;
         position: relative;
 
@@ -578,14 +577,12 @@ input[type="radio"] {
 
     &:checked+label {
         &:before {
-            background: _palette(fg-bold);
-            border-color: _palette(fg-bold);
-            color: _palette(bg);
-            content: '\f00c';
+            color: _palette(accent1, bg);
+            content: '\e90a';
         }
     }
 
-    &:focus+label {
+    +label {
         &:before {
             border-color: _palette(accent1, bg);
         }
@@ -1125,7 +1122,7 @@ input[type="button"],
 
 /* Work Item */
 
-.work-item {
+.item {
     margin: 0 0 _size(element-margin) 0;
 
     .image {
@@ -1259,7 +1256,7 @@ input[type="button"],
 
     >section {
         border-top: solid 2px _palette(border);
-        margin: $size-header-pad 0 0 0;
+        margin: #{$size-header-pad / 2} 0 0 0;
         padding: $size-header-pad 0 0 0;
 
         &:first-child {

@@ -301,40 +301,20 @@
     <div id="main">
         <section id="about">
             <header class="major">
-                <h2>About Kurt Lourens&nbsp;</h2><i><a href="https://about.me/kurt.lourens" target="_blank"
-                        rel="noopener noreferrer" title="about.me" alt="about.me">about.me/kurt.lourens</a></i>
+                <h2>About Kurt Lourens&nbsp;</h2>
+                <i>&nbsp;&nbsp;<a href="https://about.me/kurt.lourens" target="_blank" rel="noopener noreferrer"
+                        title="about.me" alt="about.me">about.me/kurt.lourens</a></i>
             </header>
             <p>
-                I found a love for computers in boarding school, I would spend many if not all break times playing games
-                and programming (then using Delphi). My interest in I.T. grew as I entered University to study a BSC
-                I.T. to become a&nbsp;Software Engineer. During my degree I found like minded individuals and
-                joined&nbsp;
-                <strong><a href="https://www.redrubyit.co.za" class="color-ruby" target="_blank"
-                        rel="noopener noreferrer" title="RedRubyIT" alt="RedRubyIT">Red Ruby IT</a></strong>&nbsp;as a
-                Co-Owner. I have learned so much from working at&nbsp;
-                <strong><a href="https://www.redrubyit.co.za" class="color-ruby" target="_blank"
-                        rel="noopener noreferrer" title="RedRubyIT" alt="RedRubyIT">
-                        Red Ruby IT
-                    </a></strong>&nbsp; and I am so lucky to be doing something that I love. My goal is to continue
-                learning all that I can and to live on the bleeding edge of tech until it bites me in the ass 😂. I am
-                currently living in&nbsp;<a href="https://goo.gl/maps/94uXM5Mgd362" target="_blank"
-                    rel="noopener noreferrer" title="Johannesburg, South africa">
-                    &nbsp;Johannesburg, South Africa 🌍
-                </a>.
-            </p><small>
-                P.S. I also have a&nbsp;
-                <strong><a href="https://blog.kurtlourens.com" target="_blank" rel="noopener noreferrer"
-                        title="Kurt's blog">blog</a></strong>, Inside my Mind - by Kurt Lourens. I haven't been making
-                use of it as much as I could have, but I have written an article on it about how I made this site and
-                all the effort I put in to make it the best that it could be&nbsp;
-                <strong><a href="https://blog.kurtlourens.com/kurtlourens-com-redesigned/" target="_blank"
-                        rel="noopener noreferrer" title="Kurt's blog">click here to read it</a></strong>&nbsp;😁.
-            </small>
+                {{{handleshortcode details.intro}}}&nbsp;<a href="https://goo.gl/maps/94uXM5Mgd362" target="_blank"
+                    rel="noopener noreferrer" title="Johannesburg, South africa">Johannesburg, South Africa 🌍</a>.
+            </p>
+            <small>{{{handleshortcode details.postSript}}}</small>
         </section>
         <section id="work">
             <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('work')">
                 Work Experience&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
-            <div class="row" style="display: none;">
+            <div class="row items collapse">
                 {{#each workExperiences}}
                 {{> components/workItem }}
                 {{/each}}
@@ -343,16 +323,30 @@
         <section id="projects">
             <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('projects')">
                 Projects&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
-            <div class="row" style="display: none;">
+            <div class="row collapse">
+                <div class="col-12 mb-1">
+                    <input id="showSideProjects" type="checkbox" checked="true"
+                        onclick="KurtLourens.toggleChildRowItemVisibility('projects', 'hideSideProjects')" />
+                    <label for="showSideProjects">Show side projects</label>
+                    &nbsp;&nbsp;
+                    <input id="showWorkProjects" type="checkbox" checked="true"
+                        onclick="KurtLourens.toggleChildRowItemVisibility('projects', 'hideWorkProjects')" />
+                    <label for="showWorkProjects">Show corporate projects</label>
+                </div>
+            </div>
+            <div class="row items collapse">
                 {{#each projects}}
                 {{> components/workItem }}
                 {{/each}}
+                <div class="col-12">
+                    <h3 class="no-items">No projects selected</h3>
+                </div>
             </div>
         </section>
         <section id="certificates">
             <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('certificates')">
                 Publications&nbsp;&amp;&nbsp;Certificates&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
-            <div class="row" style="display: none;">
+            <div class="row items collapse">
                 {{#each certificates}}
                 {{> components/workItem }}
                 {{/each}}
@@ -361,7 +355,7 @@
         <section id="recentPosts">
             <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('recentPosts')">
                 Latest Blog Posts&nbsp;<i class="icon icon-chevron-up upsideDown"></i></h2>
-            <div class="row" style="display: none;">
+            <div class="row items collapse">
                 {{#each recentBlogPosts}}
                 {{> components/blogPost }}
                 {{/each}}
@@ -370,7 +364,7 @@
         <section id="aboutThisSite">
             <h2 class="noselect" onclick="KurtLourens.toggleChildRowVisibility('aboutThisSite')">
                 About this Website <i class="icon icon-chevron-up upsideDown"></i></h2>
-            <div class="row" style="display: none;">
+            <div class="row items collapse">
                 <p>
                     I originally built this website while I was in university. I had very little understanding of html,
                     css, and javascript. I mostly copy-pasted html with inline styles and grabbed javascript from Stack

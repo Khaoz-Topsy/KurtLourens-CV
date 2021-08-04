@@ -34,6 +34,7 @@ $color-smoke: #e4e4e4;
 
     &:hover {
         transition: all 150ms linear;
+        color: #fff !important;
         opacity: .85;
     }
 
@@ -51,4 +52,10 @@ $color-smoke: #e4e4e4;
 .pretty-button.-blue {
     color: #fff;
     background: _palette(accent1, bg);
+
+    &:hover {
+        transition: all 150ms linear;
+        color: #{lighten(_palette(accent1, bg), 40%)} !important;
+        opacity: .85;
+    }
 }

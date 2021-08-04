@@ -8,6 +8,10 @@ $brand-primary: #322d2a;
     margin-top: 1em;
 }
 
+.mb-1 {
+    margin-bottom: 1em;
+}
+
 img.lazy[src*="loader.svg"] {
     padding: .5em;
     border-radius: 100%;
@@ -155,6 +159,57 @@ h2.noselect,
 
 .hidden {
     display: none;
+}
+
+.visible-row-item {
+    opacity: 1;
+    max-height: 1000vh;
+    transition: max-height 250ms, opacity 500ms ease-in-out;
+}
+
+.hidden-row-item {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.row {
+    @extend .visible-row-item;
+
+    &.collapse {
+        @extend .hidden-row-item;
+    }
+
+    &.items {
+
+        .side-item,
+        .work-item {
+            @extend .visible-row-item;
+        }
+
+        &.hideSideProjects .side-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @extend .hidden-row-item;
+        }
+
+        &.hideWorkProjects .work-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @extend .hidden-row-item;
+        }
+
+        .no-items {
+            display: none;
+        }
+
+        &.hideSideProjects.hideWorkProjects .no-items {
+            display: block;
+            color: rgb(67 67 67 / 50%);
+        }
+    }
 }
 
 .max-h-50 {

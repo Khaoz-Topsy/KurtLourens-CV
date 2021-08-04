@@ -1,4 +1,4 @@
-# AssistantApps 
+# Kurt Lourens CV V4 
 ## Home page
 
 This site is built with [Handlebars](https://handlebarsjs.com/) to inject data from [project.json](./webpack/data/project.json) into the [template](./webpack/handlebar/index.hbs), which generates the [index.html](./index.html) file. There is also [SCSS](https://sass-lang.com/) files that are compiled to CSS
