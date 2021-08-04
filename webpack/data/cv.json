@@ -54,7 +54,7 @@
         {
             "title": "Senior Software Engineer",
             "company": "Entelect",
-            "icon": "person_add",
+            "icon": "military_tech_rounded",
             "image": "assets/images/company/Entelect.png",
             "imageAlt": "Entelect",
             "timePeriodText": "July 2021 – Present",
@@ -62,7 +62,7 @@
             "timePeriodClass": "label-entelect",
             "timePeriodColour": "#004C8E",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "___ I am very thankful [entelect] recognised my abilities and promoted me to an Intermediate Software Engineer. Entelect gave me a lot of opportunities to use and improve my soft skills. Such as organising of team lunches, building relationships with clients and their employees, being in charge of onboarding new members, taking large chunks of work as if they were mini projects and so on.",
+            "content": "",
             "location": "Johannesburg, South Africa"
         },
         {
@@ -76,7 +76,7 @@
             "timePeriodClass": "label-entelect",
             "timePeriodColour": "#004C8E",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "I am very thankful [entelect] recognised my abilities and promoted me to an Intermediate Software Engineer. [entelect] gave me a lot of opportunities to use and improve my soft skills. Such as organising of team lunches, building relationships with clients and their employees, being in charge of onboarding new members, taking large chunks of work as if they were mini projects and so on.",
+            "content": "I am very thankful [entelect] recognised my abilities and promoted me to an Intermediate Software Engineer. [entelect] gave me a lot of opportunities to use and improve my soft skills. Such as organising of team lunches, building relationships with clients and their employees, being in charge of onboarding new members and taking large chunks of work as if they were mini projects and so on.",
             "location": "Johannesburg, South Africa"
         },
         {

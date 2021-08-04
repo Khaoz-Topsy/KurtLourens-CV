@@ -15,12 +15,12 @@ function calculateYearsOfWork() {
 
 module.exports = function (context, options) {
     const shortCodeMap = {
-        '[entelect]': '<a href="http://www.entelect.co.za" class="color-entelect" target="_blank" rel="noopener" title="Entelect" alt="Entelect">Entelect</a>',
-        '[redRubyIt]': '<a href="http://redrubyit.co.za" class="color-ruby" target="_blank" rel="noopener" title="Red Ruby IT" alt="Red Ruby IT">Red Ruby IT</a>',
-        '[flutter]': '<a href="https://flutter.dev/" class="color-flutter" target="_blank" rel="noopener" title="Flutter" alt="Flutter">Flutter</a>',
+        '[entelect]': '<a href="http://www.entelect.co.za?ref=kurtlourens.com" class="color-entelect" target="_blank" rel="noopener" title="Entelect" alt="Entelect">Entelect</a>',
+        '[redRubyIt]': '<a href="http://redrubyit.co.za?ref=kurtlourens.com" class="color-ruby" target="_blank" rel="noopener" title="Red Ruby IT" alt="Red Ruby IT">Red Ruby IT</a>',
+        '[flutter]': '<a href="https://flutter.dev/?ref=kurtlourens.com" class="color-flutter" target="_blank" rel="noopener" title="Flutter" alt="Flutter">Flutter</a>',
         '[workDuration]': calculateYearsOfWork(),
-        '[blog]': '<a href="https://blog.kurtlourens.com" target="_blank" rel="noopener noreferrer" title="Kurt\'s blog">blog</a>',
-        '[blogCvArticle]': '<a href="https://blog.kurtlourens.com/kurtlourens-com-redesigned/" target="_blank" rel="noopener noreferrer" title="Kurt\'s blog">click here to read it</a>',
+        '[blog]': '<a href="https://blog.kurtlourens.com?ref=kurtlourens.com" target="_blank" rel="noopener noreferrer" title="Kurt\'s blog">blog</a>',
+        '[blogCvArticle]': '<a href="https://blog.kurtlourens.com/kurtlourens-com-redesigned/?ref=kurtlourens.com" target="_blank" rel="noopener noreferrer" title="Kurt\'s blog">click here to read it</a>',
     };
 
     let innerHTML = context;
