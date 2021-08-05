@@ -74,12 +74,6 @@ small {
             }
         }
     }
-
-    footer {
-        position: absolute;
-        bottom: 1em;
-        left: 0;
-    }
 }
 
 @include breakpoint('<large') {
