@@ -1174,10 +1174,11 @@ input[type="button"],
     }
 
     >.inner {
-        @include vendor('flex-grow',
-            '1');
+        @include vendor('flex-grow', '1');
         margin: 0 0 ($size-header-pad * 0.5) 0;
         text-align: center;
+        max-height: 75%;
+        overflow-y: auto;
     }
 
     strong,
@@ -1251,7 +1252,7 @@ input[type="button"],
 #main {
     margin-left: $size-header-width;
     /* max-width: 50em + $size-header-pad; */
-    padding: $size-header-pad;
+    padding: 2em $size-header-pad $size-header-pad $size-header-pad;
     width: calc(100% - #{$size-header-width});
 
     >section {

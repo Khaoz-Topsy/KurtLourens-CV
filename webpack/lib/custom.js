@@ -1,16 +1,12 @@
 import $ from './jquery';
-import * as announcement from './announcements';
+// import * as announcement from './announcements';
 
 window.onload = function () {
-    // var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-    //     window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-    // if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
-    // else window.addEventListener('load', loadDeferredStyles);
 
     updateLazyLoadedImagesFromSelector('.inner img.lazy[data-src]');
 
     removeLoader();
-    announcement.getAnnouncements();
+    // announcement.getAnnouncements();
 
     window.setTimeout(updateAllLazyLoadedImages, 10000);
 }
@@ -38,15 +34,6 @@ export function addToHomeScreen() {
         alert('Service Worker could not be installed, this might mean that your browser is not supported');
     }
 }
-
-
-// function loadDeferredStyles() {
-//     var addStylesNode = document.getElementById("deferred-styles");
-//     var replacement = document.createElement("div");
-//     replacement.innerHTML = addStylesNode.textContent;
-//     document.body.appendChild(replacement)
-//     addStylesNode.parentElement.removeChild(addStylesNode);
-// }
 
 function updateLazyLoadedImagesFromSelector(selector) {
     var instance = $(selector).Lazy({ effect: "fadeIn", chainable: false });
@@ -103,4 +90,4 @@ export function darkModeToggle() {
     $("#darkModeSwitch").toggleClass('icon-brightness_4').toggleClass('icon-brightness_low');
 }
 
-export function clearAnnouncements(element) { announcement.clearAnnouncements(element) }
+// export function clearAnnouncements(element) { announcement.clearAnnouncements(element) }
