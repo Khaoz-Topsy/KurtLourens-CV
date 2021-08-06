@@ -62,7 +62,7 @@
             "timePeriodClass": "label-entelect",
             "timePeriodColour": "#004C8E",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "",
+            "content": "[entelect] gave me the opportunities to grow, mentor and lead. Over the years I can see how I have changed from hacking together code to someone who plans, strategises, follows best practices and works with their team to achieve the client's vision. I am so thankful that [entelect] saw my potential and helped me achieve this title.",
             "location": "Johannesburg, South Africa"
         },
         {
@@ -263,6 +263,25 @@
                     "url": "https://nmsassistant.com",
                     "alt": "NoMansSkyYoutube",
                     "text": "Youtube"
+                }
+            ]
+        },
+        {
+            "title": "BEE123",
+            "image": "assets/images/company/BEE123.png",
+            "imageAlt": "BEE123",
+            "timePeriodText": "April 2019 – Present",
+            "timePeriodTextAlt": "Ongoing - Client project",
+            "timePeriodClass": "label-bee123",
+            "timePeriodColour": "#227FDC",
+            "timePeriodTextColour": "#FFFFFF",
+            "content": "I moved on from Hollard to work on the then Sage BEE123. It was a lot older project than what I had been exposed to before. This did lead to some interesting problems such as migrating to latest technology within an old framework. On this team we also had a lot more control over things like deploys and business decisions, which gave everyone in the team exposure to problems we would not have had to deal with.",
+            "isSideProject": false,
+            "links": [
+                {
+                    "url": "https://app.bee123.co.za",
+                    "alt": "bee123 webapp",
+                    "text": "app.bee123.co.za"
                 }
             ]
         },

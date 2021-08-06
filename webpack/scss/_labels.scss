@@ -53,6 +53,12 @@ a[class^="color-"] {
     background-color: #505050;
 }
 
+.label-bee123,
+.label-bee123[href]:hover,
+.label-bee123[href]:focus {
+    background-color: #00334A;
+}
+
 .label-ruby,
 .label-ruby[href]:hover,
 .label-ruby[href]:focus {
