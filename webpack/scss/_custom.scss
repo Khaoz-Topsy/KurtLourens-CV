@@ -190,7 +190,7 @@ h2.noselect,
 
         &.hideWorkProjects .work-item {
             position: absolute;
-            top: 0;
+            top: -50vh;
             left: 0;
             @extend .hidden-row-item;
         }
