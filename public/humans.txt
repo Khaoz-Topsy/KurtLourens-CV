@@ -2,10 +2,10 @@
 Software Engineer: Kurt Lourens
 Contact: hi [at] kurtlourens.com
 Twitter: @KhaozTopsy
-From: Johannesburg, South Africa
+From: Lunteren, The Netherlands
 
 /* SITE */
-Last update: 2021-08-06
+Last update: 2021-10-10
 Language: English
 Doctype:HTML5
 IDE: Visual Studio Code
