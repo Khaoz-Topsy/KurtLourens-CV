@@ -2905,6 +2905,34 @@ body section .row article > div.card {
   transition: all 200ms;
 }
 
+.hideTechStacks .tech-container {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.tech-container {
+  text-align: center;
+  transition: max-height 250ms, opacity 500ms ease-in-out;
+}
+.tech-container hr {
+  margin: 1em 0;
+}
+.tech-container .tech-icon {
+  width: 2em;
+  height: 2em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+.tech-container .tool {
+  display: inline-block;
+}
+.tech-container .tool::after {
+  bottom: 125%;
+  width: 250px;
+  margin-left: -200px;
+}
+
 .mt-1 {
   margin-top: 1em;
 }
@@ -3046,7 +3074,7 @@ h2.noselect,
 
 .row.items.hideSideProjects .side-item {
   position: absolute;
-  top: 0;
+  top: -50vh;
   left: 0;
 }
 .row.items.hideWorkProjects .work-item {

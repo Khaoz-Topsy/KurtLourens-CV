@@ -1,5 +1,6 @@
 @import 'announcements';
 @import 'dark';
+@import 'tech';
 
 $brand-primary-background: #d0d0d0;
 $brand-primary: #322d2a;
@@ -183,7 +184,7 @@ h2.noselect,
 
         &.hideSideProjects .side-item {
             position: absolute;
-            top: 0;
+            top: -50vh;
             left: 0;
             @extend .hidden-row-item;
         }

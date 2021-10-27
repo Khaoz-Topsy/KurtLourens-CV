@@ -241,8 +241,42 @@
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "During a few days while my home internet connection was down, I picked up the game No Man’s Sky again. While playing I was frustrated with the crafting mechanics of the game and how it expected the player to remember over 1200 different items and crafting recipes. I wanted an app that would allow me to get those recipes as easily and fast as possible. There was one app on the Google Play Store, however a lot of its functionality was behind a pay wall. So I decided to build my own version using [flutter]. As of August 2020 (1 year later) the apps reached 45 000 active users! 🎉",
+            "content": "During a few days while my home internet connection was down, I picked up the game No Man’s Sky again. While playing I was frustrated with the crafting mechanics of the game and how it expected the player to remember over 1200 different items and crafting recipes. I wanted an app that would allow me to get those recipes as easily and fast as possible. There was one app on the Google Play Store, however a lot of its functionality was behind a pay wall. So I decided to build my own version using [flutter]. As of August 2021 (2 years later) the apps reached 70 000 active users! 🎉",
             "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core API using .Net5, EntityFrameworkCore and Swagger Docs"
+                },
+                {
+                    "id": "flutter",
+                    "description": "Android and iOS app built using Flutter"
+                },
+                {
+                    "id": "react",
+                    "description": "Multiple webapps built using React to give users fast and performant UIs for users to help with translations of the app and other tools"
+                },
+                {
+                    "id": "angular",
+                    "description": "Admin web pages were built using Angular to edit data on the API"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "Complete CI and CD pipelines for all the websites and services with automated unit tests."
+                },
+                {
+                    "id": "codemagic",
+                    "description": "Complete CI and CD pipelines for the Android and iOS apps are automated"
+                },
+                {
+                    "id": "swagger",
+                    "description": "Used to make a beautiful looking API documentation page with details on how the requests should be formed, what kind of errors to expect and more"
+                },
+                {
+                    "id": "sass",
+                    "description": "Styled using SCSS"
+                }
+            ],
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes",
@@ -277,11 +311,46 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "I moved on from Hollard to work on the then Sage BEE123. It was a lot older project than what I had been exposed to before. This did lead to some interesting problems such as migrating to latest technology within an old framework. On this team we also had a lot more control over things like deploys and business decisions, which gave everyone in the team exposure to problems we would not have had to deal with.",
             "isSideProject": false,
+            "techUsed": [
+                {
+                    "id": "dotNetFrame",
+                    "description": "This project had a lot of legacy code written in .Net Framework"
+                },
+                {
+                    "id": "durandal",
+                    "description": "The UI was built using Durandal, KnockoutJS, JQuery and RequireJS. I lead a project to get us away from these older technologies and helped move us to React."
+                },
+                {
+                    "id": "react",
+                    "description": "I designed a way for us to make use of React components from within Durandal so that we could migrate to React over time without breaking the existing functionality"
+                },
+                {
+                    "id": "azure",
+                    "description": "We migrated the project away from on-premise servers to Azure App Services and later spilt parts of the solution into Azure Functions"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "With my knowledge from previous projects I helped move the solution to Azure DevOps."
+                },
+                {
+                    "id": "sass",
+                    "description": "Styled using SCSS and LESS"
+                },
+                {
+                    "id": "wordpress",
+                    "description": "The home page was designed in Wordpress, we rebuilt and maintained the homepage."
+                }
+            ],
             "links": [
                 {
                     "url": "https://app.bee123.co.za",
                     "alt": "bee123 webapp",
                     "text": "app.bee123.co.za"
+                },
+                {
+                    "url": "https://bee123.co.za",
+                    "alt": "bee123 homepage",
+                    "text": "bee123.co.za"
                 }
             ]
         },
@@ -296,6 +365,20 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "I still had the interest for building apps that was sparked by Hollard's Customer App, but I had gotten tired of waiting for Xamarin to compile. I had a few small POCs of React Native apps which I thought would be easy to create since I had React experience. During this time [flutter] had just been announced that it was production ready. So I decided to learn [flutter] and Dart by making an App as my CV.",
             "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "flutter",
+                    "description": "Android app built using Flutter"
+                },
+                {
+                    "id": "nodejs",
+                    "description": "I used some scripts to fetch data from my blog and generate a JSON file with all the data in it to be used on my CV apps"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "All building, staging and releasing is automated with Azure DevOps"
+                }
+            ],
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurt_lourens_cv",
@@ -315,6 +398,28 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "This project was the second version of the BTS Site Status website. It was rebuilt with dotnet Core and Angular 7. It was quite a challenging project as we needed have all the same functionality of the old project as well as add new features, while maintaining the old project. ",
             "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core API using DotNet Core 2. As well as a TCP server for receiving data from authorised Arduino devices"
+                },
+                {
+                    "id": "angular",
+                    "description": "Client app that displayed the status for all of the cellphone towers belonging to a client. This also had PWA capabilities"
+                },
+                {
+                    "id": "pwa",
+                    "description": "We made use of PWA technology to allow users to install the web application to their mobile devices"
+                },
+                {
+                    "id": "arduino",
+                    "description": "The data for the front end was being sent via TCP connections from Arduino devices hooked up to client's cellphone towers. We needed to have an understanding of how these devices would send the data based on which model was transmitting the data"
+                },
+                {
+                    "id": "sass",
+                    "description": "Styled using SCSS"
+                }
+            ],
             "links": [
                 {
                     "url": "https://app.btsra.co.za",
@@ -335,7 +440,33 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "While I was working on the CQT team, a new project was started called Easy4Business. Which was formed from some of CQT's members. CQT shared knowledge and helped set up Easy4Business. I mainly helped in setting up their CI / CD and using Typescript and Redux as I had learned a lot about these from my home projects. I learned a lot about starting projects on the right foot.",
             "location": "Johannesburg, South Africa",
-            "isSideProject": false
+            "isSideProject": false,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core API using DotNet Core 2."
+                },
+                {
+                    "id": "react",
+                    "description": "This project's React app made use of some of the React components built in CQT."
+                },
+                {
+                    "id": "typescript",
+                    "description": "From my experience with CQT and side projects, I started this on the right foot with Typescript"
+                },
+                {
+                    "id": "redux",
+                    "description": "From my experience with CQT and side projects, I started this on the right foot with Redux"
+                },
+                {
+                    "id": "formik",
+                    "description": "Due to us needing to handle many forms, we decided to make use of this library to help us manage all the inputs, validations and conditional forms"
+                },
+                {
+                    "id": "sass",
+                    "description": "Styled using SCSS"
+                }
+            ]
         },
         {
             "title": "RemoteConfigs",
@@ -349,6 +480,36 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "This project was started from a problem that a friend of mine had which was managing his configs across multiple apps. This solution allows users to save the configurations as key value pairs and then retrieve those values through a Restful Api. Some of the cool things we added was a Nuget package so our users could get started quickly and Variants (which allows a user to set up simple logic to return different configs based on the current date, day of the week or random percentage chance). In the future we aim to have asymmetric encryption, user based A/B testing, hit user webhooks on certain events, and an NPM package. \n\r This app makes use of RemoteConfigs to get the in App announcements.",
             "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core MVC application. "
+                },
+                {
+                    "id": "jquery",
+                    "description": "The UI was enhanced with JQuery for a better user experience (less PostBacks)"
+                },
+                {
+                    "id": "swagger",
+                    "description": "We wanted people to easily be able to integrate with our solution. We used to make a beautiful looking API documentation page with details on how the requests should be formed, what kind of errors to expect and more"
+                },
+                {
+                    "id": "npm",
+                    "description": "I created a NPM package so that users can integrate with the API quickly and easily"
+                },
+                {
+                    "id": "gulp",
+                    "description": "Gulp was used to bundle up the Javascript and generate the CSS from the SCSS files"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "All building, staging and releasing is automated with Azure DevOps"
+                },
+                {
+                    "id": "sass",
+                    "description": "Styled using SCSS"
+                }
+            ],
             "links": [
                 {
                     "url": "https://remoteconfigs.com",
@@ -368,6 +529,32 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "I started this project because I wanted to learn about SignalR, as I was going to need it in the Build Monitor project. This project ended up being a really good learning opportunity. I got to learn some C# image manipulation (cutting the Cards from Cards Against Humanity's official Cards PDF) , some Optical character Recognition (using Microsoft's Cognitive services to read the words on each of the Cards), some in browser text to speech (HowlerJS reading the Card's text out loud), QR code generation and Reading (So that people wouldn’t have to enter the GameId manually) and A LOT of CSS animations. Some of the best animations that I have done in any project.",
             "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core API running using .NetCore 2 "
+                },
+                {
+                    "id": "angular",
+                    "description": "I used this project to learn Angular 5, which aws the latest at the time 😅"
+                },
+                {
+                    "id": "signalr",
+                    "description": "I used SignalR for players to be able to get real time communication"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "All building, staging and releasing is automated with Azure DevOps"
+                },
+                {
+                    "id": "pwa",
+                    "description": "This site can be installed to a mobile device's home screen"
+                },
+                {
+                    "id": "sass",
+                    "description": "Styled using SCSS"
+                }
+            ],
             "links": [
                 {
                     "url": "https://cah.kurtlourens.com",
@@ -387,6 +574,28 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "While I was working on the CQT team, we had a Raspberry PI that was our build monitor. It was just running the VSTS (at the time, now Azure Devops) dashboard. However the PI would often become overwhelmed and the web page would go into not responding (we theorised that the dashboard webpage was just to heavy). I created an AngularJS app to serve as our build monitor. Eventually I recreated it in Angular 6. Ever since then our team's PI has been happily trudging along.",
             "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core API using DotNet Core. Later upgraded to DotNet Core 2 and even later DotNet Core 3"
+                },
+                {
+                    "id": "angular",
+                    "description": "This project was built with Angular 5"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "All building, staging and releasing is automated with Azure DevOps"
+                },
+                {
+                    "id": "pwa",
+                    "description": "This site can be installed to a mobile device's home screen"
+                },
+                {
+                    "id": "sass",
+                    "description": "Styled using SCSS"
+                }
+            ],
             "links": [
                 {
                     "url": "https://monitor.kurtlourens.com",
@@ -406,7 +615,33 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "BTS was a small project which showed the status of cellphone towers in South Africa. BTS had about 300 devices with a range of meters each, that were attached to cellphone towers across South Africa. Each of these devices would inform PnPScada what the tower's voltage, amps, electricity usage, etc were. Myself and Morné created a .Net Core Api with an AngularJS front-end to display this data to BTS clients who wanted to know how much electricity their towers were using as well as the last time the specific tower was 'online'.",
             "location": " ̶p̶o̶r̶t̶a̶l̶.̶b̶t̶s̶r̶a̶.̶c̶o̶.̶z̶a̶",
-            "isSideProject": true
+            "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core API using DotNet Core"
+                },
+                {
+                    "id": "angular",
+                    "description": "This project was built with AngularJS"
+                },
+                {
+                    "id": "gulp",
+                    "description": "Gulp was used to bundle up the Javascript and generate the CSS from the SCSS files"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "All building, staging and releasing is automated with Azure DevOps"
+                },
+                {
+                    "id": "pwa",
+                    "description": "This site can be installed to a mobile device's home screen"
+                },
+                {
+                    "id": "sass",
+                    "description": "Styled using SCSS"
+                }
+            ]
         },
         {
             "title": "KhaozNet IoT",
@@ -421,6 +656,32 @@
             "content": "In the beginning of 2018 I attended an [entelect] Makers Club, it instantly sparked my interest in Arduino. It felt like a whole new world had been opened up for me, one where my software could affect the real world. Since then I have made quite a few Arduino contraptions, such as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to switch the water on and off (which I plan to automate in the future).",
             "contentHtml": "<p>In the beginning of 2018 I attended an&nbsp;<strong><a href=\"http://www.entelect.co.za\" class=\"color-entelect\" target=\"_blank\" rel=\"noopener\" title=\"entelect\" alt=\"entelect\">Entelect</a></strong>&nbsp;Makers Club, it instantly sparked my interest in Arduino. It felt like a whole new world had been opened up for me, one where my software could affect the real world. Since then I have made quite a few Arduino contraptions, such as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to switch the water on and off (which I plan to automate in the future).<p>",
             "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core API using DotNet Core"
+                },
+                {
+                    "id": "angular",
+                    "description": "This project was built with AngularJS originally and later rewritten using Angular 5"
+                },
+                {
+                    "id": "arduino",
+                    "description": "This solution made use of small ESP32 decives to control specific actions like opening my garage, measure soil humidity, water the garden, etc"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "All building, staging and releasing is automated with Azure DevOps"
+                },
+                {
+                    "id": "pwa",
+                    "description": "This site can be installed to a mobile device's home screen"
+                },
+                {
+                    "id": "sass",
+                    "description": "This was my first interaction with SCSS and from this project onwards I used it on as many projects as I could"
+                }
+            ],
             "links": [
                 {
                     "url": "https://iot.khaoznet.xyz",
@@ -441,7 +702,29 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "CQT is an internal system to help Broker Consultants create quotes. We integrated into many services at Hollard. The team had quite a lot of say in the technologies used. The technology stack that we ended up going with (React frontend and C# MVC .Net Framework backend) caused us to spend a lot of time learning (mostly React) and we ended up with quite a bit of technical debt due to time constraints and pressure from business. We were one of the first teams in Hollard to have a fully automated CI / CD pipeline and we set the golden standard on how to do deployments at Hollard. I grew a lot in this project. In the beginning I was the only Junior in the team of 5. As the team grew I was able to take on some more responsibilities. I became known as the 'Senior Grad' up until my promotion to Intermediate Software Engineer.",
             "location": "Johannesburg, South Africa",
-            "isSideProject": false
+            "isSideProject": false,
+            "techUsed": [
+                {
+                    "id": "dotNetFrame",
+                    "description": "Initially the project was set up to be an ASP.Net MVC project with some JQuery but we later built most of the app in React"
+                },
+                {
+                    "id": "react",
+                    "description": "No one on our team had ever used React before, so we were forced to learn very quickly"
+                },
+                {
+                    "id": "semanticui",
+                    "description": "Semantic UI for React kept our project consistent and their documentation was really great"
+                },
+                {
+                    "id": "gulp",
+                    "description": "Gulp was used to bundle up the Javascript and generate the CSS from the SCSS files"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "All building, staging and releasing is automated with Azure DevOps"
+                }
+            ]
         },
         {
             "title": "TennoDex",
@@ -454,6 +737,40 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "TennoDex has been my longest running side project. It simply consumes a Web Api and displays data, but it's technology stack has grown as I have. TennoDex has been rebuilt from the ground up more than 3 times by now, each time with a new tech stack. Initially TennoDex was a .Net Framework Web Api with an AngularJS front-end, then it was a .Net Core Web Api with an Android App built with Xamarin. Currently TennoDex is a .Net Core Web Api with a ReactJS front-end and an Android App built with React-Native. What makes the latest version special is that the Web App and the Mobile App use the same Typescript objects that are generated by the Web Api as well as sharing the same logic (i.e. mostly only implementing the native presentation layer. For the web: HTML, CSS and Javascript. For Mobile: React Native Components).",
             "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "angular",
+                    "description": "Originally this website was designed using AngularJS"
+                },
+                {
+                    "id": "react",
+                    "description": "This website was redesigned from AngularJS into React. It was designed in such a way that the logic, API calls, Typescript models and Redux state management could be shared and only the views needed designed for each platform (web and native)"
+                },
+                {
+                    "id": "typescript",
+                    "description": "I used this project to learn how to use Typescript"
+                },
+                {
+                    "id": "redux",
+                    "description": "I used this project to learn how to use Redux. The Redux logic was written in such a way that it could be shared over the different platforms"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "All building, staging and releasing is automated with Azure DevOps"
+                },
+                {
+                    "id": "pwa",
+                    "description": "This site can be installed to a mobile device's home screen"
+                },
+                {
+                    "id": "xamarin",
+                    "description": "Android app built in Xamarin, using Native UI"
+                },
+                {
+                    "id": "react",
+                    "description": "Android app was re-built using React Native"
+                }
+            ],
             "links": [
                 {
                     "url": "https://tennodex.com",
@@ -474,7 +791,13 @@
             "timePeriodTextColour": "#FFFFFF",
             "content": "I joined a team at Hollard Insurance in Parktown North, where I worked on their Customer App built with Xamarin. It was quite a tough fit as I did not have any real experience with Xamarin. This move was only temporary, as Hollard wanted me for a project that was to start soon after I joined. I learned a lot from working on that team and it sparked an interest in App Development. I went on to create the first version of TennoDex (Xamarin app with a C# .Net Core Api backend) in my spare time using what I had learned.",
             "location": "Johannesburg, South Africa",
-            "isSideProject": false
+            "isSideProject": false,
+            "techUsed": [
+                {
+                    "id": "xamarin",
+                    "description": "Android and iOS apps built in Xamarin, using Native UI"
+                }
+            ]
         },
         {
             "title": "Allan Grey FAIFA",
@@ -489,5 +812,107 @@
             "location": "Johannesburg, South Africa",
             "isSideProject": false
         }
-    ]
+    ],
+    "tech": {
+        "dotNetFrame": {
+            "name": ".Net Framework",
+            "img": "dotnetFramework.svg"
+        },
+        "dotNetCore": {
+            "name": "DotNet Core",
+            "img": "dotnetCore.svg"
+        },
+        "cSharp": {
+            "name": "C#",
+            "img": "c-sharp.svg"
+        },
+        "flutter": {
+            "name": "Flutter",
+            "img": "flutter.svg"
+        },
+        "dart": {
+            "name": "Dart",
+            "img": "dart.svg"
+        },
+        "durandal": {
+            "name": "Durandal",
+            "img": "jquery.svg"
+        },
+        "jquery": {
+            "name": "JQuery",
+            "img": "jquery.svg"
+        },
+        "react": {
+            "name": "React",
+            "img": "react.svg"
+        },
+        "angular": {
+            "name": "Angular",
+            "img": "angular.svg"
+        },
+        "entityFrameworkCore": {
+            "name": "EntityFrameworkCore",
+            "img": "angular.svg"
+        },
+        "swagger": {
+            "name": "Swagger",
+            "img": "swagger.svg"
+        },
+        "wordpress": {
+            "name": "WordPress",
+            "img": "wordpress.svg"
+        },
+        "azure": {
+            "name": "Azure App Services",
+            "img": "azure.svg"
+        },
+        "azdevops": {
+            "name": "Azure DevOps",
+            "img": "azurePipelines.svg"
+        },
+        "nodejs": {
+            "name": "NodeJS",
+            "img": "nodejs.svg"
+        },
+        "pwa": {
+            "name": "PWA",
+            "img": "pwa.svg"
+        },
+        "npm": {
+            "name": "NPM",
+            "img": "npm.svg"
+        },
+        "codemagic": {
+            "name": "CodeMagic.io",
+            "img": "codeMagic.png"
+        },
+        "arduino": {
+            "name": "Arduino",
+            "img": "arduino.svg"
+        },
+        "formik": {
+            "name": "Formik",
+            "img": "formik.svg"
+        },
+        "redux": {
+            "name": "Redux",
+            "img": "redux.svg"
+        },
+        "sass": {
+            "name": "SASS",
+            "img": "sass.svg"
+        },
+        "xamarin": {
+            "name": "Xamarin",
+            "img": "xamarin.svg"
+        },
+        "reactnative": {
+            "name": "React Native",
+            "img": "reactnative.svg"
+        },
+        "semanticui": {
+            "name": "Semantic UI",
+            "img": "semantic-ui.svg"
+        }
+    }
 }

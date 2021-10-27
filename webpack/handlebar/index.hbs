@@ -328,16 +328,20 @@
                 <div class="col-12 mb-1">
                     <input id="showSideProjects" type="checkbox" checked="true"
                         onclick="KurtLourens.toggleChildRowItemVisibility('projects', 'hideSideProjects')" />
-                    <label for="showSideProjects">Show side projects</label>
+                    <label for="showSideProjects" class="noselect">Show side projects</label>
                     &nbsp;&nbsp;
                     <input id="showWorkProjects" type="checkbox" checked="true"
                         onclick="KurtLourens.toggleChildRowItemVisibility('projects', 'hideWorkProjects')" />
-                    <label for="showWorkProjects">Show corporate projects</label>
+                    <label for="showWorkProjects" class="noselect">Show corporate projects</label>
+                    <br />
+                    <input id="showTechStacks" type="checkbox" checked="true"
+                        onclick="KurtLourens.toggleTechStacks()" />
+                    <label for="showTechStacks" class="noselect">Show technologies used</label>
                 </div>
             </div>
             <div class="row items collapse">
                 {{#each projects}}
-                {{> components/workItem }}
+                {{> components/workItem techLookup=../tech}}
                 {{/each}}
                 <div class="col-12">
                     <h3 class="no-items">No projects selected</h3>
@@ -380,7 +384,7 @@
                 <div class="col-12"><span>As part of the redesign this website has an automated CI / CD
                         pipeline:&nbsp;</span><img src="assets/images/loader.svg" class="lazy"
                         data-src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI"
-                        alt="Website build status" /><img src="assets/images/loader.svg" class="lazy"
+                        alt="Website build status" />&nbsp;<img src="assets/images/loader.svg" class="lazy"
                         data-src="https://vsrm.dev.azure.com/khaoznet/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20"
                         alt="Website deployment status" /></div>
                 <div class="col-12"><span>
@@ -391,7 +395,7 @@
                         CI / CD pipeline:&nbsp;
                     </span><img src="assets/images/loader.svg" class="lazy"
                         data-src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.FlutterCV%20-%20CI"
-                        alt="Website build status" /><img src="assets/images/loader.svg" class="lazy"
+                        alt="Website build status" />&nbsp;<img src="assets/images/loader.svg" class="lazy"
                         data-src="https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/18/25"
                         alt="Website deployment status" /></div>
                 <div class="col-12">

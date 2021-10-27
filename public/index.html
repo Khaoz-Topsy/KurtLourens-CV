@@ -233,9 +233,9 @@
                         "ratingValue": "5"
                     },
                     "inLanguage": "en",
-                    "dateCreated": "2021-10-19",
-                    "dateModified": "2021-10-19",
-                    "datePublished": "2021-10-19"
+                    "dateCreated": "2021-10-27",
+                    "dateModified": "2021-10-27",
+                    "datePublished": "2021-10-27"
                 }
             ],
             "nationality": {
@@ -449,11 +449,15 @@
                 <div class="col-12 mb-1">
                     <input id="showSideProjects" type="checkbox" checked="true"
                         onclick="KurtLourens.toggleChildRowItemVisibility('projects', 'hideSideProjects')" />
-                    <label for="showSideProjects">Show side projects</label>
+                    <label for="showSideProjects" class="noselect">Show side projects</label>
                     &nbsp;&nbsp;
                     <input id="showWorkProjects" type="checkbox" checked="true"
                         onclick="KurtLourens.toggleChildRowItemVisibility('projects', 'hideWorkProjects')" />
-                    <label for="showWorkProjects">Show corporate projects</label>
+                    <label for="showWorkProjects" class="noselect">Show corporate projects</label>
+                    <br />
+                    <input id="showTechStacks" type="checkbox" checked="true"
+                        onclick="KurtLourens.toggleTechStacks()" />
+                    <label for="showTechStacks" class="noselect">Show technologies used</label>
                 </div>
             </div>
             <div class="row items collapse">
@@ -485,8 +489,43 @@
                             </small>
                         </h2>
                 
-                        <p>During a few days while my home internet connection was down, I picked up the game No Man’s Sky again. While playing I was frustrated with the crafting mechanics of the game and how it expected the player to remember over 1200 different items and crafting recipes. I wanted an app that would allow me to get those recipes as easily and fast as possible. There was one app on the Google Play Store, however a lot of its functionality was behind a pay wall. So I decided to build my own version using <a href="https://flutter.dev/?ref=kurtlourens.com" class="color-flutter" target="_blank" rel="noopener" title="Flutter" alt="Flutter">Flutter</a>. As of August 2020 (1 year later) the apps reached 45 000 active users! 🎉</p>
+                        <p>During a few days while my home internet connection was down, I picked up the game No Man’s Sky again. While playing I was frustrated with the crafting mechanics of the game and how it expected the player to remember over 1200 different items and crafting recipes. I wanted an app that would allow me to get those recipes as easily and fast as possible. There was one app on the Google Play Store, however a lot of its functionality was behind a pay wall. So I decided to build my own version using <a href="https://flutter.dev/?ref=kurtlourens.com" class="color-flutter" target="_blank" rel="noopener" title="Flutter" alt="Flutter">Flutter</a>. As of August 2021 (2 years later) the apps reached 70 000 active users! 🎉</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="DotNet Core API using .Net5, EntityFrameworkCore and Swagger Docs">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetCore.svg" draggable="false"
+                                    class="lazy tech-icon" alt="DotNet Core" />
+                            </span>
+                            <span class="tool" data-tip="Android and iOS app built using Flutter">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/flutter.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Flutter" />
+                            </span>
+                            <span class="tool" data-tip="Multiple webapps built using React to give users fast and performant UIs for users to help with translations of the app and other tools">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/react.svg" draggable="false"
+                                    class="lazy tech-icon" alt="React" />
+                            </span>
+                            <span class="tool" data-tip="Admin web pages were built using Angular to edit data on the API">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/angular.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Angular" />
+                            </span>
+                            <span class="tool" data-tip="Complete CI and CD pipelines for all the websites and services with automated unit tests.">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                            <span class="tool" data-tip="Complete CI and CD pipelines for the Android and iOS apps are automated">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/codeMagic.png" draggable="false"
+                                    class="lazy tech-icon" alt="CodeMagic.io" />
+                            </span>
+                            <span class="tool" data-tip="Used to make a beautiful looking API documentation page with details on how the requests should be formed, what kind of errors to expect and more">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/swagger.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Swagger" />
+                            </span>
+                            <span class="tool" data-tip="Styled using SCSS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/sass.svg" draggable="false"
+                                    class="lazy tech-icon" alt="SASS" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item work-item">
                     <div class="card">
@@ -504,11 +543,45 @@
                                 
                                 <a href="https://app.bee123.co.za?ref&#x3D;kurtlourens.com" target="_blank" rel="noopener noreferrer" title="bee123 webapp"
                                     alt="bee123 webapp">app.bee123.co.za</a>
+                                <span>,&nbsp;</span>
+                                <a href="https://bee123.co.za?ref&#x3D;kurtlourens.com" target="_blank" rel="noopener noreferrer" title="bee123 homepage"
+                                    alt="bee123 homepage">bee123.co.za</a>
                             </small>
                         </h2>
                 
                         <p>I moved on from Hollard to work on the then Sage BEE123. It was a lot older project than what I had been exposed to before. This did lead to some interesting problems such as migrating to latest technology within an old framework. On this team we also had a lot more control over things like deploys and business decisions, which gave everyone in the team exposure to problems we would not have had to deal with.</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="This project had a lot of legacy code written in .Net Framework">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetFramework.svg" draggable="false"
+                                    class="lazy tech-icon" alt=".Net Framework" />
+                            </span>
+                            <span class="tool" data-tip="The UI was built using Durandal, KnockoutJS, JQuery and RequireJS. I lead a project to get us away from these older technologies and helped move us to React.">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/jquery.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Durandal" />
+                            </span>
+                            <span class="tool" data-tip="I designed a way for us to make use of React components from within Durandal so that we could migrate to React over time without breaking the existing functionality">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/react.svg" draggable="false"
+                                    class="lazy tech-icon" alt="React" />
+                            </span>
+                            <span class="tool" data-tip="We migrated the project away from on-premise servers to Azure App Services and later spilt parts of the solution into Azure Functions">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azure.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure App Services" />
+                            </span>
+                            <span class="tool" data-tip="With my knowledge from previous projects I helped move the solution to Azure DevOps.">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                            <span class="tool" data-tip="Styled using SCSS and LESS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/sass.svg" draggable="false"
+                                    class="lazy tech-icon" alt="SASS" />
+                            </span>
+                            <span class="tool" data-tip="The home page was designed in Wordpress, we rebuilt and maintained the homepage.">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/wordpress.svg" draggable="false"
+                                    class="lazy tech-icon" alt="WordPress" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item side-item">
                     <div class="card">
@@ -531,6 +604,21 @@
                 
                         <p>I still had the interest for building apps that was sparked by Hollard's Customer App, but I had gotten tired of waiting for Xamarin to compile. I had a few small POCs of React Native apps which I thought would be easy to create since I had React experience. During this time <a href="https://flutter.dev/?ref=kurtlourens.com" class="color-flutter" target="_blank" rel="noopener" title="Flutter" alt="Flutter">Flutter</a> had just been announced that it was production ready. So I decided to learn <a href="https://flutter.dev/?ref=kurtlourens.com" class="color-flutter" target="_blank" rel="noopener" title="Flutter" alt="Flutter">Flutter</a> and Dart by making an App as my CV.</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="Android app built using Flutter">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/flutter.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Flutter" />
+                            </span>
+                            <span class="tool" data-tip="I used some scripts to fetch data from my blog and generate a JSON file with all the data in it to be used on my CV apps">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/nodejs.svg" draggable="false"
+                                    class="lazy tech-icon" alt="NodeJS" />
+                            </span>
+                            <span class="tool" data-tip="All building, staging and releasing is automated with Azure DevOps">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item side-item">
                     <div class="card">
@@ -553,6 +641,29 @@
                 
                         <p>This project was the second version of the BTS Site Status website. It was rebuilt with dotnet Core and Angular 7. It was quite a challenging project as we needed have all the same functionality of the old project as well as add new features, while maintaining the old project. </p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="DotNet Core API using DotNet Core 2. As well as a TCP server for receiving data from authorised Arduino devices">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetCore.svg" draggable="false"
+                                    class="lazy tech-icon" alt="DotNet Core" />
+                            </span>
+                            <span class="tool" data-tip="Client app that displayed the status for all of the cellphone towers belonging to a client. This also had PWA capabilities">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/angular.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Angular" />
+                            </span>
+                            <span class="tool" data-tip="We made use of PWA technology to allow users to install the web application to their mobile devices">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/pwa.svg" draggable="false"
+                                    class="lazy tech-icon" alt="PWA" />
+                            </span>
+                            <span class="tool" data-tip="The data for the front end was being sent via TCP connections from Arduino devices hooked up to client&#x27;s cellphone towers. We needed to have an understanding of how these devices would send the data based on which model was transmitting the data">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/arduino.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Arduino" />
+                            </span>
+                            <span class="tool" data-tip="Styled using SCSS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/sass.svg" draggable="false"
+                                    class="lazy tech-icon" alt="SASS" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item work-item">
                     <div class="card">
@@ -568,6 +679,29 @@
                 
                         <p>While I was working on the CQT team, a new project was started called Easy4Business. Which was formed from some of CQT's members. CQT shared knowledge and helped set up Easy4Business. I mainly helped in setting up their CI / CD and using Typescript and Redux as I had learned a lot about these from my home projects. I learned a lot about starting projects on the right foot.</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="DotNet Core API using DotNet Core 2.">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetCore.svg" draggable="false"
+                                    class="lazy tech-icon" alt="DotNet Core" />
+                            </span>
+                            <span class="tool" data-tip="This project&#x27;s React app made use of some of the React components built in CQT.">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/react.svg" draggable="false"
+                                    class="lazy tech-icon" alt="React" />
+                            </span>
+                            <span class="tool" data-tip="From my experience with CQT and side projects, I started this on the right foot with Redux">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/redux.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Redux" />
+                            </span>
+                            <span class="tool" data-tip="Due to us needing to handle many forms, we decided to make use of this library to help us manage all the inputs, validations and conditional forms">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/formik.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Formik" />
+                            </span>
+                            <span class="tool" data-tip="Styled using SCSS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/sass.svg" draggable="false"
+                                    class="lazy tech-icon" alt="SASS" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item side-item">
                     <div class="card">
@@ -591,6 +725,33 @@
                         <p>This project was started from a problem that a friend of mine had which was managing his configs across multiple apps. This solution allows users to save the configurations as key value pairs and then retrieve those values through a Restful Api. Some of the cool things we added was a Nuget package so our users could get started quickly and Variants (which allows a user to set up simple logic to return different configs based on the current date, day of the week or random percentage chance). In the future we aim to have asymmetric encryption, user based A/B testing, hit user webhooks on certain events, and an NPM package. 
                  This app makes use of RemoteConfigs to get the in App announcements.</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="DotNet Core MVC application. ">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetCore.svg" draggable="false"
+                                    class="lazy tech-icon" alt="DotNet Core" />
+                            </span>
+                            <span class="tool" data-tip="The UI was enhanced with JQuery for a better user experience (less PostBacks)">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/jquery.svg" draggable="false"
+                                    class="lazy tech-icon" alt="JQuery" />
+                            </span>
+                            <span class="tool" data-tip="We wanted people to easily be able to integrate with our solution. We used to make a beautiful looking API documentation page with details on how the requests should be formed, what kind of errors to expect and more">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/swagger.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Swagger" />
+                            </span>
+                            <span class="tool" data-tip="I created a NPM package so that users can integrate with the API quickly and easily">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/npm.svg" draggable="false"
+                                    class="lazy tech-icon" alt="NPM" />
+                            </span>
+                            <span class="tool" data-tip="All building, staging and releasing is automated with Azure DevOps">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                            <span class="tool" data-tip="Styled using SCSS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/sass.svg" draggable="false"
+                                    class="lazy tech-icon" alt="SASS" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item side-item">
                     <div class="card">
@@ -613,6 +774,29 @@
                 
                         <p>I started this project because I wanted to learn about SignalR, as I was going to need it in the Build Monitor project. This project ended up being a really good learning opportunity. I got to learn some C# image manipulation (cutting the Cards from Cards Against Humanity's official Cards PDF) , some Optical character Recognition (using Microsoft's Cognitive services to read the words on each of the Cards), some in browser text to speech (HowlerJS reading the Card's text out loud), QR code generation and Reading (So that people wouldn’t have to enter the GameId manually) and A LOT of CSS animations. Some of the best animations that I have done in any project.</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="DotNet Core API running using .NetCore 2 ">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetCore.svg" draggable="false"
+                                    class="lazy tech-icon" alt="DotNet Core" />
+                            </span>
+                            <span class="tool" data-tip="I used this project to learn Angular 5, which aws the latest at the time 😅">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/angular.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Angular" />
+                            </span>
+                            <span class="tool" data-tip="All building, staging and releasing is automated with Azure DevOps">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                            <span class="tool" data-tip="This site can be installed to a mobile device&#x27;s home screen">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/pwa.svg" draggable="false"
+                                    class="lazy tech-icon" alt="PWA" />
+                            </span>
+                            <span class="tool" data-tip="Styled using SCSS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/sass.svg" draggable="false"
+                                    class="lazy tech-icon" alt="SASS" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item side-item">
                     <div class="card">
@@ -635,6 +819,29 @@
                 
                         <p>While I was working on the CQT team, we had a Raspberry PI that was our build monitor. It was just running the VSTS (at the time, now Azure Devops) dashboard. However the PI would often become overwhelmed and the web page would go into not responding (we theorised that the dashboard webpage was just to heavy). I created an AngularJS app to serve as our build monitor. Eventually I recreated it in Angular 6. Ever since then our team's PI has been happily trudging along.</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="DotNet Core API using DotNet Core. Later upgraded to DotNet Core 2 and even later DotNet Core 3">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetCore.svg" draggable="false"
+                                    class="lazy tech-icon" alt="DotNet Core" />
+                            </span>
+                            <span class="tool" data-tip="This project was built with Angular 5">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/angular.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Angular" />
+                            </span>
+                            <span class="tool" data-tip="All building, staging and releasing is automated with Azure DevOps">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                            <span class="tool" data-tip="This site can be installed to a mobile device&#x27;s home screen">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/pwa.svg" draggable="false"
+                                    class="lazy tech-icon" alt="PWA" />
+                            </span>
+                            <span class="tool" data-tip="Styled using SCSS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/sass.svg" draggable="false"
+                                    class="lazy tech-icon" alt="SASS" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item side-item">
                     <div class="card">
@@ -650,6 +857,29 @@
                 
                         <p>BTS was a small project which showed the status of cellphone towers in South Africa. BTS had about 300 devices with a range of meters each, that were attached to cellphone towers across South Africa. Each of these devices would inform PnPScada what the tower's voltage, amps, electricity usage, etc were. Myself and Morné created a .Net Core Api with an AngularJS front-end to display this data to BTS clients who wanted to know how much electricity their towers were using as well as the last time the specific tower was 'online'.</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="DotNet Core API using DotNet Core">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetCore.svg" draggable="false"
+                                    class="lazy tech-icon" alt="DotNet Core" />
+                            </span>
+                            <span class="tool" data-tip="This project was built with AngularJS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/angular.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Angular" />
+                            </span>
+                            <span class="tool" data-tip="All building, staging and releasing is automated with Azure DevOps">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                            <span class="tool" data-tip="This site can be installed to a mobile device&#x27;s home screen">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/pwa.svg" draggable="false"
+                                    class="lazy tech-icon" alt="PWA" />
+                            </span>
+                            <span class="tool" data-tip="Styled using SCSS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/sass.svg" draggable="false"
+                                    class="lazy tech-icon" alt="SASS" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item side-item">
                     <div class="card">
@@ -672,6 +902,33 @@
                 
                         <p>In the beginning of 2018 I attended an <a href="http://www.entelect.co.za?ref=kurtlourens.com" class="color-entelect" target="_blank" rel="noopener" title="Entelect" alt="Entelect">Entelect</a> Makers Club, it instantly sparked my interest in Arduino. It felt like a whole new world had been opened up for me, one where my software could affect the real world. Since then I have made quite a few Arduino contraptions, such as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to switch the water on and off (which I plan to automate in the future).</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="DotNet Core API using DotNet Core">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetCore.svg" draggable="false"
+                                    class="lazy tech-icon" alt="DotNet Core" />
+                            </span>
+                            <span class="tool" data-tip="This project was built with AngularJS originally and later rewritten using Angular 5">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/angular.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Angular" />
+                            </span>
+                            <span class="tool" data-tip="This solution made use of small ESP32 decives to control specific actions like opening my garage, measure soil humidity, water the garden, etc">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/arduino.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Arduino" />
+                            </span>
+                            <span class="tool" data-tip="All building, staging and releasing is automated with Azure DevOps">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                            <span class="tool" data-tip="This site can be installed to a mobile device&#x27;s home screen">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/pwa.svg" draggable="false"
+                                    class="lazy tech-icon" alt="PWA" />
+                            </span>
+                            <span class="tool" data-tip="This was my first interaction with SCSS and from this project onwards I used it on as many projects as I could">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/sass.svg" draggable="false"
+                                    class="lazy tech-icon" alt="SASS" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item work-item">
                     <div class="card">
@@ -687,6 +944,25 @@
                 
                         <p>CQT is an internal system to help Broker Consultants create quotes. We integrated into many services at Hollard. The team had quite a lot of say in the technologies used. The technology stack that we ended up going with (React frontend and C# MVC .Net Framework backend) caused us to spend a lot of time learning (mostly React) and we ended up with quite a bit of technical debt due to time constraints and pressure from business. We were one of the first teams in Hollard to have a fully automated CI / CD pipeline and we set the golden standard on how to do deployments at Hollard. I grew a lot in this project. In the beginning I was the only Junior in the team of 5. As the team grew I was able to take on some more responsibilities. I became known as the 'Senior Grad' up until my promotion to Intermediate Software Engineer.</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="Initially the project was set up to be an ASP.Net MVC project with some JQuery but we later built most of the app in React">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/dotnetFramework.svg" draggable="false"
+                                    class="lazy tech-icon" alt=".Net Framework" />
+                            </span>
+                            <span class="tool" data-tip="No one on our team had ever used React before, so we were forced to learn very quickly">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/react.svg" draggable="false"
+                                    class="lazy tech-icon" alt="React" />
+                            </span>
+                            <span class="tool" data-tip="Semantic UI for React kept our project consistent and their documentation was really great">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/semantic-ui.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Semantic UI" />
+                            </span>
+                            <span class="tool" data-tip="All building, staging and releasing is automated with Azure DevOps">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item side-item">
                     <div class="card">
@@ -709,6 +985,37 @@
                 
                         <p>TennoDex has been my longest running side project. It simply consumes a Web Api and displays data, but it's technology stack has grown as I have. TennoDex has been rebuilt from the ground up more than 3 times by now, each time with a new tech stack. Initially TennoDex was a .Net Framework Web Api with an AngularJS front-end, then it was a .Net Core Web Api with an Android App built with Xamarin. Currently TennoDex is a .Net Core Web Api with a ReactJS front-end and an Android App built with React-Native. What makes the latest version special is that the Web App and the Mobile App use the same Typescript objects that are generated by the Web Api as well as sharing the same logic (i.e. mostly only implementing the native presentation layer. For the web: HTML, CSS and Javascript. For Mobile: React Native Components).</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="Originally this website was designed using AngularJS">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/angular.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Angular" />
+                            </span>
+                            <span class="tool" data-tip="This website was redesigned from AngularJS into React. It was designed in such a way that the logic, API calls, Typescript models and Redux state management could be shared and only the views needed designed for each platform (web and native)">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/react.svg" draggable="false"
+                                    class="lazy tech-icon" alt="React" />
+                            </span>
+                            <span class="tool" data-tip="I used this project to learn how to use Redux. The Redux logic was written in such a way that it could be shared over the different platforms">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/redux.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Redux" />
+                            </span>
+                            <span class="tool" data-tip="All building, staging and releasing is automated with Azure DevOps">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/azurePipelines.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Azure DevOps" />
+                            </span>
+                            <span class="tool" data-tip="This site can be installed to a mobile device&#x27;s home screen">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/pwa.svg" draggable="false"
+                                    class="lazy tech-icon" alt="PWA" />
+                            </span>
+                            <span class="tool" data-tip="Android app built in Xamarin, using Native UI">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/xamarin.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Xamarin" />
+                            </span>
+                            <span class="tool" data-tip="Android app was re-built using React Native">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/react.svg" draggable="false"
+                                    class="lazy tech-icon" alt="React" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item work-item">
                     <div class="card">
@@ -724,6 +1031,13 @@
                 
                         <p>I joined a team at Hollard Insurance in Parktown North, where I worked on their Customer App built with Xamarin. It was quite a tough fit as I did not have any real experience with Xamarin. This move was only temporary, as Hollard wanted me for a project that was to start soon after I joined. I learned a lot from working on that team and it sparked an interest in App Development. I went on to create the first version of TennoDex (Xamarin app with a C# .Net Core Api backend) in my spare time using what I had learned.</p>
                 
+                        <div class="tech-container">
+                            <hr />
+                            <span class="tool" data-tip="Android and iOS apps built in Xamarin, using Native UI">
+                                <img src="assets/images/loader.svg" data-src="/assets/images/tech/xamarin.svg" draggable="false"
+                                    class="lazy tech-icon" alt="Xamarin" />
+                            </span>
+                        </div>
                     </div>
                 </article>                <article class="col-6 col-12-large col-12-medium col-12-small col-12-xsmall item work-item">
                     <div class="card">
@@ -929,7 +1243,7 @@
                 <div class="col-12"><span>As part of the redesign this website has an automated CI / CD
                         pipeline:&nbsp;</span><img src="assets/images/loader.svg" class="lazy"
                         data-src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.CV.v2%20-%20CI"
-                        alt="Website build status" /><img src="assets/images/loader.svg" class="lazy"
+                        alt="Website build status" />&nbsp;<img src="assets/images/loader.svg" class="lazy"
                         data-src="https://vsrm.dev.azure.com/khaoznet/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/15/20"
                         alt="Website deployment status" /></div>
                 <div class="col-12"><span>
@@ -940,7 +1254,7 @@
                         CI / CD pipeline:&nbsp;
                     </span><img src="assets/images/loader.svg" class="lazy"
                         data-src="https://khaoznet.visualstudio.com/KhaozNet/_apis/build/status/KhaozNet.FlutterCV%20-%20CI"
-                        alt="Website build status" /><img src="assets/images/loader.svg" class="lazy"
+                        alt="Website build status" />&nbsp;<img src="assets/images/loader.svg" class="lazy"
                         data-src="https://khaoznet.vsrm.visualstudio.com/_apis/public/Release/badge/b5441643-fd7c-4330-92d7-bffc23a7e0a4/18/25"
                         alt="Website deployment status" /></div>
                 <div class="col-12">
@@ -995,7 +1309,7 @@
             </ul>
         </div>
     </footer>
-    <script async defer src="/assets/js/bundle.js?2021-10-19" type="text/javascript"></script>
+    <script async defer src="/assets/js/bundle.js?2021-10-27" type="text/javascript"></script>
 </body>
 
 </html>

@@ -85,9 +85,15 @@ export function toggleChildRowItemVisibility(selector, secondSelector) {
     updateLazyLoadedImagesPerSection(selector);
 }
 
+export function toggleTechStacks() {
+    $('body').toggleClass('hideTechStacks');
+
+    updateLazyLoadedImagesPerSection(selector);
+}
+
 export function darkModeToggle() {
-    $("body").toggleClass('dark');
-    $("#darkModeSwitch").toggleClass('icon-brightness_4').toggleClass('icon-brightness_low');
+    $('body').toggleClass('dark');
+    $('#darkModeSwitch').toggleClass('icon-brightness_4').toggleClass('icon-brightness_low');
 }
 
 // export function clearAnnouncements(element) { announcement.clearAnnouncements(element) }
