@@ -302,6 +302,7 @@
         },
         {
             "title": "BEE123",
+            "company": "Entelect",
             "image": "assets/images/company/BEE123.png",
             "imageAlt": "BEE123",
             "timePeriodText": "April 2019 – Present",
@@ -430,6 +431,7 @@
         },
         {
             "title": "Hollard Easy4Business",
+            "company": "Entelect",
             "image": "assets/images/company/Hollard.png",
             "imageAlt": "Hollard",
             "darkModeImage": "assets/images/company/HollardAlt.png",
@@ -606,6 +608,7 @@
         },
         {
             "title": "BTS Site Status",
+            "company": "BTSRA",
             "image": "assets/images/company/BTS.png",
             "imageAlt": "BTS",
             "timePeriodText": "March 2018 – October 2018",
@@ -692,6 +695,7 @@
         },
         {
             "title": "Hollard CQT",
+            "company": "Entelect",
             "image": "assets/images/company/Hollard.png",
             "imageAlt": "Hollard",
             "darkModeImage": "assets/images/company/HollardAlt.png",
@@ -781,6 +785,7 @@
         },
         {
             "title": "Hollard Customer App",
+            "company": "Entelect",
             "image": "assets/images/company/Hollard.png",
             "imageAlt": "Hollard",
             "darkModeImage": "assets/images/company/HollardAlt.png",
@@ -801,6 +806,7 @@
         },
         {
             "title": "Allan Grey FAIFA",
+            "company": "Entelect",
             "image": "assets/images/company/Entelect.png",
             "imageAlt": "Entelect",
             "timePeriodText": "February 2017",
