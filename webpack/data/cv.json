@@ -261,6 +261,10 @@
                     "description": "Admin web pages were built using Angular to edit data on the API"
                 },
                 {
+                    "id": "redux",
+                    "description": "I used both the Dart and Javascript versions of Redux to maintain state accross the different apps"
+                },
+                {
                     "id": "azdevops",
                     "description": "Complete CI and CD pipelines for all the websites and services with automated unit tests."
                 },
