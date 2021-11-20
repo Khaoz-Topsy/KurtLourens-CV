@@ -6,39 +6,54 @@ section {
                 padding: 1em 1.25em 1.25em 1.25em;
                 height: 100%;
                 border-radius: 10px;
-				position: relative;
+                position: relative;
+
                 >.top-right {
                     @include breakpoint('>=medium') {
                         float: right;
                         text-align: right;
                     }
+
                     @include breakpoint('<medium') {
                         display: inline-block;
                         margin-bottom: .5em;
+
+                        p.label {
+                            margin-left: 0;
+                        }
                     }
                 }
+
                 h2 {
                     font-size: 1.25em;
+
                     @include breakpoint('<medium') {
                         margin-bottom: 0;
                     }
+
                     strong {
                         color: #147393;
                         display: block;
                     }
+
                     small {
                         font-size: .65em;
-						@include breakpoint('<small') {
-							//display: none;
-							a {
-								color: #3F65D7;
-							}
+
+                        @include breakpoint('<small') {
+
+                            //display: none;
+                            a {
+                                color: #3F65D7;
+                            }
                         }
                     }
                 }
+
                 img.company {
+                    border-radius: 5px;
                     height: 50px;
                     float: left;
+
                     @include breakpoint('>=medium') {
                         float: right;
                     }

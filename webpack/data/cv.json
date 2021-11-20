@@ -233,6 +233,128 @@
     ],
     "projects": [
         {
+            "title": "AssistantApps",
+            "image": "assets/images/company/AssistantApps.png",
+            "imageAlt": "AssistantApps",
+            "timePeriodText": "Aug 2020 - Present",
+            "timePeriodTextAlt": "Ongoing",
+            "timePeriodClass": "label-kurt",
+            "timePeriodColour": "#505050",
+            "timePeriodTextColour": "#FFFFFF",
+            "content": "After building the Assistant for Scrap Mechanic I realised that there was a lot of functionality that was shared between is and the Assistant for No Man's Sky. So I created a common library in Dart to write shared functionality once and have it be reused across the different apps as well as having a central API for common functionality. I hope to continue expanding the number of apps that fall under the AssistantApps brand! 💪",
+            "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core API using .Net5, EntityFrameworkCore and Swagger Docs. This API is the central API for all the apps that belong to the AssistantApps range."
+                },
+                {
+                    "id": "flutter",
+                    "description": "Common functionalities between the AssistantApps placed in a Dart library"
+                },
+                {
+                    "id": "react",
+                    "description": "A tools page for users to be able to help with translations and other aspects of the apps."
+                },
+                {
+                    "id": "angular",
+                    "description": "Admin web pages were built using Angular to edit data on the API"
+                },
+                {
+                    "id": "signalr",
+                    "description": "I used SignalR for certain actions such as a custom OAuth login for Patrons"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "Complete CI and CD pipelines for all the websites and services with automated unit tests."
+                },
+                {
+                    "id": "redis",
+                    "description": "Used to cache data that is repeatedly fetched from the database as well as to sync data between the API and custom services."
+                },
+                {
+                    "id": "swagger",
+                    "description": "Used to make a beautiful looking API documentation page with details on how the requests should be formed, what kind of errors to expect and more"
+                },
+                {
+                    "id": "sass",
+                    "description": "Styled using SCSS"
+                }
+            ],
+            "links": [
+                {
+                    "url": "https://assistantapps.com",
+                    "alt": "AssistantAppsWebsite",
+                    "text": "Website"
+                },
+                {
+                    "url": "https://github.com/AssistantApps",
+                    "alt": "AssistantAppsGithub",
+                    "text": "Github"
+                }
+            ]
+        },
+        {
+            "title": "Assistant for Scrap Mechanic",
+            "image": "assets/images/company/ScrapMechanic.png",
+            "imageAlt": "ScrapMechanicAssistant",
+            "timePeriodText": "Aug 2020 - Present",
+            "timePeriodTextAlt": "Ongoing - sporadic updates",
+            "timePeriodClass": "label-kurt",
+            "timePeriodColour": "#505050",
+            "timePeriodTextColour": "#FFFFFF",
+            "content": "After the success of the Assistant for No Man's Sky I wanted to try building another app making use of all the knowledge I had gained and try to do some aspects of the apps better. This was also a way for me to experiment with Flutter for Web. This app did not have the same amount of success as the Assistant for No Man's Sky, but I learned a lot and now I have an example of how to do a Flutter app that is responsive on Mobile, Tablet and Desktop screens!",
+            "isSideProject": true,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "DotNet Core API using .Net5, EntityFrameworkCore and Swagger Docs"
+                },
+                {
+                    "id": "flutter",
+                    "description": "Android and iOS app built using Flutter"
+                },
+                {
+                    "id": "pwa",
+                    "description": "I made use of PWA so that people could \"install\" the Flutter web app. It also helps with caching"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "The API makes use of Avure DevOps for CI and CD."
+                },
+                {
+                    "id": "codemagic",
+                    "description": "Complete CI and CD pipelines for the Android and iOS apps are automated"
+                },
+                {
+                    "id": "swagger",
+                    "description": "Used to make a beautiful looking API documentation page with details on how the requests should be formed, what kind of errors to expect and more"
+                }
+            ],
+            "links": [
+                {
+                    "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.scrap_mechanic",
+                    "alt": "GooglePlayStoreScrapMechanic",
+                    "text": "Google Play Store"
+                },
+                {
+                    "url": "https://apps.apple.com/us/app/id1519215611",
+                    "alt": "AppleAppStoreScrapMechanic",
+                    "text": "Apple App Store"
+                },
+                {
+                    "url": "https://scrapassistant.com",
+                    "alt": "ScrapMechanicWebsite",
+                    "text": "Website"
+                },
+                {
+                    "url": "https://github.com/AssistantSMS",
+                    "alt": "ScrapMechanicGithub",
+                    "text": "Github"
+                }
+            ]
+        },
+        {
             "title": "Assistant for No Man's Sky",
             "image": "assets/images/company/NoMansSky.png",
             "imageAlt": "NoMansSkyAssistant",
@@ -271,6 +393,10 @@
                 {
                     "id": "codemagic",
                     "description": "Complete CI and CD pipelines for the Android and iOS apps are automated"
+                },
+                {
+                    "id": "redis",
+                    "description": "Used to cache data that is repeatedly fetched from the database as well as to sync data between the API and custom services."
                 },
                 {
                     "id": "swagger",
@@ -807,20 +933,6 @@
                     "description": "Android and iOS apps built in Xamarin, using Native UI"
                 }
             ]
-        },
-        {
-            "title": "Allan Grey FAIFA",
-            "company": "Entelect",
-            "image": "assets/images/company/Entelect.png",
-            "imageAlt": "Entelect",
-            "timePeriodText": "February 2017",
-            "timePeriodTextAlt": "1 Month",
-            "timePeriodClass": "label-entelect",
-            "timePeriodColour": "#505050",
-            "timePeriodTextColour": "#FFFFFF",
-            "content": "After completing [entelect]'s Grad Bootcamp, I joined the team working on Allan Grey's FAIFA (Find An Independent Financial Advisor). It was my first introduction to React and Redux. My team mates were very experienced in the technologies used and I learned a lot.",
-            "location": "Johannesburg, South Africa",
-            "isSideProject": false
         }
     ],
     "tech": {
@@ -923,6 +1035,32 @@
         "semanticui": {
             "name": "Semantic UI",
             "img": "semantic-ui.svg"
+        },
+        "redis": {
+            "name": "Redis",
+            "img": "redis.svg"
+        },
+        "signalr": {
+            "name": "SignalR",
+            "img": "signalr.png"
         }
-    }
+    },
+    "headers": [
+        {
+            "name": "Content-Security-Policy",
+            "value": "default-src 'none'; script-src 'self' 'report-sample'; style-src 'self' 'report-sample' https://fonts.googleapis.com/css2; img-src 'self' data: cdn.assistantapps.com; font-src 'self' fonts.gstatic.com; manifest-src https://kurtlourens.com/manifest.json; connect-src api.assistantapps.com; base-uri 'self'; report-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;"
+        },
+        {
+            "name": "X-Content-Security-Policy",
+            "value": "default-src 'none'; script-src 'self' 'report-sample'; style-src 'self' 'report-sample' https://fonts.googleapis.com/css2; img-src 'self' data: cdn.assistantapps.com; font-src 'self' fonts.gstatic.com; manifest-src https://kurtlourens.com/manifest.json; connect-src api.assistantapps.com; base-uri 'self'; report-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;"
+        },
+        {
+            "name": "X-WebKit-CSP",
+            "value": "default-src 'none'; script-src 'self' 'report-sample'; style-src 'self' 'report-sample' https://fonts.googleapis.com/css2; img-src 'self' data: cdn.assistantapps.com; font-src 'self' fonts.gstatic.com; manifest-src https://kurtlourens.com/manifest.json; connect-src api.assistantapps.com; base-uri 'self'; report-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests;"
+        },
+        {
+            "name": "Set-Cookie",
+            "value": "cross-site-cookie=name; SameSite=None; Secure"
+        }
+    ]
 }

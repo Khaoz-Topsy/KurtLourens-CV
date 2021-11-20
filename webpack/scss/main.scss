@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -1161,7 +1162,7 @@ input[type="button"],
     color: _palette(accent2, fg);
     height: 100%;
     left: 0;
-    padding: 1em ($size-header-pad / 2) 0 ($size-header-pad / 2);
+    padding: 1em (math.div($size-header-pad, 2)) 0 (math.div($size-header-pad, 2));
     position: fixed;
     text-align: right;
     top: 0;
@@ -1257,7 +1258,7 @@ input[type="button"],
 
     >section {
         border-top: solid 2px _palette(border);
-        margin: #{$size-header-pad / 2} 0 0 0;
+        margin: #{math.div($size-header-pad, 2)} 0 0 0;
         padding: $size-header-pad 0 0 0;
 
         &:first-child {
@@ -1477,7 +1478,7 @@ body.is-touch {
 
     /* Header */
     #header {
-        padding: $size-header-pad ($size-header-pad / 2);
+        padding: $size-header-pad (math.div($size-header-pad, 2));
         width: $size-header-width;
 
         h1 {
@@ -1545,7 +1546,7 @@ body.is-touch {
         background-position: top left, center center;
         background-size: auto, cover;
         left: auto;
-        padding: $size-header-pad ($size-header-pad / 1.5);
+        padding: $size-header-pad (math.div($size-header-pad, 1.5));
         position: relative;
         text-align: center;
         top: auto;
@@ -1692,7 +1693,7 @@ body.is-touch {
 
     /* Header */
     #header {
-        padding: $size-header-pad ($size-header-pad / 3);
+        padding: $size-header-pad (math.div($size-header-pad, 3));
     }
 
     /* Footer */
