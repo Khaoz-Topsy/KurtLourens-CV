@@ -11,11 +11,12 @@ const jsDistPath = path.resolve(__dirname, jsDirName);
 
 const packageVersion = require('./package.json').version || '1.0.0';
 
-const moveNonHtmlHandlebarGeneratedFile = (filename, handlebarFilename) => {
+const moveNonHtmlHandlebarGeneratedFile = (filename, handlebarFilename, newName) => {
+    const newFileName = (newName != null) ? `${distPath}/${newName}` : `${distPath}/${filename}`;
     if (handlebarFilename.includes(`${filename}.html`)) {
-        moveFile(`${distPath}/${filename}.html`, `${distPath}/${filename}`)
+        moveFile(`${distPath}/${filename}.html`, newFileName)
             .then(() => console.log(`The ${filename} file has been renamed`))
-            .catch(() => console.error(`The ${filename} was file has been renamed`));
+            .catch(() => console.error(`The ${filename} file was NOT renamed`));
     }
 }
 
@@ -74,6 +75,7 @@ module.exports = (env, argv) => {
                 onBeforeSave: function (Handlebars, resultHtml, filename) { },
                 onDone: function (Handlebars, filename) {
                     moveNonHtmlHandlebarGeneratedFile('web.config', filename);
+                    moveNonHtmlHandlebarGeneratedFile('htaccess', filename, '.htaccess');
                     moveNonHtmlHandlebarGeneratedFile('sitemap.xml', filename);
                     moveNonHtmlHandlebarGeneratedFile('opensearch.xml', filename);
                     moveNonHtmlHandlebarGeneratedFile('humans.txt', filename);
