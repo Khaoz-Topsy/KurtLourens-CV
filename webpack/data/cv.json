@@ -241,7 +241,7 @@
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "After building the Assistant for Scrap Mechanic I realised that there was a lot of functionality that was shared between is and the Assistant for No Man's Sky. So I created a common library in Dart to write shared functionality once and have it be reused across the different apps as well as having a central API for common functionality. I hope to continue expanding the number of apps that fall under the AssistantApps brand! 💪",
+            "content": "After building the Assistant for Scrap Mechanic I realised that there was a lot of functionality that was shared between is and the Assistant for No Man's Sky. I created a common library in Dart to write shared functionality once and have it be reused across the different apps as well as having a central API for common functionality. I hope to continue expanding the number of apps that fall under the AssistantApps brand! 💪",
             "isSideProject": true,
             "techUsed": [
                 {
