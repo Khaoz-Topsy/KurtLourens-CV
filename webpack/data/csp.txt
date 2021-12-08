@@ -6,6 +6,7 @@ script-src
   'unsafe-inline'
   gitcdn.xyz
   hcaptcha.com
+  newassets.hcaptcha.com
   platform.twitter.com
   www.google-analytics.com;
 style-src
