@@ -4,6 +4,8 @@ script-src
   'self'
   'report-sample'
   'unsafe-inline'
+  gitcdn.xyz
+  hcaptcha.com
   platform.twitter.com
   www.google-analytics.com;
 style-src
@@ -15,6 +17,10 @@ style-src
 img-src
   'self'
   data:
+  gitcdn.xyz
+  github-readme-stats.vercel.app
+  raw.githubusercontent.com
+  kurtlourens.com
   cdn.assistantapps.com
   blog.kurtlourens.com
   khaoznet.visualstudio.com
@@ -23,6 +29,7 @@ img-src
 font-src
   'self'
   data:
+  nmscd.github.io
   fonts.gstatic.com;
 connect-src
   api.assistantapps.com
@@ -36,6 +43,8 @@ form-action
   'none';
 report-uri
   'none';
+frame-src
+  platform.twitter.com;
 frame-ancestors
   'none';
 upgrade-insecure-requests;
