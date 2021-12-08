@@ -45,6 +45,7 @@ form-action
 report-uri
   'none';
 frame-src
+  newassets.hcaptcha.com
   platform.twitter.com;
 frame-ancestors
   'none';
