@@ -8,6 +8,7 @@ script-src
   hcaptcha.com
   newassets.hcaptcha.com
   platform.twitter.com
+  cdn.syndication.twimg.com
   www.google-analytics.com;
 style-src
   'self'
@@ -45,7 +46,21 @@ form-action
 report-uri
   'none';
 frame-src
+  discord.com
+  www.google.com
+  api.assistantapps.com
+  api.nmsassistant.com
+  app.nmsassistant.com
+  scrapassistant.com
+  api.scrapassistant.com
+  kurtlourens.com
+  monitor.kurtlourens.com
+  presentation.kurtlourens.com
+  open.spotify.com
+  cristurm.github.io
+  culture.entelect.co.za
   newassets.hcaptcha.com
+  github1s.com
   platform.twitter.com;
 frame-ancestors
   'none';
