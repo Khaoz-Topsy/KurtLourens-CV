@@ -27,15 +27,3 @@ steps:
   inputs:
     pathtoPublish: './web.zip' 
     artifactName: 'web'
-    
-# Publish a Universal Package
-- task: UniversalPackages@0
-  displayName: Universal Publish
-  inputs:
-    command: publish
-    publishDirectory: './web.zip' 
-    vstsFeedPublish: 'KhaozNet/KhaozNetPkg'
-    vstsFeedPackagePublish: 'UniversalPackage'
-    packagePublishDescription: 'This is a test package'
-    versionOption: custom
-    versionPublish: '1.0.0'
