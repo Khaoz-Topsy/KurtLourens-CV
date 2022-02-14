@@ -14,8 +14,12 @@
         color: #d0d0d0;
     }
 
-    section .row article>div.card {
+    section .row article > div.card {
         background-color: #1f1815;
+    }
+
+    #extras a {
+        background-color: black;
     }
 }
 
@@ -42,7 +46,7 @@ body {
         }
     }
 
-    section .row article>div.card {
+    section .row article > div.card {
         transition: all 200ms;
     }
 }

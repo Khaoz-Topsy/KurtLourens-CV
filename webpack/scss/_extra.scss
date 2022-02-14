@@ -1,0 +1,42 @@
+#extras {
+    a {
+        position: fixed;
+        display: flex;
+        bottom: 3em;
+        right: calc(4em - 25vw);
+        width: 25vw;
+        padding: 0.5em;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom: none;
+        background-color: rgba(31, 24, 21, 0.75);
+        transition: right 500ms;
+
+        img,
+        .content {
+            max-height: 50px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            flex-grow: 1;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-left: 1em;
+            line-height: 1.25em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: opacity 500ms;
+        }
+
+        &:hover {
+            right: -2px;
+            .content {
+                opacity: 1;
+            }
+        }
+    }
+}

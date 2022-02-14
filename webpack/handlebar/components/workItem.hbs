@@ -35,7 +35,7 @@
             {{#each techUsed as | tech |}}
             {{#with (lookup ../techLookup tech.id)~}}
             {{#if tech.description}}
-            <span class="tool" data-tip="{{tech.description}}">
+            <span class="tool" data-tip="{{name}} - {{tech.description}}">
                 <img src="assets/images/loader.svg" data-src="/assets/images/tech/{{img}}" draggable="false"
                     class="lazy tech-icon" alt="{{name}}" />
             </span>

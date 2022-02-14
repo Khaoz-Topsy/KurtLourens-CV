@@ -5,7 +5,7 @@ window.onload = function () {
 
     updateLazyLoadedImagesFromSelector('.inner img.lazy[data-src]');
 
-    removeLoader();
+    // removeLoader();
     // announcement.getAnnouncements();
 
     window.setTimeout(updateAllLazyLoadedImages, 10000);

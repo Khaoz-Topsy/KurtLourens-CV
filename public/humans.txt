@@ -5,7 +5,7 @@ Twitter: @KhaozTopsy
 From: Lunteren, The Netherlands
 
 /* SITE */
-Last update: 2022-01-28
+Last update: 2022-02-14
 Language: English
 Doctype:HTML5
 IDE: Visual Studio Code

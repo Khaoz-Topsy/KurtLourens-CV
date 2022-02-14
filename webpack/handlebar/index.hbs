@@ -229,49 +229,13 @@
     </script>
     <script
         nonce="analytics">(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-97325462-2', 'auto'); ga('send', 'pageview');</script>
-    <style>
-        .full-page-loader img {
-            height: 150px;
-            margin-bottom: 1em;
-        }
-
-        .full-page-loader {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            background-color: #333333;
-            opacity: 0.85;
-        }
-
-        .full-page-loader .largeHeading {
-            color: #FFF;
-        }
-
-        .is-loading {
-            overflow: hidden;
-        }
-    </style>
 </head>
 
-<body class="is-preload is-loading">
-    <div class="full-page-loader"></div>
-    <div class="full-page-loader">
-        <ul>
-            <li style="list-style-type: none;"><img src="assets/images/loader.svg" alt="loading-animation">
-                <h2 class="largeHeading">Loading</h2>
-            </li>
-        </ul>
-    </div>
+<body>
     <div style="display: none">
-        <div class="h-card"><a class="p-name u-url" href="https://kurtlourens.com/" title="Kurt Lourens">Kurt
-                Lourens</a><img class="u-logo u-photo" src="/assets/images/KurtAvatar.svg" alt="Kurt Logo" />
+        <div class="h-card"><a class="p-name u-url" href="https://kurtlourens.com/"
+                title="{{kurt.name}}">{{kurt.name}}</a>
+            <img class="u-logo u-photo" src="/assets/images/KurtAvatar.svg" alt="Kurt Logo" />
             <div class="p-category">Senior Software Engineer</div>
             <div class="p-note">
                 {{{handleshortcode details.intro}}}
@@ -279,30 +243,48 @@
         </div>
     </div>
     <div id="announcements" onclick="KurtLourens.clearAnnouncements();"></div>
-    <header id="header"><i id="darkModeSwitch" onclick="KurtLourens.darkModeToggle()"
+    <header id="header">
+        <i id="darkModeSwitch" onclick="KurtLourens.darkModeToggle()"
             class="cursor-pointer icon icon-2x icon-brightness_4"></i>
-        <div class="inner"><a href="https://kurtlourens.com" class="image avatar" title="Kurt Lourens avatar"><img
-                    src="assets/images/loader.svg" data-src="{{kurt.image}}" class="lazy" alt="Kurt Lourens Avatar"
-                    title="Kurt Lourens Avatar" /></a>
+        <div class="inner">
+            <a href="https://kurtlourens.com" class="image avatar" title="{{kurt.name}} avatar">
+                <img src="assets/images/loader.svg" data-src="{{kurt.image}}" class="lazy" alt="{{kurt.name}} Avatar"
+                    title="{{kurt.name}} Avatar" />
+            </a>
             <h1><strong>{{kurt.name}}</strong>&nbsp;
                 <span>Senior Software Engineer&nbsp;<br /><small>Red Ruby IT Co-Owner</small></span>
             </h1>
             {{#each details.descriptions}}
             <h2>{{this}}</h2>
             {{/each}}
-            <div id="pwa-install" class="mt-1 hidden cursor-pointer" onclick="KurtLourens.addToHomeScreen()"><img
-                    src="assets/images/loader.svg" data-src="assets/images/pwa.png" class="max-h-50 lazy"
-                    alt="Install as PWA" /></div>
-            <div><a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv" class="image"
-                    title="Kurt Lourens CV App" alt="PlayStoreBadge" target="_blank" rel="noopener noreferrer"><img
-                        src="assets/images/loader.svg" data-src="assets/images/playStore.png" class="max-h-50 lazy"
-                        alt="PlayStoreBadge" /></a></div>
+            <div id="pwa-install" class="mt-1 hidden cursor-pointer" onclick="KurtLourens.addToHomeScreen()">
+                <img src="assets/images/loader.svg" data-src="assets/images/pwa.png" class="max-h-50 lazy"
+                    alt="Install as PWA" />
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv" class="image"
+                title="{{kurt.name}} CV App" alt="PlayStoreBadge" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/loader.svg" data-src="assets/images/playStore.png" class="max-h-50 lazy"
+                    alt="PlayStoreBadge" /></a>
         </div>
+        <footer id="footer" class="hidden-in-mobile">
+            <div class="inner">
+                <ul class="icons">
+                    {{#each details.socialLinks}}
+                    {{> components/iconLink }}
+                    {{/each}}
+                </ul>
+                <ul class="copyright">
+                    <li>
+                        &copy;&nbsp;{{kurt.name}}
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </header>
     <div id="main">
         <section id="about">
             <header class="major">
-                <h2>About Kurt Lourens&nbsp;</h2>
+                <h2>About {{kurt.name}}&nbsp;</h2>
                 <i>&nbsp;&nbsp;<a href="https://about.me/kurt.lourens" target="_blank" rel="noopener noreferrer"
                         title="about.me" alt="about.me">about.me/kurt.lourens</a></i>
             </header>
@@ -410,7 +392,18 @@
             </div>
         </section>
     </div>
-    <footer id="footer">
+    <div id="extras" class="hidden-in-mobile">
+        <a class="inner" href="{{kurt.playground}}" class="image" title="{{kurt.name}} Playground"
+            alt="{{kurt.name}} Playground" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/loader.svg" data-src="/assets/images/playground.png" class="lazy"
+                alt="Go to playground website" />
+            <div class="content">
+                <small>Click here to go to a desktop top like experience, showcasing some of the cool things I have
+                    worked on!</small>
+            </div>
+        </a>
+    </div>
+    <footer id="footer" class="hidden-in-desktop">
         <div class="inner">
             <ul class="icons">
                 {{#each details.socialLinks}}
