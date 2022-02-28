@@ -7,7 +7,7 @@
         "image": "https://kurtlourens.com/assets/images/KurtAvatar.svg",
         "additionalName": "KhaozTopsy",
         "twitter": "@KhaozTopsy",
-        "location": "Lunteren, The Netherlands",
+        "location": "Almere, The Netherlands",
         "playground": "https://playground.kurtlourens.com"
     },
     "theme": {
@@ -126,20 +126,11 @@
             ]
         },
         {
-            "game": "Hytale",
-            "title": "Assistant for Hytale",
-            "link": "https://hytaleassistant.com",
-            "image": "https://cdn.assistantapps.com/assistantHYT.png",
-            "icon": "https://cdn.assistantapps.com/icon/assistantHYT.png",
-            "description": "The Assistant for Scrap Mechanic app would not have been started if the developers of the game did not make it easy for modders to look at and edit the game's files. This made reading the game files a lot easier than No Man's Sky and helped in completing this project in a short period of time (2-3 weeks part time). This is also the first completely open source project.",
-            "links": []
-        },
-        {
             "game": "Coming Soon",
             "title": "Assistant for Unknown",
             "link": "#",
-            "image": "/assets/img/unknown.png",
-            "icon": "/assets/img/unknown.png",
+            "image": "https://assistantapps.com/assets/img/Unknown.webp",
+            "icon": "https://assistantapps.com/assets/img/Unknown.webp",
             "description": "Yet another Assistant app is under development. Can you guess what game it will be about? Let us know what you think we are working on 😁",
             "links": []
         }
