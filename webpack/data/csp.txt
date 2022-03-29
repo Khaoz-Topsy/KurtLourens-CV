@@ -15,7 +15,8 @@ style-src
   'report-sample'
   'unsafe-inline'
   nmscd.github.io
-  fonts.googleapis.com;
+  fonts.googleapis.com
+  platform.twitter.com;
 img-src
   'self'
   data:
@@ -27,13 +28,16 @@ img-src
   blog.kurtlourens.com
   khaoznet.visualstudio.com
   vsrm.dev.azure.com
-  khaoznet.vsrm.visualstudio.com;
+  khaoznet.vsrm.visualstudio.com
+  abs.twimg.com
+  pbs.twimg.com;
 font-src
   'self'
   data:
   nmscd.github.io
   fonts.gstatic.com;
 connect-src
+  kurtlourens.com
   api.assistantapps.com
   playground.kurtlourens.com;
 manifest-src
@@ -62,6 +66,9 @@ frame-src
   newassets.hcaptcha.com
   github1s.com
   platform.twitter.com;
+  cspscanner.com
 frame-ancestors
-  'none';
+  app.nmsassistant.com
+  kurtlourens.com
+  playground.kurtlourens.com;
 upgrade-insecure-requests;
