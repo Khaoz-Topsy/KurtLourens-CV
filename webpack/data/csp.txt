@@ -39,7 +39,8 @@ font-src
 connect-src
   kurtlourens.com
   api.assistantapps.com
-  playground.kurtlourens.com;
+  playground.kurtlourens.com
+  wttr.in;
 manifest-src
   https://kurtlourens.com/manifest.json
   https://playground.kurtlourens.com/manifest.json;
@@ -65,8 +66,8 @@ frame-src
   culture.entelect.co.za
   newassets.hcaptcha.com
   github1s.com
-  platform.twitter.com;
-  cspscanner.com
+  platform.twitter.com
+  cspscanner.com;
 frame-ancestors
   app.nmsassistant.com
   kurtlourens.com
