@@ -67,7 +67,9 @@ frame-src
   newassets.hcaptcha.com
   github1s.com
   platform.twitter.com
-  cspscanner.com;
+  cspscanner.com
+  classic.minecraft.net
+  d07riv.github.io;
 frame-ancestors
   app.nmsassistant.com
   kurtlourens.com
