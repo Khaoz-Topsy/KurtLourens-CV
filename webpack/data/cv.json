@@ -256,25 +256,25 @@
             "timePeriodClass": "label-rabobank",
             "timePeriodColour": "#ff6600",
             "timePeriodTextColour": "#FFFFFF",
-            "content": "After building the Assistant for Scrap Mechanic I realised that there was a lot of functionality that was shared between is and the Assistant for No Man's Sky. I created a common library in Dart to write shared functionality once and have it be reused across the different apps as well as having a central API for common functionality",
+            "content": "My first project in the Netherlands! I joined team Atlas within TAS, to help build software to monitor all the Azure DevOps projects within Rabobank as well as automate the process of migrating 1900+ projects to around 30 projects, merging many of the teams into Tribes, Chapters, Areas and Squads. Within this team we make use of a lot of Azure services, CLIs, SDKs, etc to automate tasks that would take a lot of time away from the many teams",
             "location": "Utrecht, The Netherlands",
             "isSideProject": false,
             "techUsed": [
                 {
                     "id": "dotNetCore",
-                    "description": "dot net core"
+                    "description": "Many of the tools we built made use of the latest .Net Core versions"
                 },
                 {
                     "id": "azure",
-                    "description": "We migrated the project away from on-premise servers to Azure App Services and later spilt parts of the solution into Azure Functions"
+                    "description": ""
                 },
                 {
                     "id": "azdevops",
-                    "description": "With my knowledge from previous projects I helped move the solution to Azure DevOps."
+                    "description": ""
                 },
                 {
                     "id": "azdevopsapi",
-                    "description": "With my knowledge from previous projects I helped move the solution to Azure DevOps."
+                    "description": ""
                 }
             ]
         },
@@ -282,7 +282,7 @@
             "title": "AssistantApps",
             "image": "assets/images/company/AssistantApps.png",
             "imageAlt": "AssistantApps",
-            "timePeriodText": "Aug 2020 - Present",
+            "timePeriodText": "August 2020 - Present",
             "timePeriodTextAlt": "Ongoing",
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
@@ -337,6 +337,21 @@
                     "url": "https://github.com/AssistantApps",
                     "alt": "AssistantAppsGithub",
                     "text": "Github"
+                },
+                {
+                    "url": "https://tools.assistantapps.com",
+                    "alt": "AssistantAppsTranslationTool",
+                    "text": "Translation tool"
+                },
+                {
+                    "url": "https://stream.assistantapps.com",
+                    "alt": "AssistantAppsStreamToys",
+                    "text": "Streaming Tools"
+                },
+                {
+                    "url": "https://admin.assistantapps.com",
+                    "alt": "AssistantAppsAdmin",
+                    "text": "Admin page"
                 }
             ]
         },
@@ -344,7 +359,7 @@
             "title": "Assistant for Scrap Mechanic",
             "image": "assets/images/company/ScrapMechanic.png",
             "imageAlt": "ScrapMechanicAssistant",
-            "timePeriodText": "Aug 2020 - Present",
+            "timePeriodText": "August 2020 - Present",
             "timePeriodTextAlt": "Ongoing - sporadic updates",
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
@@ -404,7 +419,7 @@
             "title": "Assistant for No Man's Sky",
             "image": "assets/images/company/NoMansSky.png",
             "imageAlt": "NoMansSkyAssistant",
-            "timePeriodText": "Jul 2019 - Present",
+            "timePeriodText": "July 2019 - Present",
             "timePeriodTextAlt": "Ongoing - Weekly updates",
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
@@ -492,6 +507,10 @@
                 {
                     "id": "dotNetFrame",
                     "description": "This project had a lot of legacy code written in .Net Framework"
+                },
+                {
+                    "id": "dotNetCore",
+                    "description": "Our project had a lot of legacy code and is monolithic. As we continued to maintain and add features, we broke some parts out in smaller more manageable pieces using more up to date technologies"
                 },
                 {
                     "id": "durandal",
@@ -1044,7 +1063,7 @@
         },
         "azdevopsapi": {
             "name": "Azure DevOps REST API",
-            "img": "azurePipelines.svg"
+            "img": "azureDevOpsApi.png"
         },
         "nodejs": {
             "name": "NodeJS",
