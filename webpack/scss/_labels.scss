@@ -1,20 +1,20 @@
 .label {
     display: inline;
-    padding: .2em .6em .3em;
+    padding: 0.2em 0.6em 0.3em;
     line-height: 1;
     color: #fff;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: .25em;
+    border-radius: 0.25em;
 }
 
 .color-ruby {
-    color: #BE1F25;
+    color: #be1f25;
 }
 
 .color-entelect {
-    color: #004C8E;
+    color: #004c8e;
 }
 
 a[class^="color-"] {
@@ -25,26 +25,26 @@ a[class^="color-"] {
 .label-vuma[href]:hover,
 .label-vuma[href]:focus {
     color: #000000;
-    background-color: #FF52A6;
+    background-color: #ff52a6;
 }
 
 .label-endeavour,
 .label-endeavour[href]:hover,
 .label-endeavour[href]:focus {
     color: #292929;
-    background-color: #AE8C5E;
+    background-color: #ae8c5e;
 }
 
 .label-entelect,
 .label-entelect[href]:hover,
 .label-entelect[href]:focus {
-    background-color: #004C8E;
+    background-color: #004c8e;
 }
 
 .label-entelectgreen,
 .label-entelectgreen[href]:hover,
 .label-entelectgreen[href]:focus {
-    background-color: #91C322;
+    background-color: #91c322;
 }
 
 .label-kurt,
@@ -56,13 +56,19 @@ a[class^="color-"] {
 .label-bee123,
 .label-bee123[href]:hover,
 .label-bee123[href]:focus {
-    background-color: #00334A;
+    background-color: #00334a;
+}
+
+.label-rabobank,
+.label-rabobank[href]:hover,
+.label-rabobank[href]:focus {
+    background-color: #ff6600;
 }
 
 .label-ruby,
 .label-ruby[href]:hover,
 .label-ruby[href]:focus {
-    background-color: #BE1F25;
+    background-color: #be1f25;
 }
 
 .label-kes,
@@ -129,29 +135,29 @@ a[class^="color-"] {
 .label-remoteconfigs,
 .label-remoteconfigs[href]:hover,
 .label-remoteconfigs[href]:focus {
-    background-color: #4BC18F;
+    background-color: #4bc18f;
 }
 
 .label-bts,
 .label-bts[href]:hover,
 .label-bts[href]:focus {
-    background-color: #227FDC;
+    background-color: #227fdc;
 }
 
 .label-hollard,
 .label-hollard[href]:hover,
 .label-hollard[href]:focus {
-    background-color: #441E45;
+    background-color: #441e45;
 }
 
 .label-tennodex,
 .label-tennodex[href]:hover,
 .label-tennodex[href]:focus {
-    background-image: linear-gradient(135deg, #44C9FF, #960ACC);
+    background-image: linear-gradient(135deg, #44c9ff, #960acc);
 }
 
 .label-iot,
 .label-iot[href]:hover,
 .label-iot[href]:focus {
-    background-color: #4E9B94;
+    background-color: #4e9b94;
 }

@@ -53,6 +53,20 @@
     "workExperiences": [
         {
             "title": "Senior Software Engineer",
+            "company": "Entelect Netherlands",
+            "icon": "military_tech_rounded",
+            "image": "assets/images/company/Entelect.png",
+            "imageAlt": "Entelect Netherlands",
+            "timePeriodText": "October 2021 - Present",
+            "timePeriodTextAlt": "Current position",
+            "timePeriodClass": "label-entelect",
+            "timePeriodColour": "#004C8E",
+            "timePeriodTextColour": "#FFFFFF",
+            "content": "Through various courses and opportunities within the project I was able to show [entelect] and BEE123 that I am able to design complex systems, develop solutions, mentor team members and manage sprints for the team. There is still a lot to learn and I look forward to the opportunities and possibilities made available to me going forward with this new position",
+            "location": "Amsterdam, The Netherlands"
+        },
+        {
+            "title": "Senior Software Engineer",
             "company": "Entelect",
             "icon": "military_tech_rounded",
             "image": "assets/images/company/Entelect.png",
@@ -232,6 +246,38 @@
         }
     ],
     "projects": [
+        {
+            "title": "Rabobank TAS",
+            "company": "Entelect",
+            "image": "assets/images/company/rabobankAlt.png",
+            "imageAlt": "Rabobank",
+            "timePeriodText": "December 2022 - Present",
+            "timePeriodTextAlt": "Current project",
+            "timePeriodClass": "label-rabobank",
+            "timePeriodColour": "#ff6600",
+            "timePeriodTextColour": "#FFFFFF",
+            "content": "After building the Assistant for Scrap Mechanic I realised that there was a lot of functionality that was shared between is and the Assistant for No Man's Sky. I created a common library in Dart to write shared functionality once and have it be reused across the different apps as well as having a central API for common functionality",
+            "location": "Utrecht, The Netherlands",
+            "isSideProject": false,
+            "techUsed": [
+                {
+                    "id": "dotNetCore",
+                    "description": "dot net core"
+                },
+                {
+                    "id": "azure",
+                    "description": "We migrated the project away from on-premise servers to Azure App Services and later spilt parts of the solution into Azure Functions"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "With my knowledge from previous projects I helped move the solution to Azure DevOps."
+                },
+                {
+                    "id": "azdevopsapi",
+                    "description": "With my knowledge from previous projects I helped move the solution to Azure DevOps."
+                }
+            ]
+        },
         {
             "title": "AssistantApps",
             "image": "assets/images/company/AssistantApps.png",
@@ -435,8 +481,8 @@
             "company": "Entelect",
             "image": "assets/images/company/BEE123.png",
             "imageAlt": "BEE123",
-            "timePeriodText": "April 2019 - Present",
-            "timePeriodTextAlt": "Ongoing - Client project",
+            "timePeriodText": "April 2019 - December 2021",
+            "timePeriodTextAlt": "2 years, 3 months",
             "timePeriodClass": "label-bee123",
             "timePeriodColour": "#227FDC",
             "timePeriodTextColour": "#FFFFFF",
@@ -462,6 +508,10 @@
                 {
                     "id": "azdevops",
                     "description": "With my knowledge from previous projects I helped move the solution to Azure DevOps."
+                },
+                {
+                    "id": "signalr",
+                    "description": "We used SignalR for actions that block the user from using the site for too long. So instead we allow the users to continue using the site and notify them when the action has been completed"
                 },
                 {
                     "id": "sass",
@@ -490,7 +540,7 @@
             "image": "assets/images/company/Flutter.png",
             "imageAlt": "KurtLourens",
             "timePeriodText": "March 2019 - April 2019",
-            "timePeriodTextAlt": "1 Month",
+            "timePeriodTextAlt": "1 month",
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
@@ -566,7 +616,7 @@
             "imageAlt": "Hollard",
             "darkModeImage": "assets/images/company/HollardAlt.png",
             "timePeriodText": "January 2019 - March 2019",
-            "timePeriodTextAlt": "3 Months",
+            "timePeriodTextAlt": "3 months",
             "timePeriodClass": "label-hollard",
             "timePeriodColour": "#4D2B6B",
             "timePeriodTextColour": "#FFFFFF",
@@ -605,8 +655,8 @@
             "image": "assets/images/company/RemoteConfigs.png",
             "imageAlt": "KurtLourens",
             "darkModeImage": "assets/images/company/RemoteConfigsAlt.png",
-            "timePeriodText": "July 2018 - Present",
-            "timePeriodTextAlt": "Completed in 2018 - Only maintainance work now",
+            "timePeriodText": "July 2018 - December 2019",
+            "timePeriodTextAlt": "1 year, 5 months - still in use",
             "timePeriodClass": "label-remoteconfigs",
             "timePeriodColour": "#45BB89",
             "timePeriodTextColour": "#FFFFFF",
@@ -655,7 +705,7 @@
             "image": "assets/images/company/CAH.png",
             "imageAlt": "CAH",
             "timePeriodText": "June 2018 - July 2018",
-            "timePeriodTextAlt": "1 Month",
+            "timePeriodTextAlt": "1 month",
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
@@ -700,7 +750,7 @@
             "image": "assets/images/company/Monitor.png",
             "imageAlt": "BuildMonitor",
             "timePeriodText": "March 2018 - December 2019",
-            "timePeriodTextAlt": "1 year, 9 months - Still in use",
+            "timePeriodTextAlt": "1 year, 9 months - still in use",
             "timePeriodClass": "label-kurt",
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
@@ -742,7 +792,7 @@
             "image": "assets/images/company/BTS.png",
             "imageAlt": "BTS",
             "timePeriodText": "March 2018 - October 2018",
-            "timePeriodTextAlt": "8 Months",
+            "timePeriodTextAlt": "8 months",
             "timePeriodClass": "label-bts",
             "timePeriodColour": "#227FDC",
             "timePeriodTextColour": "#FFFFFF",
@@ -830,7 +880,7 @@
             "imageAlt": "Hollard",
             "darkModeImage": "assets/images/company/HollardAlt.png",
             "timePeriodText": "August 2017 - March 2019",
-            "timePeriodTextAlt": "1 year, 7 Months",
+            "timePeriodTextAlt": "1 year, 7 months",
             "timePeriodClass": "label-hollard",
             "timePeriodColour": "#4D2B6B",
             "timePeriodTextColour": "#FFFFFF",
@@ -865,7 +915,7 @@
             "image": "assets/images/company/TennoDex.png",
             "imageAlt": "TennoDex",
             "timePeriodText": "July 2017 - August 2019",
-            "timePeriodTextAlt": "2 years, 1 Month",
+            "timePeriodTextAlt": "2 years, 1 month",
             "timePeriodClass": "label-tennodex",
             "timePeriodColour": "#7D42DB",
             "timePeriodTextColour": "#FFFFFF",
@@ -920,7 +970,7 @@
             "imageAlt": "Hollard",
             "darkModeImage": "assets/images/company/HollardAlt.png",
             "timePeriodText": "March 2017 - July 2017",
-            "timePeriodTextAlt": "5 Months",
+            "timePeriodTextAlt": "5 months",
             "timePeriodClass": "label-hollard",
             "timePeriodColour": "#4D2B6B",
             "timePeriodTextColour": "#FFFFFF",
@@ -990,6 +1040,10 @@
         },
         "azdevops": {
             "name": "Azure DevOps",
+            "img": "azurePipelines.svg"
+        },
+        "azdevopsapi": {
+            "name": "Azure DevOps REST API",
             "img": "azurePipelines.svg"
         },
         "nodejs": {
