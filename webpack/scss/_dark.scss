@@ -14,6 +14,14 @@
         color: #d0d0d0;
     }
 
+    a {
+        color: lighten(_palette(accent1, fg), 40%);
+
+        &:hover {
+            color: lighten(_palette(accent1, fg), 50%) !important;
+        }
+    }
+
     section .row article > div.card {
         background-color: #1f1815;
     }
@@ -39,10 +47,8 @@ body {
     }
 
     a {
-        color: lighten(_palette(accent1, fg), 40%);
-
         &:hover {
-            color: lighten(_palette(accent1, fg), 50%) !important;
+            color: darken(_palette(accent1, fg), 50%) !important;
         }
     }
 

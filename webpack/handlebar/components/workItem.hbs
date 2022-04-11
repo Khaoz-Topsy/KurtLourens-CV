@@ -1,31 +1,33 @@
 <article class="{{workitemclass isSideProject}}">
     <div class="card">
-        <div class="top-right">
-            <img src="assets/images/loader.svg" draggable="false" data-src="{{image}}" class="company lazy invert"
-                alt="{{company}}-{{title}}"><br>
-            {{#if timePeriodTextAlt}}
-            <span class="tool" data-tip="{{timePeriodTextAlt}}">
+        <div class="top-content">
+            <div class="top-right">
+                <img src="assets/images/loader.svg" draggable="false" data-src="{{image}}" class="company lazy invert"
+                    alt="{{company}}-{{title}}"><br>
+                {{#if timePeriodTextAlt}}
+                <span class="tool" data-tip="{{timePeriodTextAlt}}">
+                    <p class="label {{timePeriodClass}}">{{timePeriodText}}</p>
+                </span>
+                {{else}}
                 <p class="label {{timePeriodClass}}">{{timePeriodText}}</p>
-            </span>
-            {{else}}
-            <p class="label {{timePeriodClass}}">{{timePeriodText}}</p>
-            {{/if}}
-        </div>
+                {{/if}}
+            </div>
 
-        {{#if links.length}}
-        <h2>
-            <strong>{{title}}</strong>
-            <small>
+            {{#if links.length}}
+            <h2>
+                <strong>{{title}}</strong>
+            </h2>
+            <p>
                 {{#each links}}
                 {{#if @index}}<span>,&nbsp;</span>{{/if}}
                 <a href="{{urlref url}}" target="_blank" rel="noopener noreferrer" title="{{alt}}"
                     alt="{{alt}}">{{text}}</a>
                 {{/each}}
-            </small>
-        </h2>
-        {{else}}
-        <h2><strong>{{title}}</strong><small>{{location}}</small></h2>
-        {{/if}}
+            </p>
+            {{else}}
+            <h2><strong>{{title}}</strong><small>{{location}}</small></h2>
+            {{/if}}
+        </div>
 
         <p>{{{handleshortcode content}}}</p>
 

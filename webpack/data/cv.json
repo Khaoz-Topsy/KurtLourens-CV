@@ -330,27 +330,27 @@
             "links": [
                 {
                     "url": "https://assistantapps.com",
-                    "alt": "AssistantAppsWebsite",
+                    "alt": "AssistantApps Website",
                     "text": "Website"
                 },
                 {
                     "url": "https://github.com/AssistantApps",
-                    "alt": "AssistantAppsGithub",
+                    "alt": "AssistantApps Github",
                     "text": "Github"
                 },
                 {
                     "url": "https://tools.assistantapps.com",
-                    "alt": "AssistantAppsTranslationTool",
+                    "alt": "AssistantApps Translation Tool",
                     "text": "Translation tool"
                 },
                 {
                     "url": "https://stream.assistantapps.com",
-                    "alt": "AssistantAppsStreamToys",
+                    "alt": "AssistantApps Stream Toys",
                     "text": "Streaming Tools"
                 },
                 {
                     "url": "https://admin.assistantapps.com",
-                    "alt": "AssistantAppsAdmin",
+                    "alt": "AssistantApps Admin",
                     "text": "Admin page"
                 }
             ]
@@ -395,22 +395,22 @@
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.scrap_mechanic",
-                    "alt": "GooglePlayStoreScrapMechanic",
+                    "alt": "Google Play Store Scrap Mechanic",
                     "text": "Google Play Store"
                 },
                 {
                     "url": "https://apps.apple.com/us/app/id1519215611",
-                    "alt": "AppleAppStoreScrapMechanic",
+                    "alt": "Apple App Store Scrap Mechanic",
                     "text": "Apple App Store"
                 },
                 {
                     "url": "https://scrapassistant.com",
-                    "alt": "ScrapMechanicWebsite",
+                    "alt": "Scrap Mechanic Website",
                     "text": "Website"
                 },
                 {
                     "url": "https://github.com/AssistantSMS",
-                    "alt": "ScrapMechanicGithub",
+                    "alt": "Scrap Mechanic Github",
                     "text": "Github"
                 }
             ]
@@ -471,22 +471,22 @@
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurtlourens.no_mans_sky_recipes",
-                    "alt": "GooglePlayStoreNoMansSky",
+                    "alt": "Google Play Store No Mans Sky",
                     "text": "Google Play Store"
                 },
                 {
                     "url": "https://apps.apple.com/us/app/id1480287625",
-                    "alt": "AppleAppStoreNoMansSky",
+                    "alt": "Apple App Store No Mans Sky",
                     "text": "Apple App Store"
                 },
                 {
                     "url": "https://nmsassistant.com",
-                    "alt": "NoMansSkyWebsite",
+                    "alt": "No Mans Sky Website",
                     "text": "Website"
                 },
                 {
                     "url": "https://nmsassistant.com",
-                    "alt": "NoMansSkyYoutube",
+                    "alt": "No Mans Sky Youtube",
                     "text": "Youtube"
                 }
             ]
@@ -582,7 +582,7 @@
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurt_lourens_cv",
-                    "alt": "GooglePlayStoreKurtsCVApp",
+                    "alt": "Google Play Store Kurts CV App",
                     "text": "View on Google Play Store"
                 }
             ]
@@ -759,7 +759,7 @@
             "links": [
                 {
                     "url": "https://cah.kurtlourens.com",
-                    "alt": "KurtLourensCardsAgainstHumanity",
+                    "alt": "Kurt Lourens Cards Against Humanity",
                     "text": "cah.kurtlourens.com"
                 }
             ]
@@ -800,7 +800,7 @@
             "links": [
                 {
                     "url": "https://monitor.kurtlourens.com",
-                    "alt": "KurtLourensBuildMonitor",
+                    "alt": "Kurt Lourens Build Monitor",
                     "text": "monitor.kurtlourens.com"
                 }
             ]
@@ -856,7 +856,6 @@
             "timePeriodColour": "#505050",
             "timePeriodTextColour": "#FFFFFF",
             "content": "In the beginning of 2018 I attended an [entelect] Makers Club, it instantly sparked my interest in Arduino. It felt like a whole new world had been opened up for me, one where my software could affect the real world. Since then I have made quite a few Arduino contraptions, such as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to switch the water on and off (which I plan to automate in the future).",
-            "contentHtml": "<p>In the beginning of 2018 I attended an&nbsp;<strong><a href=\"http://www.entelect.co.za\" class=\"color-entelect\" target=\"_blank\" rel=\"noopener\" title=\"entelect\" alt=\"entelect\">Entelect</a></strong>&nbsp;Makers Club, it instantly sparked my interest in Arduino. It felt like a whole new world had been opened up for me, one where my software could affect the real world. Since then I have made quite a few Arduino contraptions, such as hooking up a Garage Remote so that I can open my garage from my app, from anywhere in the world. My garden has sensors for Temperature, Humidity, Soil Moisture and the ability to switch the water on and off (which I plan to automate in the future).<p>",
             "isSideProject": true,
             "techUsed": [
                 {
@@ -887,7 +886,7 @@
             "links": [
                 {
                     "url": "https://iot.khaoznet.xyz",
-                    "alt": "KurtLourensIoT",
+                    "alt": "Kurt Lourens IoT",
                     "text": "iot.khaoznet.xyz"
                 }
             ]

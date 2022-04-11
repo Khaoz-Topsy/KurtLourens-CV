@@ -1,22 +1,22 @@
 section {
     .row {
         article {
-            >div.card {
-                background-color: #FFFFFF;
+            > div.card {
+                background-color: #ffffff;
                 padding: 1em 1.25em 1.25em 1.25em;
                 height: 100%;
                 border-radius: 10px;
                 position: relative;
 
-                >.top-right {
-                    @include breakpoint('>=medium') {
+                .top-right {
+                    @include breakpoint(">=medium") {
                         float: right;
                         text-align: right;
                     }
 
-                    @include breakpoint('<medium') {
+                    @include breakpoint("<medium") {
                         display: inline-block;
-                        margin-bottom: .5em;
+                        margin-bottom: 0.5em;
 
                         p.label {
                             margin-left: 0;
@@ -24,10 +24,21 @@ section {
                     }
                 }
 
+                .top-content {
+                    min-height: 4.5em;
+                    margin-bottom: 0.25em;
+
+                    a {
+                        text-decoration: none;
+                        border-bottom: unset;
+                    }
+                }
+
                 h2 {
                     font-size: 1.25em;
+                    margin-bottom: 0;
 
-                    @include breakpoint('<medium') {
+                    @include breakpoint("<medium") {
                         margin-bottom: 0;
                     }
 
@@ -37,13 +48,12 @@ section {
                     }
 
                     small {
-                        font-size: .65em;
+                        font-size: 0.65em;
 
-                        @include breakpoint('<small') {
-
+                        @include breakpoint("<small") {
                             //display: none;
                             a {
-                                color: #3F65D7;
+                                color: #3f65d7;
                             }
                         }
                     }
@@ -54,7 +64,7 @@ section {
                     height: 50px;
                     float: left;
 
-                    @include breakpoint('>=medium') {
+                    @include breakpoint(">=medium") {
                         float: right;
                     }
                 }
