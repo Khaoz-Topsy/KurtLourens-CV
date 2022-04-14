@@ -2,7 +2,7 @@
     "details": {
         "image": "assets/images/KurtAvatar.svg",
         "intro": "Full Stack Engineer with [workDuration] of experience working for large companies on various technology solutions. I find that the best way to learn is to build! I love creating beautiful and striking front-end user experiences, blazing fast APIs, services, etc, that follow best practices and building amazing user experiences for mobile. Working on so many projects as well as joining [redRubyIt] as a Co-Owner has taught me so much, not just about code, but also how to mentor, present, manage expectations and run projects. My goal is to continue learning all that I can and use that knowledge to create more opportunities to learn! 😂",
-        "postSript": "P.S. I also have a [blog], Inside my Mind - by Kurt Lourens. I haven't been making use of it as much as I could have, but I have written an article on it about how I made this site and all the effort I put in to make it the best that it could be [blogCvArticle] 😁.",
+        "postScript": "P.S. I also have a [blog], Inside my Mind - by Kurt Lourens. I haven't been making use of it as much as I could have, but I have written an article on it about how I made this site and all the effort I put in to make it the best that it could be [blogCvArticle] 😁.",
         "descriptions": [
             ".Net Core Advocate",
             "Crazy about Javascript Frameworks",
@@ -156,8 +156,8 @@
                     "text": "Project Description"
                 },
                 {
-                    "url": "/docs/EndeavourMiningInternshipJan2015-CertificateofService.pdf",
-                    "alt": "CertificateofService",
+                    "url": "/docs/EndeavourMiningInternshipJan2015-CertificateOfService.pdf",
+                    "alt": "CertificateOfService",
                     "text": "Certificate of Service"
                 }
             ]
@@ -266,15 +266,15 @@
                 },
                 {
                     "id": "azure",
-                    "description": ""
+                    "description": "Our apps are hosted in Azure App Services and a lot of the functionality of our tools make use of or call Azure services"
                 },
                 {
                     "id": "azdevops",
-                    "description": ""
+                    "description": "We make use of Azure DevOps to build and release our software. We also make use of pipelines alter "
                 },
                 {
                     "id": "azdevopsapi",
-                    "description": ""
+                    "description": "Our team makes use of the Azure DevOps API to do multiple operations such as moving WorkItems, Migrating Git Repositories, pipelines, etc"
                 }
             ]
         },
@@ -381,7 +381,7 @@
                 },
                 {
                     "id": "azdevops",
-                    "description": "The API makes use of Avure DevOps for CI and CD."
+                    "description": "The API makes use of Azure DevOps for CI and CD."
                 },
                 {
                     "id": "codemagic",
@@ -445,7 +445,7 @@
                 },
                 {
                     "id": "redux",
-                    "description": "I used both the Dart and Javascript versions of Redux to maintain state accross the different apps"
+                    "description": "I used both the Dart and Javascript versions of Redux to maintain state across the different apps"
                 },
                 {
                     "id": "azdevops",
@@ -582,7 +582,7 @@
             "links": [
                 {
                     "url": "https://play.google.com/store/apps/details?id=com.kurt_lourens_cv",
-                    "alt": "Google Play Store Kurts CV App",
+                    "alt": "Google Play Store Kurt's CV App",
                     "text": "View on Google Play Store"
                 }
             ]
@@ -868,7 +868,7 @@
                 },
                 {
                     "id": "arduino",
-                    "description": "This solution made use of small ESP32 decives to control specific actions like opening my garage, measure soil humidity, water the garden, etc"
+                    "description": "This solution made use of small ESP32 devices to control specific actions like opening my garage, measure soil humidity, water the garden, etc"
                 },
                 {
                     "id": "azdevops",
