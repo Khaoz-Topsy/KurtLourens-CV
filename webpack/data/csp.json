@@ -43,6 +43,7 @@
                 "data:",
                 "gitcdn.xyz",
                 "github-readme-stats.vercel.app",
+                "github-readme-streak-stats.herokuapp.com",
                 "raw.githubusercontent.com",
                 "kurtlourens.com",
                 "cdn.assistantapps.com",
@@ -135,6 +136,8 @@
         {
             "name": "frame-ancestors",
             "values": [
+                "google.com",
+                "ogs.google.com",
                 "app.nmsassistant.com",
                 "kurtlourens.com",
                 "playground.kurtlourens.com"
