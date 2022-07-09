@@ -68,6 +68,9 @@
             "name": "connect-src",
             "values": [
                 "kurtlourens.com",
+                "fonts.gstatic.com",
+                "fonts.googleapis.com",
+                "blog.kurtlourens.com",
                 "api.assistantapps.com",
                 "playground.kurtlourens.com",
                 "khaoznet.visualstudio.com",
