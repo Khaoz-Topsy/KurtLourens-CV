@@ -54,7 +54,8 @@
                 "vsrm.dev.azure.com",
                 "khaoznet.vsrm.visualstudio.com",
                 "abs.twimg.com",
-                "pbs.twimg.com"
+                "pbs.twimg.com",
+                "lanyard.cnrad.dev"
             ]
         },
         {
@@ -63,7 +64,8 @@
                 "'self'",
                 "data:",
                 "nmscd.github.io",
-                "fonts.gstatic.com"
+                "fonts.gstatic.com",
+                "font.nmscd.com"
             ]
         },
         {
