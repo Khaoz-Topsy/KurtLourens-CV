@@ -144,16 +144,14 @@ h2.noselect,
 
 *::-webkit-scrollbar-thumb {
     background-color: $brand-primary;
-    background-image: -webkit-linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0.2) 25%,
-        transparent 25%,
-        transparent 50%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0.2) 75%,
-        transparent 75%,
-        transparent
-    );
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent);
 }
 
 .hidden {
@@ -180,6 +178,7 @@ h2.noselect,
     }
 
     &.items {
+
         .side-item,
         .work-item {
             @extend .visible-row-item;
@@ -214,7 +213,7 @@ h2.noselect,
     max-height: 50px;
 }
 
-li > a > img {
+li>a>img {
     margin-bottom: -5px;
     max-height: 1.75em;
     max-width: 1.75em;
@@ -242,6 +241,10 @@ li > a > img {
         width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+
+        &.lazy {
+            max-height: 300px;
+        }
     }
 }
 
@@ -256,6 +259,7 @@ li > a > img {
 .tag-list {
     p {
         margin: 0 2px;
+        text-transform: capitalize;
     }
 }
 
