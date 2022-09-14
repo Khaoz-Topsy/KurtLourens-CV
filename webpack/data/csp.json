@@ -51,8 +51,8 @@
                 "cdn.assistantapps.com",
                 "blog.kurtlourens.com",
                 "khaoznet.visualstudio.com",
-                "vsrm.dev.azure.com",
                 "khaoznet.vsrm.visualstudio.com",
+                "vsrm.dev.azure.com",
                 "abs.twimg.com",
                 "pbs.twimg.com",
                 "lanyard.cnrad.dev"
@@ -79,6 +79,7 @@
                 "playground.kurtlourens.com",
                 "khaoznet.visualstudio.com",
                 "khaoznet.vsrm.visualstudio.com",
+                "vsrm.dev.azure.com",
                 "www.google-analytics.com",
                 "google-analytics.com",
                 "wttr.in"
