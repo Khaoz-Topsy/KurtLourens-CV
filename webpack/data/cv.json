@@ -271,7 +271,7 @@
                 },
                 {
                     "id": "azdevops",
-                    "description": "We make use of Azure DevOps to build and release our software. We also make use of pipelines alter "
+                    "description": "We make use of Azure DevOps to build and release our software. We also make use of pipelines to alter things in Azure in an auditable way"
                 },
                 {
                     "id": "azdevopsapi",
@@ -306,6 +306,10 @@
                 {
                     "id": "angular",
                     "description": "Admin web pages were built using Angular to edit data on the API"
+                },
+                {
+                    "id": "svelte",
+                    "description": "I created a WebComponents library to share certain components across the different AssistantApps websites, no matter what JS framework (or lack of one) is used"
                 },
                 {
                     "id": "signalr",
@@ -443,6 +447,10 @@
                 {
                     "id": "angular",
                     "description": "Admin web pages were built using Angular to edit data on the API"
+                },
+                {
+                    "id": "svelte",
+                    "description": "I designed an easy to use WebComponents library for people to use to display NMS related content on their own projects using my APIs & data"
                 },
                 {
                     "id": "redux",
@@ -1040,6 +1048,10 @@
         "angular": {
             "name": "Angular",
             "img": "angular.svg"
+        },
+        "svelte": {
+            "name": "Svelte",
+            "img": "svelte.svg"
         },
         "entityFrameworkCore": {
             "name": "EntityFrameworkCore",
