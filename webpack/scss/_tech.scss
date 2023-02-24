@@ -17,6 +17,13 @@
         height: 2em;
         margin-left: 0.25em;
         margin-right: 0.25em;
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            transform: scale(1.02) translateY(-5px);
+        }
     }
 
     .tool {

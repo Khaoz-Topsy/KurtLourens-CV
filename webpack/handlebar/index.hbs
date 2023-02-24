@@ -231,7 +231,7 @@
         nonce="analytics">(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-97325462-2', 'auto'); ga('send', 'pageview');</script>
 </head>
 
-<body>
+<body class="dark">
     <div style="display: none">
         <div class="h-card"><a class="p-name u-url" href="https://kurtlourens.com/"
                 title="{{kurt.name}}">{{kurt.name}}</a>
@@ -245,23 +245,26 @@
     <div id="announcements" onclick="KurtLourens.clearAnnouncements();"></div>
     <header id="header">
         <i id="darkModeSwitch" onclick="KurtLourens.darkModeToggle()"
-            class="cursor-pointer icon icon-2x icon-brightness_4"></i>
+            class="cursor-pointer icon icon-2x icon-brightness_low"></i>
         <div class="inner">
             <a href="https://kurtlourens.com" class="image avatar" title="{{kurt.name}} avatar">
                 <img src="assets/images/loader.svg" data-src="{{kurt.image}}" class="lazy" alt="{{kurt.name}} Avatar"
                     title="{{kurt.name}} Avatar" />
             </a>
-            <h1><strong>{{kurt.name}}</strong>&nbsp;
-                <span>Senior Software Engineer&nbsp;<br /><small>Red Ruby IT Co-Owner</small></span>
+            <h1><strong>{{kurt.name}}</strong>&nbsp;<br /><br />
+                <span class="mt-1">Senior Software Engineer&nbsp;<br /><small>Red Ruby IT Co-Owner</small></span>
             </h1>
+            <br />
             {{#each details.descriptions}}
-            <h2>{{this}}</h2>
+            <h2 class="hidden">{{this}}</h2>
             {{/each}}
+            <h2 class="descrip-text-slider"></h2>
+            <br />
             <div id="pwa-install" class="mt-1 hidden cursor-pointer" onclick="KurtLourens.addToHomeScreen()">
                 <img src="assets/images/loader.svg" data-src="assets/images/pwa.png" class="max-h-50 lazy"
                     alt="Install as PWA" />
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv" class="image"
+            <a href="https://play.google.com/store/apps/details?id=com.kurt_lourens_cv" class="mt-1 image"
                 title="{{kurt.name}} CV App" alt="PlayStoreBadge" target="_blank" rel="noopener noreferrer">
                 <img src="assets/images/loader.svg" data-src="assets/images/playStore.png" class="max-h-50 lazy"
                     alt="PlayStoreBadge" /></a>

@@ -74,6 +74,12 @@ module.exports = (env, argv) => {
                 onBeforeRender: function (Handlebars, data, filename) { },
                 onBeforeSave: function (Handlebars, resultHtml, filename) { },
                 onDone: function (Handlebars, filename) {
+                    if (filename.includes('_slider-generated.sass')) {
+                        (async () => {
+                            await moveFile(`${distPath}/_slider-generated.sass.html`, 'webpack/scss/_slider-generated.sass');
+                            console.log('The _slider-generated.sass file has been renamed');
+                        })();
+                    }
                     moveNonHtmlHandlebarGeneratedFile('web.config', filename);
                     moveNonHtmlHandlebarGeneratedFile('htaccess', filename, '.htaccess');
                     moveNonHtmlHandlebarGeneratedFile('sitemap.xml', filename);

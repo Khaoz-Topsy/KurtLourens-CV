@@ -1,0 +1,9 @@
+@use "sass:math"
+
+$descripTitles: {{#each details.descriptions}}"{{this}}"{{#unless
+@last}},{{/unless}}{{/each}}
+
+$appAnimationPerc: (math.div(100, length($descripTitles)))
+$appAnimationGapPerc: 5
+$appAnimationSecPerApp: 3
+$appAnimationDuration: ($appAnimationSecPerApp * length($descripTitles))

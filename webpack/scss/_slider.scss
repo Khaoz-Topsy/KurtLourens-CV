@@ -1,0 +1,44 @@
+@use "sass:math";
+@import "./_slider-generated.sass";
+
+.descrip-text-slider {
+    font-style: italic;
+    &::after {
+        content: " ";
+        animation: descripTextSliderAnim #{$appAnimationDuration}s infinite;
+        overflow: hidden;
+    }
+}
+
+@keyframes descripTextSliderAnim {
+    @for $titleIndex from 1 through length($descripTitles) {
+        $percentageLower: (($titleIndex - 1) * $appAnimationPerc)+1;
+        $percentage: ($titleIndex * $appAnimationPerc);
+
+        @if $titleIndex==1 {
+            $percentageLower: 0;
+        }
+
+        $title: nth($descripTitles, $titleIndex);
+
+        #{$percentageLower}#{"%"} {
+            opacity: 0;
+            content: $title;
+        }
+
+        #{$percentageLower + $appAnimationGapPerc}#{"%"} {
+            opacity: 1;
+            content: $title;
+        }
+
+        #{$percentage - $appAnimationGapPerc}#{"%"} {
+            opacity: 1;
+            content: $title;
+        }
+
+        #{$percentage}#{"%"} {
+            opacity: 0;
+            content: $title;
+        }
+    }
+}
