@@ -1,117 +1,119 @@
 section {
-    h2 {
-        i.icon {
+  h2 {
+    i.icon {
+      display: inline-block;
+      animation-name: arrowBounceAnim;
+      animation-duration: 1s;
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      animation-iteration-count: infinite;
+      animation-play-state: paused;
+    }
+
+    &:hover {
+      i.icon {
+        animation-play-state: running;
+      }
+    }
+  }
+
+  .row {
+    article {
+      > div.card {
+        background-color: #ffffff;
+        padding: 1em 1.25em 1.25em 1.25em;
+        height: 100%;
+        border-radius: 10px;
+        position: relative;
+        transition-duration: 250ms;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+          filter, backdrop-filter, -webkit-backdrop-filter;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        .top-right {
+          @include breakpoint(">=medium") {
+            float: right;
+            text-align: right;
+          }
+
+          @include breakpoint("<medium") {
             display: inline-block;
-            animation-name: arrowBounceAnim;
-            animation-duration: 1s;
-            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            animation-iteration-count: infinite;
-            animation-play-state: paused;
+            margin-bottom: 0.5em;
+
+            p.label {
+              margin-left: 0;
+            }
+          }
+        }
+
+        .top-content {
+          min-height: 4.5em;
+          margin-bottom: 0.25em;
+
+          a {
+            text-decoration: none;
+            border-bottom: unset;
+          }
+        }
+
+        h2 {
+          font-size: 1.25em;
+          margin-bottom: 0;
+
+          @include breakpoint("<medium") {
+            margin-bottom: 0;
+          }
+
+          strong {
+            color: #147393;
+            display: block;
+          }
+
+          small {
+            font-size: 0.65em;
+
+            @include breakpoint("<small") {
+              //display: none;
+              a {
+                color: #3f65d7;
+              }
+            }
+          }
+
+          i.icon {
+            transform: translateY(2px);
+          }
+        }
+
+        img.company {
+          border-radius: 5px;
+          height: 50px;
+          float: left;
+
+          @include breakpoint(">=medium") {
+            float: right;
+          }
         }
 
         &:hover {
-            i.icon {
-                animation-play-state: running;
-            }
+          transform: translateY(-5px);
+          box-shadow: 0 0 #0000, 0 0 #0000,
+            0 20px 25px -5px rgb(_palette(accent1, bg), 0.2),
+            0 8px 10px -6px rgb(_palette(accent1, bg), 0.2);
         }
+      }
     }
-
-    .row {
-        article {
-            > div.card {
-                background-color: #ffffff;
-                padding: 1em 1.25em 1.25em 1.25em;
-                height: 100%;
-                border-radius: 10px;
-                position: relative;
-                transition-duration: 250ms;
-                transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity,
-                    box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-                .top-right {
-                    @include breakpoint(">=medium") {
-                        float: right;
-                        text-align: right;
-                    }
-
-                    @include breakpoint("<medium") {
-                        display: inline-block;
-                        margin-bottom: 0.5em;
-
-                        p.label {
-                            margin-left: 0;
-                        }
-                    }
-                }
-
-                .top-content {
-                    min-height: 4.5em;
-                    margin-bottom: 0.25em;
-
-                    a {
-                        text-decoration: none;
-                        border-bottom: unset;
-                    }
-                }
-
-                h2 {
-                    font-size: 1.25em;
-                    margin-bottom: 0;
-
-                    @include breakpoint("<medium") {
-                        margin-bottom: 0;
-                    }
-
-                    strong {
-                        color: #147393;
-                        display: block;
-                    }
-
-                    small {
-                        font-size: 0.65em;
-
-                        @include breakpoint("<small") {
-                            //display: none;
-                            a {
-                                color: #3f65d7;
-                            }
-                        }
-                    }
-
-                    i.icon {
-                        transform: translateY(2px);
-                    }
-                }
-
-                img.company {
-                    border-radius: 5px;
-                    height: 50px;
-                    float: left;
-
-                    @include breakpoint(">=medium") {
-                        float: right;
-                    }
-                }
-
-                &:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgb(_palette(accent1, bg), 0.2),
-                        0 8px 10px -6px rgb(_palette(accent1, bg), 0.2);
-                }
-            }
-        }
-    }
+  }
 }
 
 @keyframes arrowBounceAnim {
-    0% {
-        transform: translateY(2px);
-    }
-    50% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(2px);
-    }
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
 }

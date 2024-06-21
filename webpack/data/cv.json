@@ -1,7 +1,7 @@
 {
     "details": {
         "image": "assets/images/KurtAvatar.svg",
-        "intro": "Full Stack Engineer with [workDuration] of experience working for large companies on various technology solutions. I find that the best way to learn is to build! I love creating beautiful and striking front-end user experiences, blazing fast APIs, services, etc, that follow best practices and building amazing user experiences for mobile. Working on so many projects as well as joining [redRubyIt] as a Co-Owner has taught me so much, not just about code, but also how to mentor, present, manage expectations and run projects. My goal is to continue learning all that I can and use that knowledge to create more opportunities to learn! 😂",
+        "intro": "Full Stack Engineer with [workDuration] of experience in developing technological solutions for large companies. I find that the best way to learn is to build! I love creating beautiful and striking front-end user experiences, blazing fast APIs, services, etc, that follow best practices and building amazing user experiences for mobile. Throughout my career, I have been involved in numerous projects and collaborated with diverse teams, which has significantly deepened my technical skills and also enhanced my abilities in mentoring, presenting, managing expectations, and leading projects. My goal is to continue learning all that I can and use that knowledge to create more opportunities to learn! 😂",
         "postScript": "P.S. I also have a [blog], Inside my Mind - by Kurt Lourens. I haven't been making use of it as much as I could have, but I have written an article on it about how I made this site and all the effort I put in to make it the best that it could be [blogCvArticle] 😁.",
         "descriptions": [
             ".Net Core Advocate",
@@ -247,12 +247,49 @@
     ],
     "projects": [
         {
+            "title": "Rabobank Rabo Labs",
+            "company": "Entelect",
+            "image": "assets/images/company/rabolabs.png",
+            "imageTile": "assets/images/company/rabolabs.png",
+            "imageAlt": "Rabobank",
+            "timePeriodText": "December 2022 - Present",
+            "timePeriodTextAlt": "Current project",
+            "timePeriodClass": "label-rabobank",
+            "timePeriodColour": "#ff6600",
+            "timePeriodTextColour": "#FFFFFF",
+            "content": "I joined Team Nomads within the Digital Platform Tribe. This project allows the teams within Rabobank to allow users to test out their new experimental features without having to build their own systems to limit who can view & test their experiments. Our solution standardizes the process across the teams and we take care of allowing a certain amount users to access new features and collect analytics & feedback from them",
+            "location": "Utrecht, The Netherlands",
+            "isSideProject": false,
+            "techUsed": [
+                {
+                    "id": "kotlin",
+                    "description": "We were required to migrate our back-end to Kotlin & Spring Boot"
+                },
+                {
+                    "id": "spring",
+                    "description": "We were required to migrate our back-end to Kotlin & Spring Boot"
+                },
+                {
+                    "id": "nodejs",
+                    "description": "Our backend is written in NodeJS with ExpressJS"
+                },
+                {
+                    "id": "azdevops",
+                    "description": "We make heavy use of Azure DevOps to build and release our software as well as automate provisioning resources, load testing, certificate renewal, etc."
+                },
+                {
+                    "id": "angular",
+                    "description": "Occasionally I helped on the front-end, which is a massive monolithic repository known as Senses internally"
+                }
+            ]
+        },
+        {
             "title": "Rabobank TAS",
             "company": "Entelect",
             "image": "assets/images/company/rabobankAlt.png",
             "imageTile": "assets/images/company/rabobank.png",
             "imageAlt": "Rabobank",
-            "timePeriodText": "December 2021 - Present",
+            "timePeriodText": "December 2021 - December 2022",
             "timePeriodTextAlt": "Current project",
             "timePeriodClass": "label-rabobank",
             "timePeriodColour": "#ff6600",
@@ -349,9 +386,9 @@
                     "text": "Translation tool"
                 },
                 {
-                    "url": "https://stream.assistantapps.com",
-                    "alt": "AssistantApps Stream Toys",
-                    "text": "Streaming Tools"
+                    "url": "https://webcomp.assistantapps.com",
+                    "alt": "AssistantApps Web Components",
+                    "text": "Web Components"
                 },
                 {
                     "url": "https://admin.assistantapps.com",
@@ -1080,6 +1117,14 @@
         "nodejs": {
             "name": "NodeJS",
             "img": "nodejs.svg"
+        },
+        "kotlin": {
+            "name": "Kotlin",
+            "img": "kotlin.svg"
+        },
+        "spring": {
+            "name": "Kotlin",
+            "img": "spring.png"
         },
         "pwa": {
             "name": "PWA",

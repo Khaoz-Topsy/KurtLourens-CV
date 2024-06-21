@@ -1,65 +1,81 @@
 .dark {
+  color: #d0d0d0;
+  background-color: #202124;
+
+  #header {
+    background: rgb(15, 29, 42);
+    background: linear-gradient(
+      45deg,
+      rgba(15, 29, 42, 1) 27%,
+      darken(_palette(accent1, bg), 25%) 100%
+    );
+  }
+
+  h1,
+  h2,
+  h4,
+  label,
+  strong,
+  input[type="checkbox"] + label {
     color: #d0d0d0;
-    background-color: #202124;
+  }
 
-    #header {
-        background: rgb(15, 29, 42);
-        background: linear-gradient(45deg, rgba(15, 29, 42, 1) 27%, darken(_palette(accent1, bg), 25%) 100%);
+  a {
+    color: lighten(_palette(accent1, fg), 40%) !important;
+    &.color-ruby {
+      color: #be1f25 !important;
     }
 
-    h1,
-    h2,
-    h4,
-    label,
-    strong,
-    input[type="checkbox"] + label {
-        color: #d0d0d0;
+    &:hover {
+      color: lighten(_palette(accent1, fg), 50%) !important;
+      &.color-ruby {
+        color: lighten(#be1f25, 15%) !important;
+      }
     }
+  }
 
-    a {
-        color: lighten(_palette(accent1, fg), 40%);
+  section .row article > div.card {
+    background-color: #0003;
+    border: 1px solid rgb(30 41 59);
+  }
 
-        &:hover {
-            color: lighten(_palette(accent1, fg), 50%) !important;
-        }
-    }
+  .row.items.hideSideProjects.hideWorkProjects .no-items {
+    display: block;
+    color: rgb(200, 200, 200, 0.5);
+  }
 
-    section .row article > div.card {
-        background-color: #0003;
-        border: 1px solid rgb(30 41 59);
-    }
+  #extras a {
+    background-color: black;
+  }
 
-    #extras a {
-        background-color: black;
-    }
+  &::-webkit-scrollbar-track {
+    background-color: #181818;
+  }
+  .pretty-button.-blue {
+    color: _palette(accent2, fg) !important;
+  }
 
-    &::-webkit-scrollbar-track {
-        background-color: #181818;
-    }
+  #footer .icons a {
+    color: rgb(255, 255, 255) !important;
+  }
 }
 
-body {
-    transition: all 200ms;
+// body {
+//   transition: all 200ms;
 
-    #header {
-        transition: all 200ms;
-    }
+//   #header {
+//     transition: all 200ms;
+//   }
 
-    h1,
-    h2,
-    h4,
-    label,
-    strong {
-        transition: all 200ms;
-    }
+//   h1,
+//   h2,
+//   h4,
+//   label,
+//   strong {
+//     transition: all 200ms;
+//   }
 
-    a {
-        &:hover {
-            color: darken(_palette(accent1, fg), 50%) !important;
-        }
-    }
-
-    section .row article > div.card {
-        transition: all 200ms;
-    }
-}
+//   section .row article > div.card {
+//     transition: all 200ms;
+//   }
+// }
