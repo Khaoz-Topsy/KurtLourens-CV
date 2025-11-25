@@ -107,21 +107,6 @@
             "location": "Johannesburg, South Africa"
         },
         {
-            "title": "Co-Owner",
-            "company": "Red Ruby IT",
-            "icon": "business_center",
-            "image": "assets/images/company/RedRubyIT.png",
-            "imageAlt": "RedRubyIT",
-            "darkModeImage": "assets/images/company/RedRubyITAlt.png",
-            "timePeriodText": "January 2014 - Present",
-            "timePeriodTextAlt": "Currently only providing support",
-            "timePeriodClass": "label-ruby",
-            "timePeriodColour": "#BE1F25",
-            "timePeriodTextColour": "#FFFFFF",
-            "content": "I joined [redRubyIt] with a focus on Web Design and Web Hosting Management as well as looking into mobile application development for the android platform, with multiple android applications on the Google Play Store that I designed, latest one released was [redRubyIt] Client which allowed our clients to view details about their domains such as registration date, expiry date, recurring fee and so on. I did some work as a developer (up until December 2016), performing Website Development using ASP.Net and Mobile development with Xamarin as well as making use of Ionic to create hybrid apps.",
-            "location": "Johannesburg, South Africa"
-        },
-        {
             "title": "Junior Sales Rep",
             "company": "Vuma",
             "icon": "settings_input_hdmi",
