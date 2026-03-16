@@ -100,3 +100,4 @@ Thumbs.db
 /dist
 /assets/js
 /assets/css
+.DS_Store
