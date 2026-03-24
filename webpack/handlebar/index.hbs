@@ -236,7 +236,7 @@
         <div class="h-card"><a class="p-name u-url" href="https://kurtlourens.com/"
                 title="{{kurt.name}}">{{kurt.name}}</a>
             <img class="u-logo u-photo" src="/assets/images/KurtAvatar.svg" alt="Kurt Logo" />
-            <div class="p-category">Senior Software Engineer</div>
+            <div class="p-category">{{kurt.title}}</div>
             <div class="p-note">
                 {{{handleshortcode details.intro}}}
             </div>
@@ -252,7 +252,7 @@
                     title="{{kurt.name}} Avatar" />
             </a>
             <h1><strong>{{kurt.name}}</strong>&nbsp;<br /><br />
-                <span class="mt-1">Senior Software Engineer&nbsp;<br /><small>Red Ruby IT Co-Owner</small></span>
+                <span class="mt-1">{{kurt.title}}</span>
             </h1>
             <br />
             {{#each details.descriptions}}
